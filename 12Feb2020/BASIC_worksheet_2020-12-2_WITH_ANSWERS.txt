@@ -1,0 +1,89 @@
+# ######################################################################
+#
+# SMNG's BASIC (BLAB And SMAC Intro to Computing) series
+# Worksheet for February 12, 2020
+# 
+# - Skills introduced: 
+# --- Command line basics
+# ------ Navigating through directories
+# ------ Creating, deleting, removing directories and files 
+# --- Github basics
+# ------ Cloning a repository
+# ------ Git add, commit, push
+#
+# Presented by Sarah Bakst and Robin Karlin
+# 
+# ######################################################################
+
+# Before going through this worksheet, you should: 
+# 1. Have a github account
+# 2. Have installed either git bash (if you are on a PC) or know how to open the command line (mac) 
+
+# COMMAND LINE BASICS
+# 1. Open git bash (PC) or your command line (mac)
+# 2. How do you know what directory you're in?  
+pwd # print working directory (this is also a Matlab command) 
+
+# 3. Now you want to switch into a different directory. How do we know what's available to us? 
+ls # lists the contents of the working directory 
+# Check for a directory inside your current directory 
+
+# 4. Okay, now that we know what directories exist, we can move into one! 
+cd DirectoryName # this will take you downward, into a subfolder
+cd ../ # this takes you up into a superfolder
+cd ../OtherDirectoryName # this moves you "across", i.e., into the superfolder, and then back down into another folder
+
+# Application check: if you wanted to list the contents of a folder other than the one that you are currently in, without moving into it, how would you do that? 
+
+# Application check: What if you wanted to go up multiple levels of folders?  Say you were in C:/Users/Public/Documents and you wanted to go to C:/Users
+
+# Note: if you have a computer with multiple drives, switch with cd /letter, i.e. to get to the M: drive, cd /m (for git bash)
+
+# 5. You can also create directories from the command line: 
+mkdir robinsNewDirectory # "make directory" 
+
+# 6. Whoops, you put this directory in the wrong spot! You want it in the directory above the one you're currently in. 
+mv robinsNewDirectory ../ # "move" 
+
+# 7. Ope, turns out you were right to begin with, you did want it in the original directory. How do you move it back? 
+mv robinsNewDirectory # _____? 
+
+
+
+
+# (you should have gotten an error---why?) 
+
+# Remember to define your target directory relative to where you are! It is currently in the directory above you, so how would you refer to its path? 
+
+# 8. Okay, now we know the first half of this command, but we need to know what destination is. How do we refer to the directory we're currently in? : mv ../robinsNewDirectory/
+./ # 
+
+# Now try the whole command. 
+
+# 9. All right, now we've got the directory back where we want it, in the working directory (wd). What will this do? 
+mv robinsNewDirectory testdir
+
+# Assuming you don't have a directory in your wd that is called "testdir", it will RENAME the directory "testdir"
+
+# 10. Change the name back to the original name, and now create another directory called "testdir"
+
+# 11. What do you think will happen if you do this command now? 
+mv robinsNewDirectory testdir
+
+# 12. Okay, now we're done with these directories. You can remove them with the command line as well, with rmdir (ReMove DIRectory). How would you remove JUST robinsNewDirectory (i.e., how do you refer to robinsNewDirectory from your wd)? 
+rmdir testing/robinsNewDirectory
+
+# Now also remove the "testing" directory
+
+################################
+# Intro to git
+
+# 1. Okay, now we're ready to start getting into git. Navigate into C:/Users/Public/Documents. 
+
+# All of you should have been added to the git repository comppedagogy, and also accepted your invite---if you haven't, do that now. 
+
+# 2. When you're in git bash and doing git specific commands, you need to preface them with git, e.g. git status. 
+
+# 3. 
+
+
