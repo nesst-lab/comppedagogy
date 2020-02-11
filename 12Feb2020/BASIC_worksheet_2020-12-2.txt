@@ -17,10 +17,10 @@
 
 # Before going through this worksheet, you should: 
 # 1. Have a github account
-# 2. Have installed either git bash (if you are on a PC) or know how to open the command line (mac) 
+# 2. Have installed either git bash (if you are on a PC) or know how to open the terminal (mac) 
 
 # COMMAND LINE BASICS
-# 1. Open git bash (PC) or your command line (mac)
+# 1. Open git bash (PC) or your command line (terminal program, mac)
 # 2. How do you know what directory you're in?  
 pwd # print working directory (this is also a Matlab command) 
 
@@ -37,7 +37,7 @@ cd ../OtherDirectoryName # this moves you "across", i.e., into the superfolder, 
 
 # Application check: What if you wanted to go up multiple levels of folders?  Say you were in C:/Users/Public/Documents and you wanted to go to C:/Users
 
-# Note: if you have a computer with multiple drives, switch with cd /letter, i.e. to get to the M: drive, cd /m (for git bash)
+# Note: if you have a computer with multiple drives, switch with cd /letter, i.e. to get to the M: drive, cd /m (for git bash), or cd /Volumes if you are on a Mac.
 
 # 5. You can also create directories from the command line: 
 mkdir robinsNewDirectory # "make directory" 
@@ -72,6 +72,8 @@ mv robinsNewDirectory testdir
 
 # 12. Okay, now we're done with these directories. You can remove them with the command line as well, with rmdir (ReMove DIRectory). How would you remove JUST robinsNewDirectory (i.e., how do you refer to robinsNewDirectory from your wd)? 
 rmdir testing/robinsNewDirectory
+or
+rm -rf testing/robinsNewDirectory
 
 # Now also remove the "testing" directory
 
@@ -84,6 +86,33 @@ rmdir testing/robinsNewDirectory
 
 # 2. When you're in git bash and doing git specific commands, you need to preface them with git, e.g. git status. 
 
-# 3. 
+# 3. Another example is making a copy of a repository ("repo") on your local drive aka cloning the repository.
+git clone https://github.com/sbakst/comppedagogy
 
+# This command clones the folder "comppedagogy" and any folders and files inside it into the directory where you have run the clone command from.
 
+# Application check: how can you test whether comppedagogy has anything inside it?
+
+# Now change directory to comppedagogy.
+cd comppedagogy
+
+# 4. Now we are going to create a new text file and put it in comppedagogy without ever leaving the command line! We are going to use a program called vi. It's best to think of this program as one where you are telling someone else to do the writing for you, like "now we are going to write some text! Now we are going to save! Now we are going to write some text again!" Once you are familiar with the program, you'll see how it can be a convenient tool that avoids some weird things like ghost characters that notepad or other programs can introduce. Anyway, end vi talk.
+
+# vi myfirstvi_yourlastname.txt
+# so for example
+
+vi myfirstvi_Bakst.txt
+vi myfirstvi_Karlin.txt
+
+# Now type the letter i (for "insert mode").
+# you'll see --INSERT-- appear at the bottom left corner of the window. I am currently writing this in vi, so that is what I see at the bottom left corner of my own terminal window. 
+# Type whatever you want, eg "vi is the best!" or "Sarah and Robin are the best!" 
+# When you are done typing, press esc.
+# To save, type :w (the colon is important, as is the lowercase w) and press enter.
+# To quit, type :q (again, colon and lowercase q are important). Press enter.
+# The file has gone away! But where am I? 
+# Check where you are...
+# Did I create a new file?
+# Check the contents of the current directory.
+
+# 5. Awesome, you created a file!
