@@ -104,9 +104,10 @@ cd comppedagogy
 vi myfirstvi_Bakst.txt
 vi myfirstvi_Karlin.txt
 
-# Now type the letter i (for "insert mode").
+# When you first open up vi, you are in command mode. That is, vi accepts commands, which are combinations of characters.
+# Now type the letter i, which will take you into "insert" mode; now vi will know that the keys you are typing are intended to create text in your document rather than send commands to the program.
 # you'll see --INSERT-- appear at the bottom left corner of the window. I am currently writing this in vi, so that is what I see at the bottom left corner of my own terminal window. 
-# Type whatever you want, eg "vi is the best!" or "Sarah and Robin are the best!" 
+# Type whatever you want, eg "vi is the best!" 
 # When you are done typing, press esc.
 # To save, type :w (the colon is important, as is the lowercase w) and press enter.
 # To quit, type :q (again, colon and lowercase q are important). Press enter.
@@ -115,4 +116,30 @@ vi myfirstvi_Karlin.txt
 # Did I create a new file?
 # Check the contents of the current directory.
 
-# 5. Awesome, you created a file!
+# 5. Awesome, you created a file! Now suppose you want to track changes to this file and make sure that this version appears on the computer of everyone who wants to have access to everything in the repository. Github needs to track the file, and to do that, it needs to know the existence of it.
+
+git add myfirstvi_NAME.txt # instead of NAME, your last name of course.
+# alternatively, try tab completion.
+
+6. Now you have added the file to a list of changes to be tracked by git. But now you need to "commit" your change, or get it ready to send off to the repository. You must also add a message (with the -m "flag") saying what new changes there are to the file. This is important for tracking changes to the file over time.
+
+git commit -m 'created my first file in vi' # you must use quotes around your message. Don't use an apostrophe.
+
+7. Ok, time to send off your changes! A "push" takes whatever is in your own local version of the repository and essentially overwrites what's in the repository online. That means it's good practice to make sure your version is totally up-to-date with whatever is online. For example, if you and your co-author are both editing the same file at the same time and one of you pushes your changes and then the other does, one person's changes could get overwritten. For us right now, this shouldn't matter because we are all working on unique files, but this is a very good habit to be in. So first:
+
+git pull # bring in changes from the repository. Normally this will not cause any problems.
+
+# then
+
+git push
+
+8. Now try making changes to your textfile. Follow the commands in steps 4-7. The steps remain the same even though that file already exists. Remember to type "i" to "insert" text! You can also try deleting some text and then pushing those changes.
+
+9. After you have toyed around editing and pushing, go to https://github.com/sbakst/comppedagogy. Do you see the commit messages in the second column? Try clicking on one and see how github represents the commit history.
+
+
+### MORE FUN WITH VI ###
+Excited about vi? See more on basic commands here: https://www.cs.colostate.edu/helpdocs/vi.html and some fancier things here: https://www.ccsf.edu/Pub/Fac/vi.html
+
+
+
