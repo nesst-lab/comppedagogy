@@ -48,10 +48,7 @@ mv robinsNewDirectory ../ # "move"
 # 7. Ope, turns out you were right to begin with, you did want it in the original directory. How do you move it back? 
 mv robinsNewDirectory # _____? 
 
-
-
-
-# (you should have gotten an error---why?) 
+# This will produce an error for you. Why? 
 
 # Remember to define your target directory relative to where you are! It is currently in the directory above you, so how would you refer to its path? 
 
@@ -72,7 +69,7 @@ mv robinsNewDirectory testdir
 
 # 12. Okay, now we're done with these directories. You can remove them with the command line as well, with rmdir (ReMove DIRectory). How would you remove JUST robinsNewDirectory (i.e., how do you refer to robinsNewDirectory from your wd)? 
 rmdir testing/robinsNewDirectory
-or
+# or
 rm -rf testing/robinsNewDirectory
 
 # Now also remove the "testing" directory
@@ -121,11 +118,11 @@ vi myfirstvi_Karlin.txt
 git add myfirstvi_NAME.txt # instead of NAME, your last name of course.
 # alternatively, try tab completion.
 
-6. Now you have added the file to a list of changes to be tracked by git. But now you need to "commit" your change, or get it ready to send off to the repository. You must also add a message (with the -m "flag") saying what new changes there are to the file. This is important for tracking changes to the file over time.
+# 6. Now you have added the file to a list of changes to be tracked by git. But now you need to "commit" your change, or get it ready to send off to the repository. You must also add a message (with the -m "flag") saying what new changes there are to the file. This is important for tracking changes to the file over time.
 
-git commit -m 'created my first file in vi' # you must use quotes around your message. Don't use an apostrophe.
+git commit -m 'created my first file in vi' # you must use quotes around your message (in git bash you can also use double quotes, "created my first file"). Don't use an apostrophe in the message itself. 
 
-7. Ok, time to send off your changes! A "push" takes whatever is in your own local version of the repository and essentially overwrites what's in the repository online. That means it's good practice to make sure your version is totally up-to-date with whatever is online. For example, if you and your co-author are both editing the same file at the same time and one of you pushes your changes and then the other does, one person's changes could get overwritten. For us right now, this shouldn't matter because we are all working on unique files, but this is a very good habit to be in. So first:
+# 7. Ok, time to send off your changes! A "push" takes whatever is in your own local version of the repository and essentially overwrites what's in the repository online. That means it's good practice to make sure your version is totally up-to-date with whatever is online. For example, if you and your co-author are both editing the same file at the same time and one of you pushes your changes and then the other does, one person's changes could get overwritten. For us right now, this shouldn't matter because we are all working on unique files, but this is a very good habit to be in. So first:
 
 git pull # bring in changes from the repository. Normally this will not cause any problems.
 
@@ -133,9 +130,9 @@ git pull # bring in changes from the repository. Normally this will not cause an
 
 git push
 
-8. Now try making changes to your textfile. Follow the commands in steps 4-7. The steps remain the same even though that file already exists. Remember to type "i" to "insert" text! You can also try deleting some text and then pushing those changes.
+# 8. Now try making changes to your textfile. Follow the commands in steps 4-7. The steps remain the same even though that file already exists. Remember to type "i" to "insert" text! You can also try deleting some text and then pushing those changes.
 
-9. After you have toyed around editing and pushing, go to https://github.com/sbakst/comppedagogy. Do you see the commit messages in the second column? Try clicking on one and see how github represents the commit history.
+# 9. After you have toyed around editing and pushing, go to https://github.com/sbakst/comppedagogy. Do you see the commit messages in the second column? Try clicking on one and see how github represents the commit history.
 
 
 ### MORE FUN WITH VI ###

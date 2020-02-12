@@ -17,10 +17,10 @@
 
 # Before going through this worksheet, you should: 
 # 1. Have a github account
-# 2. Have installed either git bash (if you are on a PC) or know how to open the command line (mac) 
+# 2. Have installed either git bash (if you are on a PC) or know how to open the terminal (mac) 
 
 # COMMAND LINE BASICS
-# 1. Open git bash (PC) or your command line (mac)
+# 1. Open git bash (PC) or your command line (terminal program, mac)
 # 2. How do you know what directory you're in?  
 pwd # print working directory (this is also a Matlab command) 
 
@@ -35,9 +35,16 @@ cd ../OtherDirectoryName # this moves you "across", i.e., into the superfolder, 
 
 # Application check: if you wanted to list the contents of a folder other than the one that you are currently in, without moving into it, how would you do that? 
 
+# ls plus the path to whatever folder you're interested in (relative to your current position) 
+ls ../ # list contents of the directory above you
+ls subdirectoryName # list contents of some subdirectory 
+ls ../sisterDirectoryName # list contents of some folder that is on the same level as your current one
+
 # Application check: What if you wanted to go up multiple levels of folders?  Say you were in C:/Users/Public/Documents and you wanted to go to C:/Users
 
-# Note: if you have a computer with multiple drives, switch with cd /letter, i.e. to get to the M: drive, cd /m (for git bash)
+cd ../../ # etc. you can go up as high as you want. 
+
+# Note: if you have a computer with multiple drives, switch with cd /letter, i.e. to get to the M: drive, cd /m (for git bash), or cd /Volumes if you are on a Mac.
 
 # 5. You can also create directories from the command line: 
 mkdir robinsNewDirectory # "make directory" 
@@ -48,12 +55,10 @@ mv robinsNewDirectory ../ # "move"
 # 7. Ope, turns out you were right to begin with, you did want it in the original directory. How do you move it back? 
 mv robinsNewDirectory # _____? 
 
+# This will produce an error for you. Why? 
+# robinsNewDirectory doesn't exist in your working directory anymore.  Remember to define your target directory relative to where you are! It is currently in the directory above you, so how would you refer to its path? 
 
-
-
-# (you should have gotten an error---why?) 
-
-# Remember to define your target directory relative to where you are! It is currently in the directory above you, so how would you refer to its path? 
+../robinsNewDirectory 
 
 # 8. Okay, now we know the first half of this command, but we need to know what destination is. How do we refer to the directory we're currently in? : mv ../robinsNewDirectory/
 ./ # 
@@ -66,14 +71,22 @@ mv robinsNewDirectory testdir
 # Assuming you don't have a directory in your wd that is called "testdir", it will RENAME the directory "testdir"
 
 # 10. Change the name back to the original name, and now create another directory called "testdir"
+mv testdir robinsNewDirectory
+mkdir testdir
 
 # 11. What do you think will happen if you do this command now? 
 mv robinsNewDirectory testdir
 
+# This will move robinsNewDirectory into testdir. 
+
 # 12. Okay, now we're done with these directories. You can remove them with the command line as well, with rmdir (ReMove DIRectory). How would you remove JUST robinsNewDirectory (i.e., how do you refer to robinsNewDirectory from your wd)? 
 rmdir testing/robinsNewDirectory
+# or
+rm -rf testing/robinsNewDirectory
 
 # Now also remove the "testing" directory
+
+rmdir testdir
 
 ################################
 # Intro to git
@@ -84,6 +97,61 @@ rmdir testing/robinsNewDirectory
 
 # 2. When you're in git bash and doing git specific commands, you need to preface them with git, e.g. git status. 
 
-# 3. 
+# 3. Another example is making a copy of a repository ("repo") on your local drive aka cloning the repository.
+git clone https://github.com/sbakst/comppedagogy
+
+# This command clones the folder "comppedagogy" and any folders and files inside it into the directory where you have run the clone command from.
+
+# Application check: how can you test whether comppedagogy has anything inside it?
+ls comppedagogy
+
+# Now change directory to comppedagogy.
+cd comppedagogy
+
+# 4. Now we are going to create a new text file and put it in comppedagogy without ever leaving the command line! We are going to use a program called vi. It's best to think of this program as one where you are telling someone else to do the writing for you, like "now we are going to write some text! Now we are going to save! Now we are going to write some text again!" Once you are familiar with the program, you'll see how it can be a convenient tool that avoids some weird things like ghost characters that notepad or other programs can introduce. Anyway, end vi talk.
+
+# vi myfirstvi_yourlastname.txt
+# so for example
+
+vi myfirstvi_Bakst.txt
+vi myfirstvi_Karlin.txt
+
+# When you first open up vi, you are in command mode. That is, vi accepts commands, which are combinations of characters.
+# Now type the letter i, which will take you into "insert" mode; now vi will know that the keys you are typing are intended to create text in your document rather than send commands to the program.
+# you'll see --INSERT-- appear at the bottom left corner of the window. I am currently writing this in vi, so that is what I see at the bottom left corner of my own terminal window. 
+# Type whatever you want, eg "vi is the best!" 
+# When you are done typing, press esc.
+# To save, type :w (the colon is important, as is the lowercase w) and press enter.
+# To quit, type :q (again, colon and lowercase q are important). Press enter.
+# The file has gone away! But where am I? 
+# Check where you are...
+# Did I create a new file?
+# Check the contents of the current directory.
+
+# 5. Awesome, you created a file! Now suppose you want to track changes to this file and make sure that this version appears on the computer of everyone who wants to have access to everything in the repository. Github needs to track the file, and to do that, it needs to know the existence of it.
+
+git add myfirstvi_NAME.txt # instead of NAME, your last name of course.
+# alternatively, try tab completion.
+
+# 6. Now you have added the file to a list of changes to be tracked by git. But now you need to "commit" your change, or get it ready to send off to the repository. You must also add a message (with the -m "flag") saying what new changes there are to the file. This is important for tracking changes to the file over time.
+
+git commit -m 'created my first file in vi' # you must use quotes around your message (in git bash you can also use double quotes, "created my first file"). Don't use an apostrophe in the message itself. 
+
+# 7. Ok, time to send off your changes! A "push" takes whatever is in your own local version of the repository and essentially overwrites what's in the repository online. That means it's good practice to make sure your version is totally up-to-date with whatever is online. For example, if you and your co-author are both editing the same file at the same time and one of you pushes your changes and then the other does, one person's changes could get overwritten. For us right now, this shouldn't matter because we are all working on unique files, but this is a very good habit to be in. So first:
+
+git pull # bring in changes from the repository. Normally this will not cause any problems.
+
+# then
+
+git push
+
+# 8. Now try making changes to your textfile. Follow the commands in steps 4-7. The steps remain the same even though that file already exists. Remember to type "i" to "insert" text! You can also try deleting some text and then pushing those changes.
+
+# 9. After you have toyed around editing and pushing, go to https://github.com/sbakst/comppedagogy. Do you see the commit messages in the second column? Try clicking on one and see how github represents the commit history.
+
+
+### MORE FUN WITH VI ###
+Excited about vi? See more on basic commands here: https://www.cs.colostate.edu/helpdocs/vi.html and some fancier things here: https://www.ccsf.edu/Pub/Fac/vi.html
+
 
 
