@@ -90,6 +90,8 @@ git clone https://github.com/sbakst/comppedagogy
 
 # Application check: how can you test whether comppedagogy has anything inside it?
 
+# Note: now that you have cloned this repo, you can access the text file "worksheet" we are using today, from the directory 12Feb2020. If you want to review later, there is also a version WITH_ANSWERS. 
+
 # Now change directory to comppedagogy.
 cd comppedagogy
 
