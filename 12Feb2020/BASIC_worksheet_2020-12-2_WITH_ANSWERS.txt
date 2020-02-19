@@ -54,6 +54,7 @@ mv robinsNewDirectory ../ # "move"
 
 # 7. Ope, turns out you were right to begin with, you did want it in the original directory. How do you move it back? 
 mv robinsNewDirectory # _____? 
+# mv robinsNewDirectory ./ 
 
 # This will produce an error for you. Why? 
 # robinsNewDirectory doesn't exist in your working directory anymore.  Remember to define your target directory relative to where you are! It is currently in the directory above you, so how would you refer to its path? 
