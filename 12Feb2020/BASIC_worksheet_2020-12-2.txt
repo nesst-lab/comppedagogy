@@ -1,7 +1,7 @@
 # ######################################################################
 #
 # SMNG's BASIC (BLAB And SMAC Intro to Computing) series
-# Worksheet for February 12, 2020
+# Worksheet for February 12, 2020 and Feb 19, 2020
 # 
 # - Skills introduced: 
 # --- Command line basics
