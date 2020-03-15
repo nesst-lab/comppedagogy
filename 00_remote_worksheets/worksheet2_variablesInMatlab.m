@@ -61,7 +61,9 @@ secondVar = 2
 
 % Both of these should have created variables that appear in your Workspace, but only the second one should have produced
 % "verbose output" in the command window. The semicolon after the variable definition is how you tell Matlab that you don't
-% want this verbose output. This is useful in long scripts with lots of variable definitions, when you don't want Matlab to
+% want this verbose output. In both of these cases, the value is getting assigned to the variable. It's kind of like sending
+% a letter certified mail: in the verbose case, you're getting explicit confirmation back from Matlab. Silencing with the ; 
+% is useful in long scripts with lots of variable definitions, when you don't want Matlab to
 % be vomiting a bunch of variable values into your command window. 
 
 % 5. If you are working with a bunch of variables and have forgotten the value of one of them, you can ask Matlab what it is
