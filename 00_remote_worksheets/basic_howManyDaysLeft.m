@@ -39,7 +39,7 @@ for d = 1:length(matlabBasicDate)
         break;        
         
     else % If you are negative (past the current meeting) 
-        if d == 3 % If the current meeting is meeting 3 
+        if d == length(matlabBasicDate) % If the current meeting is meeting 3 
             fprintf('All BASIC meetings have already happened :(\n')
         end
         continue; 
