@@ -6,6 +6,7 @@
 % - Skills introduced: 
 % --- Indexing introduction
 % --- Indexing on different variable types
+% --- : notation
 % --- Logical indexing
 % ------ Vowel indices in waverunner
 %
