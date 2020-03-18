@@ -148,7 +148,7 @@ doc size
 % We're using size here instead of length because testMatrix has multiple columns AND multiple rows. Size
 % returns the dimensions in order: x, y, z, etc. Important to note here is that you don't FORCE output 1 to be
 % rows and output 2 to be columns just by naming them as such: 
-[cols, ros] = size(testMatrix); 
+[ros, cols] = size(testMatrix); 
 [googly, boogly] = size(testMatrix); 
 
 % In all cases, the first output will be 2, and the second output will be 3. 
