@@ -28,6 +28,10 @@
 
 %% Defining variables in Matlab
 
+
+% Vocabulary: "Define" is just a more computery word for "assign" or "create" or "make" when
+% talking about a variable. 
+
 % 1. Variables are basically like what you learned in algebra---a value (or set of values) that can change, but is referred
 % to by the same name. For example, you may have seen in worksheet 1 that the variable "ans" kept changing as you did
 % different commands at different times. 
@@ -121,7 +125,8 @@ class(workingDir)
 class(numVar)
 
 % The command class(variable) returns the type of variable that the enclosed variable is. These classes are important because
-% different classes of variable behave differently, and have to be defined differently. 
+% different classes of variable behave differently, and have to be defined
+% differently. Broadly, variables are either numbers or letters.
 
 % 2. The most simple type of variable is the double type, which basically means that it is a number. For example, 
 numVar = 6; 
@@ -142,6 +147,16 @@ aCharVar = 'string';
 aCharNumber = '2'; 
 aCharSentence = 'this is a sentence'; 
 
+% How and why, you might ask, would you want a number to be a character?!
+% Suppose you are an Ancient Roman, and you name all your kids in the order
+% in which they were born (trufax, look it up). Suppose you wanted them entered
+% as variables in Matlab for some kind of weird Dr. Who time warp. More
+% likely, maybe you are doing an experiment where there is a
+% between-subjects difference in when groups receive a treatment: stage 1,
+% stage 2, stage 3, etc. You might want the groups labeled by the numbers
+% 1, 2, and 3, but in subsequent analyeses you might not want those to
+% function as numbers you could do math with.
+
 % ***
 % Homework item 2: what command would you ACTUALLY use if you wanted to make a variable called oldWorkingDir be the string
 % workingDir? You can experiment in the Matlab command window until you have it right. Remember that you can recall the value
@@ -150,8 +165,9 @@ aCharSentence = 'this is a sentence';
 % When you have the command, use vi to edit your homework text file to include this command. 
 % ***
 
-% 4. Variables can also be booleans or logicals, meaning true (1) or false (0). In SMNG, we prefix our boolean variables with
-% a b, like bTestMode. 
+% 4. Variables can also be booleans or logicals. This means that their values say whether
+% something is true (denoted by the number 1) or false (denoted by the number 0)).
+% In SMNG, we prefix our boolean variables with a b, like bTestMode. 
 bTestMode = 1; 
 
 % This means that it is true (1) that we are in test mode. 

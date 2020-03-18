@@ -39,8 +39,12 @@ if intVariable == 2
     fprintf('Hello world!\n'); 
 end
 
-% This is called syntax highlighting. In Matlab, the basic functions and variable definitions are in black,
-% comments are in green, strings are in purple, and syntactic keywords are in blue. 
+% By the way, fprintf is just a special way of "printing," or showing words
+% either in the command window or in some other window.
+
+
+% Anyway, the colors: this is called syntax highlighting. In Matlab, the basic functions and variable definitions 
+% are in black, comments are in green, strings are in purple, and syntactic keywords are in blue. 
 
 % 2. The thing we'll be focusing on today are examples of syntactic keywords. One very important syntactic
 % keyword is "end". We've discussed naming variables before and their requirements, but one thing that you
@@ -58,10 +62,10 @@ end = 2; % you should get a specific error here telling you what is wrong!
 
 % Let's take a look at that if statement from above: 
 if intVariable == 2
-    fprintf('Hello world!\n'); 
+    fprintf('Hello world!\n'); % \n means "print a new line"
 end
 
-% Try clicking on the if. It should become underlined, and the corresponding "end" should also become
+% Try clicking on the if. It should become underlined temporarily, and the corresponding "end" should also become
 % underlined, to show you which keyword initializer that end is matched with.  Let's make the if statement a
 % little more complicated, by embedding another if statement inside: 
 if intVariable == 2
@@ -72,7 +76,7 @@ if intVariable == 2
 end
 
 % Click on the first if again---you should see the underlining happen again. Now, click on the FIRST end (the
-% one that is tabbed in). The second "if" should become underlined. The same is true if we put a for statement
+% one that is tabbed in (indented). The second "if" should become underlined. The same is true if we put a for statement
 % inside, instead of another if statement: 
 
 if intVariable == 2
@@ -148,7 +152,7 @@ end
 % there, even if you hit enter. For example, type the following into the command window: 
 
 
-Entering if statements (or any kind of statement that requires an end) in the command line: Matlab will
+% Entering if statements (or any kind of statement that requires an end) in the command line: Matlab will
 % wait for you to finish entering the statement. So if you type in the command line: 
 if intVariable == 2
     

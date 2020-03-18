@@ -142,6 +142,12 @@ doc length
 testMatrix = [1 2 3; 4 5 6]; 
 [rows,columns] = size(testMatrix); 
 
+% Remember, those semicolons between the numbers in testMatrix
+% denote the end of a row. If you copy and paste line 142 into the command
+% window and press enter, then type testMatrix into the command window and
+% press enter, you'll see the structure of testMatrix (and test the output
+% of "size"!)
+
 % Let's look at what the function size does: 
 doc size
 
@@ -161,5 +167,8 @@ anotherMatrix = [1 2; 3 4; 5 6; 7 8];
 % If we tried to just get the first output by only specifying one variable, we get a vector anyway: 
 anotherSize = size(anotherMatrix); 
 
-
+% Finally, some functions actually take no input arguments. Remember in the
+% last worksheet when we typed pwd and got the dummy variable ans?
+% pwd is a function that takes in no explicit input argument, and outputs
+% the path that you're in!
 
