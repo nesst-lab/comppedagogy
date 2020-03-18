@@ -210,11 +210,24 @@ myName = 'sarah';
 strcmp(myName,'robin') % Will this be a 1 or a 0? 
 bSameString = strcmp(myName,'robin');
 
+% NB: You can also compare two variables, e.g.
+strcmp(myName,bSameString)
+% or two strings:
+strcmp('hello','hi')
+
 % 5. Okay, but what if I want to check if they AREN'T equal?? The ~ operator is the negation in Matlab. 
 bNequal = intVariable ~= 2; 
 bNempty = ~isempty(emptyVariable); 
 bNNan = ~isnan(errorVariable); 
 bDiffString = ~strcmp(myName,'robin'); 
+
+% ***
+% Homework item 1:
+% 
+% Is strcmp(string1, string2) case sensitive? How would you find this out without looking it up with either
+% the doc command or by googling it? Write your solution in the worksheet_4 homework file using vi.
+% 
+% ***
 
 %% Writing if statements
 
@@ -244,7 +257,7 @@ isempty(emptyVariable)
 % of getting to the same point. 
 
 % ***
-% Homework item 1: 
+% Homework item 2: 
 % 
 % The function exist('nameOfSomething') returns different integers if that "something" exists as a different
 % object. For example, if it exists as a variable, it returns 1, if it exists as a file, it returns 2, etc.  
@@ -302,7 +315,7 @@ end
 % comppedagogy repo. (You can use the file you've been working on, that you created with cmd + n.) 
 
 % ***
-% Homework item 2: 
+% Homework item 3: 
 % 
 % Write an if statement that will: 
 % a. Check if a variable is empty
@@ -311,7 +324,7 @@ end
 % ***
 
 % ***
-% Homework item 3: 
+% Homework item 4: 
 % 
 % Write an if statement that will: 
 % a. Check if a variable is 'SMAC'. If so, print 'Your PI is Prof. Ben Parrell'
@@ -323,8 +336,14 @@ end
 % doc fprintf
 % ***
 
-
-
-
-
+% ***
+% Homework item 5: 
+% 
+% The function basic_pythagHypotenuse is largely uncommented in the body of the function. Copy the body of the
+% function (i.e., don't include the function...end statements) into your homework Matlab document. Using the
+% comment capability of Matlab, include comments about each line describing what is happening in that line. 
+% 
+% Remember that for functions you don't already know, you can use the "doc" command to look them up (or google
+% them!). 
+% ***
 
