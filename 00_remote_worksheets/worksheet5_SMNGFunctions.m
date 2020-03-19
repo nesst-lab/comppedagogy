@@ -91,7 +91,7 @@ end
 % Let's look at the rest of the audioGUI argments:
 
 if nargin < 2, trialnums = []; end % this is a vector of trialnumbers.
-if nargin < 3 || isempty(buffertype), buffertype = 'signalIn'; end % This is the signal you want audioGUI to analyze. Have you ever done something other than signalIn?
+if nargin < 3 || isempty(buffertype), buffertype = 'signalIn'; end % This is the "signal" (sound) you want audioGUI to analyze. Have you ever done something other than signalIn?
 if nargin < 4, figpos = []; end % This is just where you want the audioGUI window to appear on the screen. You can look into how Matlab positions windows if you like.
 if nargin < 5, bSaveCheck = 1; end % You know how when you track a trial you've already tracked and it asks you if you want to overwrite a trial? That's this variable.
 
