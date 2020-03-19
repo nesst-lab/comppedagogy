@@ -95,10 +95,48 @@ if nargin < 3 || isempty(buffertype), buffertype = 'signalIn'; end % This is the
 if nargin < 4, figpos = []; end % This is just where you want the audioGUI window to appear on the screen. You can look into how Matlab positions windows if you like.
 if nargin < 5, bSaveCheck = 1; end % You know how when you track a trial you've already tracked and it asks you if you want to overwrite a trial? That's this variable.
 
-% Homework 1: 
+%% Homework 1: 
 % For each of the arguments 2 and 3 list some possible input that you
 % might feed to audioGUI instead of the default. 
 % For number 5, what do we call that type of variable again? with the b?
+
+%%
+% A final note about optional inputs:
+% How can an argument be empty?
+% Consider this: audioGUI expects five arguments in. The inside of the
+% script gives instructions about what to assume about the inputs if there
+% are fewer than five of them.
+
+% Suppose you want the default value for the fouth argument
+% (position) but you want bSaveCheck to be equal to 0.
+
+% if you gave some kind of input like:
+% audioGUI(cd, [1 2 3 4], 'signalIn', 0)
+% Consider this:
+% Would that successfully set bSaveCheck equal to zero? why or why not?
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+% That's right, it would not. If you only gave four arguments, that would
+% fall under contingency if nargin<5 (then set bSaveCheck equal to 1). That
+% is, the function can't be inside your head and know which argument you're
+% leaving out! You can use empty square brackets [] to indicate an empty
+% argument.
+
+%% Homework 2
+% revise the audioGUI statement (reprinted below) to indicate an
+% empty fourth argument.
+
+% audioGUI(cd, [1 2 3 4], 'signalIn', 0)
+
+
 
 
 %% waverunner
