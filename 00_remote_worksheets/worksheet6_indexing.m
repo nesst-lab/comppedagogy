@@ -120,7 +120,7 @@ myLongVector(end-1)
 % The logic vector here will contain a truth value (1 or 0) for each item
 % in the vector. 
 
-% Question 1: suppose you're looking for carrie first. She's not in her
+% a) suppose you're looking for carrie first. She's not in her
 % office, so maybe she's in the vector. What is the command you will type
 % at the command line to get [logicVector] ?
 
@@ -128,11 +128,31 @@ myLongVector(end-1)
 % nonzero element (item). It takes a doubles vector as input, eg
 % find(logicVecgtor).
 
-% Question 2: Where is carrie?
-% Question 3: Where is ben?
+% b) Where is carrie?
+% c) Where is ben?
 
 % BONUS Question: Is alexa in the vector, or is she at home playing smooth
 % jazz? Can you think of a theoretical way to find out the answer to this
 % question without using the "find" function? Hint: the question "is alexa
 % in the vector" is a yes/no question, or boolean, and logicVector is just
 % a long row of zeros and potentially ones.
+
+%% waverunner
+% Much like in audioGUI, you can run waverunner over only a particular set
+% of trials instead of all the trials. Say, all the "eh" vowels. 
+% How many of you are also feeling a little "eh" during this whole staying home thing?
+
+% the expt object, as you are no doubt familiar, has an "inds" field. If
+% you thought those "inds" were indices, you were correct!!!
+
+load('uhdapter_test_expt.mat')
+ehVector = expt.inds.vowels.eh;
+
+open waverunner.m
+
+%% Homework 3 
+% a) what does ehVector contain?
+
+% b) Given what we have learned about arguments and optional arguments, what
+% is an example of what a waverunner command might look like if you ran it
+% just over the eh indices?
