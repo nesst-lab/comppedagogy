@@ -1,7 +1,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % SMNG's BASIC (BLAB And SMAC Intro to Computing) series
 % Remote BASIC series 
-% Worksheet 6: Matlab structures
+% Worksheet 7: Matlab structures
 % 
 % - Skills introduced: 
 % --- Matlab structures

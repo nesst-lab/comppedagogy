@@ -1,7 +1,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % SMNG's BASIC (BLAB And SMAC Intro to Computing) series
 % Remote BASIC series 
-% Worksheet 5: Indexing
+% Worksheet 6: Indexing
 % 
 % - Skills introduced: 
 % --- Indexing introduction
