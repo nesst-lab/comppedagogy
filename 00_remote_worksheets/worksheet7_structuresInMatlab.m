@@ -6,7 +6,7 @@
 % - Skills introduced: 
 % --- Matlab structures
 % --- Indexing in Matlab structures
-% --- The "data" output from Audapter
+% --- Structures in the lab: expt and data 
 %
 % Presented by Sarah Bakst and Robin Karlin
 % 
@@ -111,6 +111,8 @@ smngLabMembers(1).name = 'Robin Karlin';
 % and now actually create a second entry: 
 smngLabMembers(2).name = 'Sarah Bakst'; 
 
+% Now our structure is a structure ARRAY: an array of structures. 
+
 % ***
 % Homework item 1: Add the information of the other fields to Sarah's entry! Include your commands in your
 % Matlab worksheet. 
@@ -186,14 +188,134 @@ smngLabMembers(5) = carrieInfo;
 % Let's check out the fieldnames: 
 fieldnames(carrieInfo)
 
-% Oh, this has different fields! So they can't merge. Let's clear that variable. 
+% Oh, this has different fields! That's why they can't merge---you can only merge structures together that
+% have the same fields. So let's clear that variable. 
 clear carrieInfo
 
-% 3. Okay, now say we have a cell variable: 
 
+%% Structure arrays in the lab: data and expt
 
+% 1. We use structure arrays all the time in our experiments! And you've definitely worked with some before.
+% Let's first take a look at a simple structure, expt. There's a directory with sample data in
+% sampleBasicData. Load in the expt (use GUI or command!)
 
-%% Structure arrays in the lab: the data output (Audapter data)
+% Okay, now let's examine this. You can get the fieldnames:
+fieldnames(expt)
+
+% Whoa, that's a lot! Let's just take a look at a few. For example, we can tell what experiment this expt came
+% from:
+expt.name 
+
+% What the participant code is:
+expt.snum % that's "speaker number" 
+
+% And the path of the directory where data was stored while the experiment was running:
+expt.dataPath
+
+% ***
+% Homework item 3:
+% 
+% In the expt, find one field that is a cell array, and one that is a double array. Define a variable as the
+% cell array and another as the cell array. Include the code for this in your Matlab worksheet file. 
+% 
+% ***
+
+% 2. All right, now let's look at a more complicated structure array---one that is more than a 1x1. Load in
+% data.mat, also in sampleBasicData. 
+
+% The loading time may have been longer for this than for expt! This is because there is a LOT more data: it
+% has 10 "entries", and each entry has a ton of data. In these data structure, an "entry" is a single trial.
+% So let's look first at trial 1:
+spoken = data(1).signalIn; % note the index
+nSamples = length(spoken); % the number of times the spoken signal was sampled during the trial
+
+% You might remember that signalIn is the data from what people SAY in experiments. Let's just look at a
+% random 15 datapoints in this vector "spoken" 
+spoken(401:415)
+
+% It's just a list of numbers! This is just what the pressure was at the mic at whenever that sample was
+% taken. It doesn't really look that familiar until we plot it against time (we'll talk more about plotting in
+% a future worksheet, don't worry!): 
+plot(1:nSamples,spoken) % plot(xValues,yValues)---here x is just time, i.e. samples from 1 to nSamples
+
+% Well that looks a lot more familiar! You've definitely seen that in audioGUI. 
+
+% 3. There's a lot of other stuff stored in data, mostly other vectors. But we can even see some matrices:
+formants = data(6).fmts; % what trial are we looking at? 
+
+% Let's take the size of this matrix:
+[rows,cols] = size(formants); 
+
+% ***
+% Homework item 4: 
+% 
+% Audapter automatically spits out four formant measures. Are individual formants stored in a column, or in a
+% row? Why do you think this? Write a line of code that assigns the variable "formant2" to the second formant,
+% using the matrix "formants", and a comment explaining your reasoning. 
+% 
+% In addition, write a single line of code that assigns the variable "formant3" to the third formant of the
+% 30th trial. Include both of your code solutions in your Matlab worksheet solution file. 
+% ***
+
+% 4. Let's take a look at the field "params". We can assign ALL 150 "params" values to a single variable by
+% telling Matlab that we want the array:
+rpkParams = [data.params]; 
+
+% The brackets around data.params signifies that you want the whole output of data.params. Run the following
+% command:
+data.params
+
+% This should have spit out an annoying line of answers at you! Basically this just loops through all 150
+% entries and tells you what the "params" field is. We don't want that! Now try this:
+[data.params] % what we assigned to rpkParams
+
+% Now "ans" should be a single, 1x150 struct, the same as rpkParams. But what's this?? How is this a structure
+% array? Didn't we extract this from a structure array??
+
+% Yes! Let's look just at trial 9's params: 
+singleParams = data(9).params; 
+
+% The params field is actually a structure within a structure! Now, there's a field called "rmsThr" in the
+% params structure. How would you access this directly? 
+% . 
+% . 
+% . 
+% . 
+% . 
+% . 
+% . 
+% . 
+% . 
+% . 
+% . 
+% . 
+% . 
+% . 
+% . 
+% . 
+% Right, we can just stack the fieldnames:
+data(9).params.rmsThr
+
+% There is also a field called pertF2, which is a vector. How would we get the 100th value out of this? 
+% . 
+% . 
+% . 
+% . 
+% . 
+% . 
+% . 
+% . 
+% . 
+% . 
+% . 
+% . 
+% . 
+% . 
+% . 
+% . 
+% Yes, we can both stack fieldnames and add an index: 
+data(9).params.pertF2(100)
+
 
 
 
