@@ -316,6 +316,32 @@ data(9).params.rmsThr
 % Yes, we can both stack fieldnames and add an index: 
 data(9).params.pertF2(100)
 
+%%
+
+% *** 
+% Homework item 5: 
+% There is actually another way of creating structures, which involves taking separate cell
+% arrays/vectors/etc. and putting them together into a structure array. 
+% 
+% We've already looked at some Matlab documentation, and if you took up the bonus problem at the beginning of
+% this worksheet, you have also ventured into the very wide world of googling things in code! We're going to
+% practice using documentation for learning to code again here. So do the following command: 
+% 
+% doc struct
+% 
+% Using the information you find there, create a structure that is: 
+% - at least 3 entries long; 
+% - has a field called "letters", where structure(1).letters == 'a', structure(2).letters == 'b', and
+% structure(3).letters == 'c'; 
+% - has a field called "numbers", where structure(1).numbers == 1, structure(2).numbers == 2, and
+% structure(3).numbers == 3; 
+% - has at least one other field that either contains numeric vectors (bonus if there are different vectors in
+% each entry) OR contains another structure with at least one field
+% 
+% Put all the code lines you used to make this structure in your Matlab Worksheet 7 file---don't save the
+% structure itself. 
+% 
+% *** 
 
 
 
