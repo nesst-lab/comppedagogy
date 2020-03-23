@@ -143,3 +143,41 @@ if nargin < 5, bSaveCheck = 1; end % You know how when you track a trial you've 
 % Let's set audioGUI aside for a moment. Open up waverunner:
 open waverunner.m
 % Does the input argument structure look familiar?
+
+
+%% check_dataVals
+% How does check_dataVals choose trials for your to re-check? Does it know
+% there's something wrong with those trials? 
+% Let's open it up. There will be a lot of extra syntax and functions defined 
+% inside it that you don't need to worry about. We'll ignore it. Just
+% scroll down to line 137.
+
+% Homework 3
+% a. Not a trick question: what are lines 138-141 doing? They are setting
+% words equal to particular values. What do we call this? i.e., what do we
+% call shortThresh, longThresh, jumpThresh, and wrongFThresh?
+% b. Do you recognize the words in lines 142-151?? From where?!
+
+% We haven't done for-loops yet, so I'll do a line-by line translation of
+% the following (next few lines):
+
+%     for i = 1:length(dataVals)
+%         if dataVals(i).bExcl
+%             badTrials = [badTrials dataVals(i).token];
+
+%     for i = 1:length(dataVals)
+% % % We're going to get information from all of the rows in dataVals.
+%         if dataVals(i).bExcl
+% % % % % Ooo, remember what the b is? Boolean! so, if the line of the trial
+% % % % % that we're currently looking at is a trial marked as "bad" (eg during
+% % % % % audioGUI or checkAudio) [literally, if the variable bExcl exists 
+% % % % % for this trial)
+%             badTrials = [badTrials dataVals(i).token];
+% % % % % % % Then take that trial and add it to my list of bad trials.
+
+% c. Can you write a similar translation for lines 157-160?
+
+% d. Given all of this, how does check_dataVals figure out which trials to
+% check? That is, is there some kind of complex signal processing or neural
+% network that determines the trials to check, or is it an educated guess,
+% and where would that guess come from? Explain.
