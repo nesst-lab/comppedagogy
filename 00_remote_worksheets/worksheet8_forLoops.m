@@ -12,6 +12,22 @@
 % 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+% Reminder to use good Gitiquette!! 
+% 1. Pull before pushing
+% 2. Don't delete anything that belongs to someone else. 
+% 3. Don't change the worksheet! 
+
+% ***
+% Before starting this worksheet, use Terminal (/git bash) to create a new directory called Worksheet_8 in your personal
+% directory inside comppedagogy. 
+%
+% BONUS: you'll need a LASTNAME_worksheet8.m file for this worksheet as well. Create this either via Matlab or
+% via the command line. 
+% 
+% *** 
+
+%%
+
 
 
 % 3. Okay, now say we have a cell variable: 
