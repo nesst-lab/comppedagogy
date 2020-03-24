@@ -1,2 +1,3 @@
+These two variables are the same becuase the result of the command isequal(newVector,anotherVector); resulted in answer being logical which means it is true.
 I used the command: oldWorkingDir = 'workingDir'
 I do not think oldWorkingDir and workingDir will not be the same value because we redefined workingDir. Therefore, these two values won't be the same. I checkedin the Workspace and I think I am correct? 
