@@ -1,3 +1,4 @@
+To create a matrix with 2 rows and 3 columns, I used the command: newMatrix= [1 2 3; 4 5 6]. For the cell array I did the command: newCellArray = {'a' 'b' 'c'; 'd' 'e' 'f'}. 
 anotherVector and columnVector are not the same because anotherVector is 1x6 and columnVector is 6x1. To double check, I entered anotherVector into the command window and pressed enter and t showed one row wiht 6 columns. I did the same thing for columnVector. 
 These two variables are the same becuase the result of the command isequal(newVector,anotherVector); resulted in answer being logical which means it is true.
 I used the command: oldWorkingDir = 'workingDir'
