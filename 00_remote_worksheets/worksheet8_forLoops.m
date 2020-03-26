@@ -40,7 +40,7 @@
 % the square of the numbers 20 through 30 are. We can do that general operation with two simple commands, one
 % math and one print statement:
 square = 20^2; 
-fprintf('The square of 20 is %d\n',square); % Remember that %d just indicates that a double (number) will go there---specifically, the doubule in "square"
+fprintf('The square of 20 is %d\n',square); % Remember that %d just indicates that a double (number) will go there---specifically, the double in "square"
 
 % If you wanted to be a little more fancy and variable-using, you could define a variable as 20, and then
 % square AND display it: 
@@ -150,7 +150,7 @@ end
 % 
 % Transform the following code into a for loop that runs over the number of trials in the sample data file: 
 trialIx = 1; % trial index
-trialFileName = [num2str(1) '.mat']; % putting strings in [] brackets makes a concatenated string! 
+trialFileName = [num2str(1) '.mat']; % putting strings in [] brackets makes a concatenated string! and num2str makes a number into a string.
 fprintf('The file name for trial %d will be %s\n',trialIx,trialFileName); 
 % ***
 
