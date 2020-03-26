@@ -318,18 +318,6 @@ for i = 1:length(goodEvilAvailable) % 1:length(goodEvilAvailable) == 4, so this 
     
 end
 
-% This is what I'm calling "dislocated" indexing: the two indices are not identical 
-
 % (We actually want to delete the 2 and 3 assignments we also made, because they're wrong, so you can do: 
 officeCharacters(2).goodEvil = []; 
-officeCharacters(3).goodEvil = []; %)
-
-% *** 
-% Homework item 5: 
-% 
-% "Dislocated" indexing comes up a lot in our experiment running scripts. For example, we may have a vector
-% called trials2run: 
-% 
-% trials2run = 31:60; 
-% 
-% Now we want to run some loop over all these trials. We also want to 
+officeCharacters(3).goodEvil = []; 
