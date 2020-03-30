@@ -78,8 +78,29 @@ clear rows
 % function? Let's open up audioGUI to find out:
 open audioGUI.m
 
-% Ok, there's a lot going on in there. Let's just look at the start. See
-% that "nargin"? That's Number of ARGuments IN. 
+% Ok, there's a lot going on in there. Let's just look at the start.
+
+function [] = audioGUI(dataPath,trialnums,buffertype,figpos,bSaveCheck)
+
+% The parts in parentheses tell you the arguments that the function expects
+% you to give it and the order in which it expects to find them. Remember,
+% the function itself doesn't actually have knowledge of what a dataPath
+% is, or what a buffertype is. The information you put in will be used at
+% some point in the function. If you put the arguments in the wrong order,
+% you'll get some kind of wild error eventually. For example, pretend you
+% swap dataPath and trialnums. If you gave:
+audioGUI([1 2 3 4 5], '/myfavexptobviouslyuhdapter/acousticdata/spxxx', 'signalIn', [0 0 0 0], 1)
+
+% Then audioGUI would think that [1 2 3 4 5] was a dataPath. 
+% line 22 says:
+load(fullfile(dataPath,'data.mat'),'data');
+
+% So then audioGUI would try to load '[1 2 3 4 5]/data.mat' which doesn't
+% really make any sense, does it. Ok, so order matters.
+
+% 
+
+% See that "nargin"? That's Number of ARGuments IN. 
 % Let's look at the first statement:
 % if nargin < 1 || isempty(dataPath), dataPath = cd; end
 % We can also write that with more familiar syntax:
@@ -98,7 +119,7 @@ if nargin < 5, bSaveCheck = 1; end % You know how when you track a trial you've 
 %% Homework 1: 
 % For each of the arguments 2 and 3 list some possible input that you
 % might feed to audioGUI instead of the default. 
-% For number 5, what do we call that type of variable again? with the b?
+% For number 5, what do we call that type of variable again? starts with a b?
 
 %%
 % A final note about optional inputs:
@@ -142,8 +163,25 @@ if nargin < 5, bSaveCheck = 1; end % You know how when you track a trial you've 
 %% waverunner
 % Let's set audioGUI aside for a moment. Open up waverunner:
 open waverunner.m
-% Does the input argument structure look familiar?
+% Does the input argument structure look familiar? Yes, yes it does.
 
+% As we've seen, an argument can be any variable type! It could be a
+% double, an array of numbers, a string, a cell array...
+% params2overwrite is a cell array of parameters. Waverunner overwrites
+% parameters in a set of trials that you can specify. That list of
+% parameters includes amplitude threshold and preemphasis. This is useful
+% if, say, you want to make the amplitude threshold 0 on all trials but
+% don't want to open them up one by one in audioGUI.
+
+
+% Homework 3
+% a. which argument of waverunner specifies trials?
+% b. write an example of a waverunner call that only overwrites trials 1,
+% 4, and 6, with default arguments for bufferType, bSaveCheck and
+% params2overwrite.
+% c. Can you think of another parameter (other htan amplitude threshold or
+% preemphasis that you alter in audioGUI that you could overwrite using
+% waverunner?
 
 %% check_dataVals
 % How does check_dataVals choose trials for your to re-check? Does it know
@@ -152,7 +190,7 @@ open waverunner.m
 % inside it that you don't need to worry about. We'll ignore it. Just
 % scroll down to line 137.
 
-% Homework 3
+% Homework 4
 % a. Not a trick question: what are lines 138-141 doing? They are setting
 % words equal to particular values. What do we call this? i.e., what do we
 % call shortThresh, longThresh, jumpThresh, and wrongFThresh?
