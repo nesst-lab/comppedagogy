@@ -32,7 +32,7 @@
 # - Specific locations have text files---in some really small cities, you might just get a specific location with no street address! 
 # - If you don't know what exists in a city, remember to use ls. If you forget where you are, remember to use pwd! 
 #
-# At the end of every question, you'll open/preview a .txt file. Copy down the letter that appears in the last line---at the end of your travels you'll have a message!
+# At the end of every question, you'll open/preview a .txt file. Copy down the letter that appears in the last line---at the end of your travels you'll have a message! Put this message in your homework txt file. 
 # 
 ########################################################################
 
