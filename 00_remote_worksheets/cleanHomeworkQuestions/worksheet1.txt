@@ -1,0 +1,36 @@
+% ***
+% Homework item 1: Before starting this worksheet, use Terminal (/git bash) to create a new directory called Worksheet_1 in 
+% your personal directory inside comppedagogy. 
+% *** 
+
+% *** 
+% Homework item 2: After you've navigated into comppedagogy, take a screenshot of your Matlab window and save it in your
+% Worksheet_1 directory. If you do not know know how to take a screenshot, go to this page: 
+% https://www.itg.ias.edu/content/keyboard-shortcuts-capture-screen-shot-mac-os-x
+% ***
+
+% *** 
+% Homework item 3: You can rearrange your command/editor/workspace/etc. windows however you like. This includes popping them 
+% out (I personally like my Variables window popped out, rather than docked), resizing (my Current Folder window is usually a
+% little narrower than default), completely rearranging (my Workspace is on the right side of the screen instead of the 
+% default left), etc. Make at least ONE change to your default so that your Matlab space is more intuitive to you. Take a 
+% screenshot and save it to your Worksheet_1 directory. 
+% 
+% (If you actually liked everything at default, you can just change it back. If you've already made a change because you've 
+% worked with Matlab before, just send a screenshot of your current space, as it will be different from default already.) 
+% ***
+
+% ***
+% Homework item 4: Once you have gotten the countdown on how much time you have left, create a text file using vi in your
+% Worksheet_1 directory in the comppedagogy repo, called LASTNAME_homework1.txt
+% 
+% In the body of this text file, write down how much time there is left according to this script. Save and quit. 
+% *** 
+
+% *** 
+% Homework item 5: Push all your changes! But remember to pull first :) 
+% 
+% If you have any questions about this worksheet or anything we've covered in BASIC, feel free to message the Basic Slack
+% channel (if you think others might have the same question and would benefit---which is probably very likely!!) or DM Sarah
+% and/or me in Slack if you'd rather ask privately. 
+% ***
