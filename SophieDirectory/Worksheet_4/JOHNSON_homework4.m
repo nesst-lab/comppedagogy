@@ -1,7 +1,11 @@
 %% Item 3:
 if isempty(varEnter)
    varEnter = 4;
-else ~isempty(varEnter);
+else ~isempty(varEnter); 
+    % RK: else by itself doesn't take any conditions---it's just "all other cases". If you want to define
+    % another possibility, use elseif (even in binary choices where there are only two possibilities) 
+    % RK: also, if you're not doing anything, strictly speaking, you don't need to have an else(if) statement
+    % at all. If you want to be really thorough, you can do something tautological like varEnter = varEnter
 end
 %% Item 4:
 if strcmp(myLab,'SMAC')
