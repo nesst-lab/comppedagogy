@@ -68,6 +68,8 @@
 
 # 16. Finally, you get to go home. You live on Manitowoc Pkwy: home.txt
 
-# 17. Check if there is a directory for the street of your Madison address. If there isn't, make one (remember to pull right before you do this step---someone else might have added it while you were traveling!). Inside this street directory, create a text file using vi that is called YOURNAME_home.txt. Put your initials inside, and save. When you've finished this worksheet, push your worksheet and this new directory to the master repo. 
+# 17. Check if there is a directory for the street of your Madison address. If there isn't, make one (remember to pull right before you do this step---someone else might have added it while you were traveling!). Inside this street directory, create a text file using vi that is called YOURNAME_home.txt. Put your initials inside, and save. In addition, put the full path to this text document inside your worksheet 1s answer file (so we can find your home document with initials). 
+
+When you've finished this worksheet, push your worksheet and this new directory to the master repo. 
 
 # (Note: if you don't want people to know what street you live on in Madison, just use Highland Ave [the Waisman center address].)
