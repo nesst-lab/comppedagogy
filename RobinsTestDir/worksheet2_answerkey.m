@@ -19,7 +19,7 @@ answerkey for worksheet 2
 % ***
 'yes; in logic, 1 means yes and 0 means no. the answer to "is equal" is 1, or yes.'
 
-4: 
+% 4: 
 % If [1 2 3 4 5 6] is 1x6 because there is one row and six columns, what are the dimensios of columnVector? 
 % 
 % Do you think anotherVector and columnVector are equivalent? Why or why not? Include your reasoning and the
