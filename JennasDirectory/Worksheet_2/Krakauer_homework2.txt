@@ -1,0 +1,7 @@
+1. I expected oldWorkingDir and workingDir to be different values because I assigned them to different variables.
+2. oldWorkingDir = 'workingDir'
+3. Yes, these two variables are the same because the only thing I did different  when I created the two vectors was include the commas between numbers for the vector called "anotherVector". However, that does not change anything because they are both 1x6 matrices.
+To proove this, I entered in isequal(newVector,anotherVector) and it gave me a logical 1, which means true.
+4. The dimensions of columnVector are 6x1. They are not equivalent because they have different dimensions. I used the command isequal(anotherVector,columnVector) and I got a logical 0, which is false.
+5. A 2x3 matrix could be defined as myMatrix = [1 2 3; 4 5 6]
+For the cell array, it would be myCellArray = {'a' 'b' 'c';'d' 'e' 'f'}
