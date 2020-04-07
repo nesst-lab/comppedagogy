@@ -53,7 +53,7 @@ load('myLongVector.mat');
 % cell data types. This gets a little tricky. Typically, words will be
 % concatenated in a cell array.
 load('myCells.mat')
-myCells % look, an assorted box of about ten baker's dozen each Robins and Sarahs!
+myCells % look, an assorted box of about 25 baker's dozen each Robins and Sarahs!
 % Remember that the curly braces denote a cell.
 % try this:
 myCells(1)

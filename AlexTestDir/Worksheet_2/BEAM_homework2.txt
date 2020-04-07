@@ -6,9 +6,11 @@ than the one that I had defined oldWorkingDir in.
 oldWorkingDir = C:\\Users\Public\Documents\comppedagogy , WorkingDir = C:\\Users\Public\Documents
 
 
-Item 2: What command would you ACTUALLY use if you wanted to make a variable called oldWorkingDir be the strong workingDir?
+Item 2: What command would you ACTUALLY use if you wanted to make a variable called oldWorkingDir be the string workingDir?
 
 oldWorkingDir = 'C:\Users\Public\Documents'
+
+# This isn't correct---check again what the question is asking you to do! 
 
 
 Item 3: Are these two variables the same? How do you know?
