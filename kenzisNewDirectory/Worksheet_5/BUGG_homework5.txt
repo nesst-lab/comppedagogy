@@ -1,0 +1,6 @@
+Lines 138-141 are assigning values to short trials, long trials, jump trials, and wrongFtrials. I recognize the terms in lines 142-151 from check_dataVals.
+If the trial is too short, then add it my list of bad trials.
+Check dataVals decides which trials to mark as bad by comparing each trial to the set arguments and if they are too short, jumping, etc they will be added to the list of bad trials. 
+instead of analyzing all of the trials, you can put in a specific trial. You could also put in a set of trials you want analyzed rather than all of them at once. The argument with a b in front of it is called a boolean!
+audioGUI(cd [1 2 3 [4]], 'signalIn', 0)
+
