@@ -1,0 +1,5 @@
+1. I would have expected them to be the same value, and they were the same (using MATLAB online version) 
+2. oldWorkingDir = 'workingDir'
+3. Yes, the variables are the same because they are the same vectors and the values were denoted with a 1.
+4. 6x1, they are not equivalent because the command isequal (anotherVector, columnVector) showed a value of 0. 
+5. matrix = [1, 2, 3; 4, 5, 6] and cellarray = {'a' 'b' 'c'; 'd' 'e' 'f'} 
