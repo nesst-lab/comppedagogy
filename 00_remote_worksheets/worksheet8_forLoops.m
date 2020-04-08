@@ -332,4 +332,12 @@ officeCharacters(3).goodEvil = []; %)
 % 
 % trials2run = 31:60; 
 % 
-% Now we want to run some loop over all these trials. We also want to 
+% Now we want to run some loop over all these trials. We also have a list of 30 items, the words that will be
+% used, in the right order: 
+
+load('words4trials.mat');
+
+% Using one for loop, issue a print statement for each trial that says: 
+% The word for trial TRIAL is WORD
+% *** 
+
