@@ -338,6 +338,6 @@ officeCharacters(3).goodEvil = []; %)
 load('words4trials.mat');
 
 % Using one for loop, issue a print statement for each trial that says: 
-% The word for trial TRIAL is WORD
+% The word for trial TRIALNUMBER is WORD
 % *** 
 
