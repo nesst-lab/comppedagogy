@@ -21,6 +21,7 @@ b = -1;
 % --- both a and b are nonzero
 % --- neither a nor b are empty 
 
+
 % 2. | (logical or): You may also want to act if any of a set of conditions is true. The operator | is an
 % inclusive or: at least one condition has to be true. 
 
@@ -67,14 +68,14 @@ a = 15;
 b = 5; 
 
 if a < 0 && b > 0 % how would you translate this? 
-	print('hello world!\n')
+	fprintf('hello world!\n')
 end 
 
 % a is NOT negative, so you don't even have to know if b is positive or not to figure out that your "and" 
 % statement will be false. Thus, Matlab would never evaluate the b > 0 portion. Similarly:
 
 if a > 0 || b < 0 
-	print('hello world!\n')
+	fprintf('hello world!\n')
 end
 
 % a is positive, so it doesn't matter if b is positive or negative; at least one of the conditions is true. 
@@ -165,6 +166,7 @@ end
 
 % This simply won't evaluate. But this will: 
 
+a = 4; 
 switch a
     case 5 
         greeting = 'hello'; 
@@ -179,7 +181,7 @@ fprintf('Charlotte says %s!\n', greeting);
 % 3. If you have multiple cases that would result in the same process, you can combine them (much like an "or"
 % in an if/else): 
 
-condWord = 'tapper'; 
+condWord = 'capper'; 
 switch condWord
     case {'capper','gapper'}
         max_events = 7;     % doesn't include aspiration. is OST status but not a user event        
@@ -216,7 +218,7 @@ elseif strcmp(name,'robin')
 end
 fprintf('%s earned her PhD at %s\n',name,almaMater); 
 
-% 3. Can you translate the following to a switch/case statement? 
+% 3. Can you translate the following to a switch/case statement? Why/why not? 
 name = 'ben'; 
 if strcmp(name,'sarah')
     almaMater = 'UC Berkeley'; 
