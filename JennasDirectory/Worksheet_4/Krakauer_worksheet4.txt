@@ -1,0 +1,5 @@
+1. strcmp(string1, string2) is case sensitive.
+myName = 'jenna';
+strcmp(myName,'Jenna')
+This will give me a logical 0. If I do strcmp(myName,'jenna') instead, I will get a logical 1 which prooves it's case sensitive.
+2. Yes, 'basic_pythagHypotenuse' will print 'This exists!' because it exists as a file.
