@@ -8,9 +8,10 @@ oldWorkingDir = C:\\Users\Public\Documents\comppedagogy , WorkingDir = C:\\Users
 
 Item 2: What command would you ACTUALLY use if you wanted to make a variable called oldWorkingDir be the string workingDir?
 
-oldWorkingDir = 'C:\Users\Public\Documents'
+oldWorkingDir = newWorkingDir
 
-# This isn't correct---check again what the question is asking you to do! 
+# This isn't correct---check again what the question is asking you to do!
+# Updated answer  
 
 
 Item 3: Are these two variables the same? How do you know?
@@ -37,4 +38,4 @@ Now do the same thing, but for a cell array, where row 1 has a b c, and row 2 ha
 
 variableName = {'a' 'b' 'c' ; 'd' ''e' 'f'}
 
- 
+
