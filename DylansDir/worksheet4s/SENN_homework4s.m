@@ -34,7 +34,7 @@ if a ~= 0 | b ~= 0
     fprintf("hello world")
 end
 
-if ~isempty(a) | ~isempty(b)
+if ~isempty(a) | ~isempty(b) % RK: reread the question carefully :) 
     fprintf("hello world")
 end
 
@@ -53,8 +53,9 @@ end
 
 % 4)
 
-% false, true, fale
+% false, true, fale 
 % (a | b) & c
+% *** RK: your third option is wrong, and thus your answer to the follow-up question
 
 % short-circuiting
 
@@ -66,6 +67,7 @@ end
 
 % all default vals 
 % no, the first statement is evaluated first
+% *** RK: and...? (What would happen if this statement were evaluated?) 
 
 % switch-case statements
 
@@ -96,14 +98,15 @@ elseif strcmp(condWord, 'sea') || strcmp(condWord, 'C') || strcmp(condWord, 'Z')
        strcmp(condWord, 'czar') || strcmp(condWord, 'cod') || strcmp(condWord, 'god')
     max_events = 5; 
 else 
-    max_events = 0; % prevent error
+    max_events = 0; % prevent error 
+    % RK: Good!
 end
 fprintf('You may have at most %d events\n',max_events); 
 
 
 name = 'sarah'; 
 switch name
-    case {'sarah'}
+    case {'sarah'} % RK: strictly speaking you do not need brackets around singular choices 
         almaMater = 'UC Berkeley'; 
     case {'robin'}
         almaMater = 'Cornell University'; 
