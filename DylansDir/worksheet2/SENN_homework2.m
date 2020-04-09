@@ -3,7 +3,7 @@
 SB: Please try again! What are the values, at this point, of oldWorkingDir and workingDir?
 
 
-2. oldWorkingDir = 'workingDir'
+2. oldWorkingDir = fprintf(workingDir)
 
 3. isequal(vector1, vector2) = 1 (True)
 spaces and commas both serve as delimiters when assigning vectors
