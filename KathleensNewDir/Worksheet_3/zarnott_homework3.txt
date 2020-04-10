@@ -1,0 +1,3 @@
+#2. The value of vectorMin in the expression vectorMin = min(testVector); would be 1. 
+
+#1: As indicated, I no longer have a side 1, side 2, or side 3; a, b, c, are also now different than what they were before. Now a = 15, b = 17, and c = 4 because the side values became the letter values when we called the function and stopped the script. I also have traingleSides 15,17,4 which are the original sides but because we stopped the script and we do not know if the triangle is a pyathaogrean triangle they are defined as triangle sides. We also see nonHyp as 15,4, and hypotenuse as 17.  
