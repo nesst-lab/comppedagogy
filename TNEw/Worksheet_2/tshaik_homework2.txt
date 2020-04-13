@@ -1,0 +1,7 @@
+Homework #2 command: oldWorkingDir = "WorkingDir"
+HW #3: Yes, because the out of the command is 1 meaning that statments is true. So both the variables are equal to eachother
+Hw #4: The dimension of columnVector is 6x1 because there are 6 rows and 1 colume. 
+AnotherVector and columnVector are not the same becuase they have different dimensions. This is the command I used was : isequal( anotherVector,columnVector);
+The output of the commmand was a zero, meaning they are not equal to eachother.
+HW#5:  Matrix = [1,2,3;4,5,6]
+Matrixabc = ["a","b","c"; "d", "e", "f"]
