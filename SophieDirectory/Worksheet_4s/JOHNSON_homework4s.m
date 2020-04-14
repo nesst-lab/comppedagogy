@@ -1,102 +1,119 @@
-%%
+%% Intro Scratch Work Part I
 a = 2; 
 b = -1; 
 if a>0 & b>0
     fprintf('hello world\n')
 end
-
 if round(a) == a & round(b) == b
     fprintf('hello world\n')
 end
-
 if a ~= 0 & b~= 0
     fprintf('hello world\n')
 end
-
 if ~isempty(a) & ~isempty(b)
     fprintf('hello world\n')
 end
-
-%%
+%% Intro Scratch Work Part II
 a = 2; 
 b = -1; 
 if a>0 | b>0
     fprintf('hello world\n')
 end
-
 if round(a) == a | round(b) == b
     fprintf('hello world\n')
 end
-
 if a ~= 0 | b~= 0
     fprintf('hello world\n')
 end
-
 if isempty(a) | ~isempty(b)
     fprintf('hello world\n')
 end
-
-%%
-% - print out 'hello world' if...
-% --- either a or b is positive, but not both
-% --- either a is empty or b is not empty (but not both conditions) 
-% ------ how would you assign a and b such that you would actually print something out? How about another way
-% to not print anything out (other than a = 2 and b = -1)? 
-
-
+%% Intro Scratch Work Part III
 a = 2; b = -1;
-
 if xor(a>0,b>0)
     fprintf('hello world\n')
 end
-
 if xor(isempty(a), ~isempty(b))
     fprintf('hello world\n')
 end
-
-%%
-% 4. You can also combine things. Easy example: 
-
+%% Intro Scratch Work Part IV
 a = 1; 
 b = 1; 
 c = 0; 
-
 % What will the results be? 
 a & b & c %False
 a & b | c %True
 a | b & c %True
-
 % Which expression is the third expression (above) equivalent to?
 (a | b) & c %False
 a | (b & c) %True
-
-%% Short-Circuiting
-
-1. You may see in some of our SMNG scripts doubled operators: && and ||. This means that you are
-% "short-circuiting". Short-circuiting means that the first part of the statement will be evaluated, and if
-% the outcome is already determined, then Matlab does not bother looking at the second (third, fourth, etc.)
-
+%% Short-Circuiting Intro Scratch Work Part V
 a = 15; 
 b = 5; 
-
 if a < 0 && b > 0 % how would you translate this? If a is negative and b is positive. 
 	print('hello world!\n')
 end 
-
-% a is NOT negative, so you don't even have to know if b is positive or not to figure out that your "and" 
-% statement will be false. Thus, Matlab would never evaluate the b > 0 portion. Similarly:
-
 if a > 0 || b < 0 
 	print('hello world!\n')
 end
-
-% a is positive, so it doesn't matter if b is positive or negative; at least one of the conditions is true. 
-
 % Food for thought: is there a short-circuit version of xor? No because it
 % is logically impossible. You have to evaluate all the way to the end.
-
+% Question: what are the advantages/disadvantages of using if/else vs. switch/case? 
+% If you use switch/case, it can be more condensed, however, switch/case
+% does not have an else ability
+%% Practice translating switch/case to if/else and vice versa
+% 1. Translate the following to an if/else statement: 
+condWord = 'tapper'; 
+switch condWord
+    case {'capper','gapper'}
+        max_events = 7;     % doesn't include aspiration. is OST status but not a user event        
+    case {'sapper','zapper'}
+        max_events = 6; 
+    case {'sea','C','Z','czar','gar','cod','god'}
+        max_events = 5; 
+end
+fprintf('You may have at most %d events\n',max_events); 
 %% 
+condWord = 'tapper'; 
+if condWord == 'capper' || condWord == 'gapper'
+    max_events = 7;     % doesn't include aspiration. is OST status but not a user event        
+elseif condWord == 'sapper' || condWord == 'zapper'
+    max_events = 6; 
+elseif condWord == {'sea','C','Z','czar','gar','cod','god'}
+    max_events = 5; 
+end
+fprintf('You may have at most %d events\n',max_events);
 
-%Question: what are the advantages/disadvantages of using if/else vs. switch/case? 
-%If you use switch/case, it can be more condensed, however, switch/case
-%does not have an else ability
+%% 2. Translate the following to a switch/case statement: 
+name = 'sarah';
+switch name
+    case {'sarah'}
+        almaMater = 'UC Berkeley';
+    case {'robin'}
+        almaMater = 'Cornell University';
+end
+fprintf('%s earned her PhD at %s\n', name,almaMater);
+
+%% 3. Can you translate the following to a switch/case statement? Why/why not?
+% I do not think you can translate it because when I tried the strcmp
+% function will not evaluate, and it will immediately jump to the otherwise
+% statement. Below is what I tried to do:
+name = 'ben';
+switch name
+    case strcmp(name, 'sarah')
+        almaMater = 'UC Berkeley'; 
+        possPro = 'her';
+    case strcmp(name, 'robin')
+        almaMater = 'Cornell University';
+        possPro = 'her';
+    case strcmp(name,'ben')
+        almaMater = 'USC'; 
+        possPro = 'his';
+    case strcmp(name,'carrie')
+        almaMater = 'MIT'; 
+        possPro = 'her';
+    otherwise
+        almaMater = 'unknown'; 
+        possPro = 'their';
+end
+fprintf('%s earned %s PhD at %s\n',name,possPro,almaMater)
