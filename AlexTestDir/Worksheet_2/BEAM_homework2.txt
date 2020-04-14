@@ -12,6 +12,7 @@ oldWorkingDir = newWorkingDir
 
 # This isn't correct---check again what the question is asking you to do!
 # Updated answer  
+# RK (4/13): still not correct! 
 
 
 Item 3: Are these two variables the same? How do you know?
