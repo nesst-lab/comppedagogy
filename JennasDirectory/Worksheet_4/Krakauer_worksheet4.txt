@@ -2,4 +2,4 @@
 myName = 'jenna';
 strcmp(myName,'Jenna')
 This will give me a logical 0. If I do strcmp(myName,'jenna') instead, I will get a logical 1 which prooves it's case sensitive.
-2. Yes, 'basic_pythagHypotenuse' will print 'This exists!' because it exists as a file.
+2. Yes, 'basic_pythagHypotenuse' will print 'This exists!' because, using an if statement, I told matlab to print 'This exists!' using fprintf if this exists as a file, which it does.

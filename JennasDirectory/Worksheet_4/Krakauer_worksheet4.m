@@ -19,3 +19,4 @@ hypotenuse = sqrt(leg1^2 + leg2^2); % the hypotenuse is equal to the square root
 if round(hypotenuse) ~= hypotenuse % if we round hypotenuse to the nearest integer and it is not equal to the original value of hypotenuse, then (next line)
     hypotenuse = NaN; % assign hypotenuse to not a number
     fprintf('No Pythagorean triple exists with these two leg lengths\n'); % prints this script if the above is true
+end
