@@ -179,8 +179,8 @@ open waverunner.m
 % b. write an example of a waverunner call that only overwrites trials 1,
 % 4, and 6, with default arguments for bufferType, bSaveCheck and
 % params2overwrite.
-% c. Can you think of another parameter (other htan amplitude threshold or
-% preemphasis that you alter in audioGUI that you could overwrite using
+% c. Can you think of another parameter (other than amplitude threshold or
+% preemphasis) that you alter in audioGUI that you could overwrite using
 % waverunner?
 
 %% check_dataVals
@@ -193,7 +193,8 @@ open waverunner.m
 % Homework 4
 % a. Not a trick question: what are lines 138-141 doing? They are setting
 % words equal to particular values. What do we call this? i.e., what do we
-% call shortThresh, longThresh, jumpThresh, and wrongFThresh?
+% call shortThresh, longThresh, jumpThresh, and wrongFThresh, and what do we call it (in computery land) when we make one of those terms be a value? (This is a review question.)
+
 % b. Do you recognize the words in lines 142-151?? From where?!
 
 % We haven't done for-loops yet, so I'll do a line-by line translation of
