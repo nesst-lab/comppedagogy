@@ -2,6 +2,8 @@
 
 Hmm, try again! First we set oldWorkingDir to pwd, then we changed directory...
 
+Then they would not be ther same value, thank you!
+
 2. oldWorkingDir = 'workingDir'
 3. Yes, the variables are the same because they are the same vectors and the values were denoted with a 1.
 4. 6x1, they are not equivalent because the command isequal (anotherVector, columnVector) showed a value of 0. 
