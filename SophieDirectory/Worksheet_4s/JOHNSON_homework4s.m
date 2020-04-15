@@ -75,14 +75,23 @@ end
 fprintf('You may have at most %d events\n',max_events); 
 %% 
 condWord = 'tapper'; 
-if condWord == 'capper' || condWord == 'gapper'
+if strcmp(condWord,'capper') || strcmp(condWord,'gapper')
     max_events = 7;     % doesn't include aspiration. is OST status but not a user event        
-elseif condWord == 'sapper' || condWord == 'zapper'
+elseif strcmp(condWord,'sapper') || strcmp(condWord,'zapper')
     max_events = 6; 
-elseif condWord == {'sea','C','Z','czar','gar','cod','god'}
-    max_events = 5; 
+elseif strcmp(condWord,'sea') || ...
+       strcmp(condWord,'C') || ...
+       strcmp(condWord,'Z') || ...
+       strcmp(condWord,'czar') || ...
+       strcmp(condWord,'gar') || ...
+       strcmp(condWord,'cod') || ...
+       strcmp(condWord,'god')
+    max_events = 5;
+else 
+    condWord = NaN;
+    max_events = NaN;
 end
-fprintf('You may have at most %d events\n',max_events);
+fprintf('You may have at most %d events\n', max_events);
 
 %% 2. Translate the following to a switch/case statement: 
 name = 'sarah';
@@ -95,21 +104,21 @@ end
 fprintf('%s earned her PhD at %s\n', name,almaMater);
 
 %% 3. Can you translate the following to a switch/case statement? Why/why not?
-% I do not think you can translate it because when I tried the strcmp
-% function will not evaluate, and it will immediately jump to the otherwise
-% statement. Below is what I tried to do:
+% Yes, you can because you can add an otherwise statement at the end of the
+% switch case lines to accommodateany answers that don't fall into any of
+% the cases.
 name = 'ben';
 switch name
-    case strcmp(name, 'sarah')
+    case 'sarah'
         almaMater = 'UC Berkeley'; 
         possPro = 'her';
-    case strcmp(name, 'robin')
+    case 'robin'
         almaMater = 'Cornell University';
         possPro = 'her';
-    case strcmp(name,'ben')
+    case 'ben'
         almaMater = 'USC'; 
         possPro = 'his';
-    case strcmp(name,'carrie')
+    case 'carrie'
         almaMater = 'MIT'; 
         possPro = 'her';
     otherwise
