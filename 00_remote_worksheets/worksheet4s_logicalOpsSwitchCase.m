@@ -202,6 +202,7 @@ switch a
     case 6 
         greeting = 'salutations'; 
     otherwise
+        warning('Unexpected value') % This is a specific command that lets you know if something bad and unexpected happened! 
         greeting = 'go away'; 
 end
 fprintf('Charlotte says %s!\n', greeting); 
