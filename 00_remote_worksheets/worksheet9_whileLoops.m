@@ -68,7 +68,7 @@ fprintf('This while loop ran %d time(s)\n',count);
 % 1. Unlike for loops, while loops have the potential to run infinitely ("an infinite loop"). Sometimes, this
 % can be due to code error, such as making it impossible for the condition to ever be met. For example, if you
 % were to run the following code, it would run infinitely. (If you do run the following code, wait a few
-% seconds and then hit ctrl+c (windows) or cmd+c (mac) before your computer hates you!! This is a
+% seconds and then hit ctrl+c before your computer hates you!! This is a
 % force quit command.)
 
 aNumber = 0;
