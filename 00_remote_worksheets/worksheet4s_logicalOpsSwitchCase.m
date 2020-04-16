@@ -192,6 +192,21 @@ switch condWord
 end
 fprintf('You may have at most %d events\n',max_events); 
 
+% 4. Much like how in if/else statements, there is an "all other cases" option, switch case has the keyword
+% "otherwise": 
+
+a = 4; 
+switch a
+    case 5 
+        greeting = 'hello'; 
+    case 6 
+        greeting = 'salutations'; 
+    otherwise
+        warning('Unexpected value') % This is a specific command that lets you know if something bad and unexpected happened! 
+        greeting = 'go away'; 
+end
+fprintf('Charlotte says %s!\n', greeting); 
+
 % ***
 % Question: what are the advantages/disadvantages of using if/else vs. switch/case? 
 

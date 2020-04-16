@@ -1,0 +1,1 @@
+I would expect workingDir and oldWorkingDir to be the same value since we set OldWorkingDir to be equal to workingDir. When I checked my Workspace, I saw that they were both equal to /MATLAB Drive/comppedagogy, which is what I got when I used the pwd command.
