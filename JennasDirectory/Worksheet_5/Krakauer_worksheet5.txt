@@ -1,0 +1,15 @@
+1. For argument 2 you might put 25 for trial number 25. For argument 3 you might put in signalOut. For number 5, b means boolean.
+2. audioGui(cd, [1 2 3 4], 'signalIn', [], 0)
+3.
+ a) if nargin < 2, triallinds = []; end
+ b) waverunner(cd, [1 4 6], 'signalIn', 1, [])
+ c) A parameter you can alter in audioGUI includes user events.
+4.
+ a) These are variables, and by setting them equal to numbers we are assigning them to a value.
+ b) Yes, these are from check_dataVals
+ c) 
+	elseif dataVals(i).dur < shortThresh %check for too short trials if marked as a bad trial
+	    shortTrials = [shortTrials dataVals(i).token]; %add to short trials list
+	elseif dataVals(i).dur > longThresh %check for too long trials if not a short trial
+	    longTrials = [longTrials dataVals(i).token]; %add to long trials list
+ d) check_dataVals figures out what trials to check by guessing, but it comes from the code. Starting at line 137 thresholds for errors are given, so if it is within that range of values, matlab assumes it is an acceptable trial. Next, the different types of trials are listed, and matlab goes through the for statement to see if any trials meet each elseif statement. 
