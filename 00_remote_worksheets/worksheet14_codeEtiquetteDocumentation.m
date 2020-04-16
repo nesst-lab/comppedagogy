@@ -1,13 +1,13 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % SMNG's BASIC (BLAB And SMAC Intro to Computing) series
 % Remote BASIC series 
-% Worksheet 12: writing a function
+% Worksheet 14: code etiquette and documentation in Matlab
 % 
 % - Skills introduced: 
 % --- Function structure
 % --- Debugging 
 % 
-% Presented by Sarah Bakst and Robin Karlina
+% Presented by Sarah Bakst and Robin Karlin
 % 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
