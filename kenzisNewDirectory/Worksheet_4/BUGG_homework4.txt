@@ -2,8 +2,10 @@ strcmp is a case sensitive comparison of string 1 and string 2. You can find thi
 
 RK: but what strings would you have to test? (what are string1 and string2?) Two different variables? 
 RK (4/13): yes, but what are those variables set to? Give concrete examples. 
+KB: strcmp(kenzie, Kenzie) 
 
 The variable 'This exists!' will print because the statement tells matlab to give you that variable if the thing you put into the statement does exist. 
 
 RK: how does matlab tell that code snippet that the file exists? By checking the if exist('basic_pythagHypotenuse') function. 
 RK (4/13): right, but what is the result of checking? 
+KB: It would print a 2 because it does exist and the is a 2 because it is a file. 
