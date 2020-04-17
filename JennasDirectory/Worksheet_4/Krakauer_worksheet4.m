@@ -4,10 +4,10 @@ if isempty(emptyVariable)
 end
 
 4.
-Var1 = 'SMAC' % RK: don't forget to suppress your output! 
-if Var1 = 'SMAC' % RK: careful of the difference between = and ==! (Also: strcmp is more retro-compatible) 
+if strcmp(Var1,'SMAC'); % RK (4/16): don't actually need to suppress output on a condition like this---you're not assigning a variable. 
+    % RK cont'd: Previously when you have Var1 = 'SMAC' as the assignment, that would be when you would probably want to suppress
         fprintf('Your PI is Prof. Ben Parrell')
-elseif Var1 = 'BLAB'
+elseif strcmp(Var1,'BLAB');
         fprintf('Your PI is Prof. Carrie Niziolek')
 else
         fprintf('Oh no! You have no PI')
@@ -20,6 +20,4 @@ if round(hypotenuse) ~= hypotenuse % if we round hypotenuse to the nearest integ
     hypotenuse = NaN; % assign hypotenuse to not a number
     fprintf('No Pythagorean triple exists with these two leg lengths\n'); % prints this script if the above is true
 end
-=======
-end % RK: Your lack of end statement was killing me ^^
->>>>>>> 76cf11572a26d3715140b30b8fae8ede12743764
+
