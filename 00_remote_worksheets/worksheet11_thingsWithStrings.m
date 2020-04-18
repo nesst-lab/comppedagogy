@@ -1,73 +1,66 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % SMNG's BASIC (BLAB And SMAC Intro to Computing) series
 % Remote BASIC series 
-% Worksheet 9: writing a function
+% Worksheet 11: things with strings
 % 
 % - Skills introduced: 
-% --- Function structure
-% --- Debugging 
+% --- Concatenation
+% --- Case changing
+% --- String splitting 
 % 
-% Presented by Sarah Bakst and Robin Karlina
+% Presented by Sarah Bakst and Robin Karlin
 % 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+% Reminder to use good Gitiquette!! 
+% 1. Pull before pushing
+% 2. Don't delete anything that belongs to someone else. 
+% 3. Don't change the worksheet! 
 
-
-
-
-
-
-%% Writing functions: the basics
-
-% 1. Let's take a look at how functions work. Now we'll look at basic_pythagHypotenuse
-open basic_pythagHypotenuse
-
-% You should see a function statement enclosing the entire script: "function" declares the beginning of a
-% function, and "end" signifies the end. 
-
-% 2. Next we have the output(s), which are enclosed in the []. Your function can have no outputs, in which
-% case the brackets would be empty ([]), or however many outputs you want: [output1, output2, output3]
-
-% 3. Then we do an = sign, basically just like how you would assign the output of functions to a variable. 
-
-% 4. Next, the function name. This is how you will call the function, like max or length. Note: when you save
-% a function, it should be called the function name. So basic_pythagHypotenuse is saved as
-% basic_pythagHypotenuse.m
-
-% 5. Finally, in parentheses, the inputs you need. For our function basic_pythagHypotenuse, we need side1 and
-% side2
-
-% 6. Underneath the line declaring the function, it is good practice to have a description of what the
-% function does, and what the inputs are. 
-
-% 7. Finally, we have the body of the function. This function is a tad on the complicated side, and involves
-% some if statements, but basically it does this: 
-
-% - Take the square root of the sum of side1^2 and side2^2, and assigns it to the variable hypotenuse
-% - Check if that number, hypotenuse, is a whole number (if you round hypotenuse, is it the same number as the
-% original hypotenuse?) 
-% - If it isn't, a whole number, then hypotenuse becomes NaN (not a number) and you are told that the original
-% two sides can't make a pythagorean triple. 
-
-% If your function has an output, then the variable in the output has to be defined somewhere in the function.
-% In basic_pythagHypotenuse, hypotenuse is the output, and hypotenuse is defined in the function. 
-
-% *** 
-% Homework item 3: 
-% 
-% In your personal folder, create a function called LASTNAME_firstFunction. 
-% 
-% Write a function that does one of the following: 
-% 
-% - 
-% - 
-% - 
-% 
-% Test out your function to make sure it does what you want it to do by calling it with the necessary inputs.
-% When you are satisfied, push it to the repository. 
-% 
-% Note: you have to save any changes you make before running an udpated version of a function. So if you fix a
-% typo and then don't save, the version being run will still have the typo. 
-% 
 % ***
+% Before starting this worksheet, use Terminal (/git bash) to create a new directory called Worksheet_10 in your personal
+% directory inside comppedagogy. 
+%
+% You'll need a LASTNAME_worksheet10.m file for this worksheet as well. Create this either via Matlab or
+% via the command line. 
+% 
+% *** 
+
+%% Changing case
+
+
+
+%% String splitting
+
+% 1. Sometimes you may have a longer string that has a certain character in between every word or important
+% bit of information. For example, if you wanted to split a sentence into its individual words, each word is
+% separated from the next by a space: 
+
+mySentence = 'the cow jumped over the moon'; 
+
+% The function strsplit() takes the string you want to split, and the character you want to split it by: 
+sentenceParts = strsplit(mySentence,' '); 
+
+% In this case, the single quotes enclose a space. The result of this is a cell array, where the first cell
+% has the first word, the second cell has hte second word, etc. Note that the spaces are NOT there, so
+% basically the split character is "deleted".
+
+% ***
+% Homework item : 
+% What would the result be of a string split that split mySentence over the character 't'? How about the 
+% character '_'? % Describe the outputs of this. 
+% 
+% Next, create two new variables that do these two tasks and compare your predictions to the results. Were you
+% correct? If not, do you understand why? 
+% ***
+
+% 2. Once you have your individual split parts in a cell array, you can refer to them just like a normal cell
+% array. For example,
+
+secondWord = sentenceParts{2}; 
+
+
+
+
+
 
