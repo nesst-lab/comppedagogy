@@ -1,0 +1,8 @@
+Item 1
+A = 15
+B = 17
+C = 4
+Variables A, B, and C have the values of side1, side2, and side3 because the function produces the results with the labels of A, B, and C, which overwrites any previous values set with these variable names.
+
+Item 2
+vectorMin = 1
