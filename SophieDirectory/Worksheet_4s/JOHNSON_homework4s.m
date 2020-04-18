@@ -88,7 +88,7 @@ elseif strcmp(condWord,'sea') || ...
        strcmp(condWord,'god')
     max_events = 5;
 else 
-    condWord = NaN;
+    condWord = NaN; % RK 4/18: Why are you resetting this variable? 
     max_events = NaN;
 end
 fprintf('You may have at most %d events\n', max_events);
@@ -96,7 +96,7 @@ fprintf('You may have at most %d events\n', max_events);
 %% 2. Translate the following to a switch/case statement: 
 name = 'sarah';
 switch name
-    case {'sarah'}
+    case {'sarah'} % RK 4/18: When you have single values here, you don't actually need the {} (not an error, just not necessary)
         almaMater = 'UC Berkeley';
     case {'robin'}
         almaMater = 'Cornell University';
