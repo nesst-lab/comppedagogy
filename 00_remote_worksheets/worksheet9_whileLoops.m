@@ -20,7 +20,7 @@
 % Before starting this worksheet, use Terminal (/git bash) to create a new directory called Worksheet_9 in your personal
 % directory inside comppedagogy. 
 %
-% You'll need a LASTNAME_worksheet8.m file for this worksheet as well. Create this either via Matlab or
+% You'll need a LASTNAME_worksheet9.m file for this worksheet as well. Create this either via Matlab or
 % via the command line. 
 % 
 % *** 
