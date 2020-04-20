@@ -4,5 +4,7 @@ B = 17
 C = 4
 Variables A, B, and C have the values of side1, side2, and side3 because the function produces the results with the labels of A, B, and C, which overwrites any previous values set with these variable names.
 
+SB: not exactly overwrites. When we put a red dot "breakpoint" in the script, it makes the script pause when it gets to that line. That means that we're looking at a, b, and c while the script is paused. What happens if you hit "continue"? What are a, b, and c equal to now that the script has finished executing? Were the variables overwritten, or is something else going on[, Sarah asked in a leading manner]?
+
 Item 2
 vectorMin = 1
