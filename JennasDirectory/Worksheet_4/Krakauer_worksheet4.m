@@ -4,7 +4,7 @@ if isempty(emptyVariable)
 end
 
 4.
-if strcmp(Var1,'SMAC');
+if strcmp(Var1,'SMAC')
         fprintf('Your PI is Prof. Ben Parrell')
 elseif strcmp(Var1,'BLAB');
         fprintf('Your PI is Prof. Carrie Niziolek')
