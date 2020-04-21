@@ -1,9 +1,9 @@
 1. For argument 2 you might put 25 for trial number 25. For argument 3 you might put in signalOut. For number 5, b means boolean.
 2. audioGui(cd, [1 2 3 4], 'signalIn', [], 0)
 3.
- a) if nargin < 2, triallinds = []; end
+ a) if nargin < 2, triallinds = []; end %the 2nd argument specifies trials
  b) waverunner(cd, [1 4 6], 'signalIn', 1, [])
- c) A parameter you can alter in audioGUI includes user events.
+ c) A parameter you can alter in audioGUI is LPC order.
 4.
  a) These are variables, and by setting them equal to numbers we are assigning them to a value.
  b) Yes, these are from check_dataVals
