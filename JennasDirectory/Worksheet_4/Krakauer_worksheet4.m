@@ -4,12 +4,7 @@ if isempty(emptyVariable)
 end
 
 4.
-<<<<<<< HEAD
 if strcmp(Var1,'SMAC')
-=======
-if strcmp(Var1,'SMAC'); % RK (4/16): don't actually need to suppress output on a condition like this---you're not assigning a variable. 
-    % RK cont'd: Previously when you have Var1 = 'SMAC' as the assignment, that would be when you would probably want to suppress
->>>>>>> 734fc439b0707d5a1f00607ce624bb9f2d3329b1
         fprintf('Your PI is Prof. Ben Parrell')
 elseif strcmp(Var1,'BLAB');
         fprintf('Your PI is Prof. Carrie Niziolek')
