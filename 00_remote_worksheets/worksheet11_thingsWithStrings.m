@@ -4,9 +4,10 @@
 % Worksheet 11: things with strings
 % 
 % - Skills introduced: 
-% --- Concatenation
 % --- Case changing
 % --- String splitting 
+% --- Excessively complicated sprintf
+% --- Using string variables to make fields
 % 
 % Presented by Sarah Bakst and Robin Karlin
 % 
@@ -28,7 +29,56 @@
 
 %% Changing case
 
+% 1. Sometimes you have a word in a certain case---lower case, upper case, etc., and you want to change it to
+% a different one.  
+trialWord = 'gapper'; 
 
+% Say you want to display trialWord in all caps on the screen. We can change this using the function upper(): 
+fprintf('The word is %s\n',upper(trialWord))
+
+% You can also go the other direction:
+emphaticWord = 'CAPPER'; 
+fprintf('He said %s quietly\n', lower(emphaticWord))
+
+% 2. Recall that you can concatenate strings together to make a longer string by using []: 
+aPhrase = [trialWord ' and ' emphaticWord]; 
+fprintf('The phrase is %s\n',aPhrase)
+
+% Also recall that you can get the nth letter of a particular string by indexing: 
+secondLetter = trialWord(2); 
+
+% What this means is that you can change the case of a single letter. For example, if you wanted to capitalize
+% this name: 
+name = 'sarah'; 
+
+% Which number character do you want to be capitalized? 
+upper(name(1))
+
+% And you can attach that to the rest of the word: 
+capitalizedName = [upper(name(1)) name(2:end)]; % remember the "end" keyword for indexing! 
+
+% Or you could simply change the first character of the variable "name" to be capitalized: 
+name(1) = upper(name(1)); 
+
+% *** 
+% Homework item 1:
+% Write a code snippet that will assign the following sentence with "proper" capitalization to the variable 
+% goodSentence 
+% 
+% sentence = 'sarah and robin are postdocs with the blab and smac labs at uw-madison.'
+% ***
+
+% ***
+% Homework item 2:
+% Now write another code snippet that will assign the same sentence with "sponge-bob capitalization" to the
+% variable bobSentence. (Here, sponge-bob capitalization simply means that every other letter is lower/upper
+% case.)
+% 
+% Note: the function rem(x,y) or mod(x,y) may be helpful here! 
+% *** 
+
+
+ 
 
 %% String splitting
 
@@ -58,6 +108,12 @@ sentenceParts = strsplit(mySentence,' ');
 % array. For example,
 
 secondWord = sentenceParts{2}; 
+
+% 3. And you can loop over the contents of this array, like any other array
+
+for w = 1:length(sentenceParts)
+    
+end
 
 
 
