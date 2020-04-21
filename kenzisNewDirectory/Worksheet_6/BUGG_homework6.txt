@@ -1,1 +1,7 @@
-200=736 504=295 830=130
+#2 A) I typed [logicVector] = contains(myCells, 'carrie'). Then, to find where Carrie was in the vector i typed find(logicVector)
+Carrie is in cell 415
+Ben is in 544
+
+#3 the ehVector contains the trial numbers in which the person is saying the vowel "eh".
+Asked the last question on Slack in the Basic channel. Will update once my question is answered. 
+#1 200=736 504=295 830=130
