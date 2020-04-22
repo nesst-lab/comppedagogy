@@ -5,8 +5,7 @@
 % 
 % - Skills introduced: 
 % --- Case changing
-% --- String splitting 
-% --- Excessively complicated sprintf
+% --- String splitting, joining, and excessively complicated sprintf
 % --- Using string variables to make fields
 % 
 % Presented by Sarah Bakst and Robin Karlin
@@ -22,7 +21,7 @@
 % Before starting this worksheet, use Terminal (/git bash) to create a new directory called Worksheet_10 in your personal
 % directory inside comppedagogy. 
 %
-% You'll need a LASTNAME_worksheet10.m file for this worksheet as well. Create this either via Matlab or
+% You'll need a LASTNAME_worksheet11.m file for this worksheet as well. Create this either via Matlab or
 % via the command line. 
 % 
 % *** 
@@ -72,7 +71,7 @@ name(1) = upper(name(1));
 % Homework item 2:
 % Now write another code snippet that will assign the same sentence with "sponge-bob capitalization" to the
 % variable bobSentence. (Here, sponge-bob capitalization simply means that every other letter is lower/upper
-% case.)
+% case. You can treat spaces like a character.)
 % 
 % Note: the function rem(x,y) or mod(x,y) may be helpful here! 
 % *** 
@@ -96,7 +95,7 @@ sentenceParts = strsplit(mySentence,' ');
 % basically the split character is "deleted".
 
 % ***
-% Homework item : 
+% Homework item 3: 
 % What would the result be of a string split that split mySentence over the character 't'? How about the 
 % character '_'? % Describe the outputs of this. 
 % 
@@ -115,8 +114,65 @@ for w = 1:length(sentenceParts)
     
 end
 
+% 4. You've already concatenated using [] notation, but you can concatenate
+% in another way, which is basically like string splitting in reverse. Say
+% you have a list of items to buy: 
+shoppingList = {'apples' 'bananas' 'pears'}; 
+
+% If you wanted to print out "apples, bananas, pears", you COULD do: 
+joinedList = [shoppingList{1} ', ' shoppingList{2} ', ' shoppingList{3}]; 
+
+% But what if your list were 20 items long? You wouldn't want to write that
+% all out. Instead, you can use join(): 
+joinedList = join(shoppingList, ', '); 
+
+% The output is different (cell instead of character) but the basic end
+% result is the same.  
+
+% 5. Okay, now you've gotten a nice joined list, but it's bothering you
+% because it's not really natural-sounding: if you were actually telling
+% someone what they needed to buy, you would say "you should buy apples,
+% bananas, and pears" instead of just "you should buy apples, bananas,
+% pears".  Again, this is easy to do with basic [] concatenation when your
+% list is short, but what if you have a long list? 
+
+lockdownShoppingList{1} = {'oranges' 'greens' 'beets' 'farro' 'mint' 'barley'...
+    'milk' 'eggs' 'yogurt' 'broccoli'}; 
+
+% (note here the ... notation, which allows you to split up long lines of
+% code!) 
+
+% Or worse yet, what if you have lists of different lengths?
+lockdownShoppingList{2} = {'bell peppers' 'squash' 'candy'}; 
+
+% There are a couple of different ways to address this. The first thing to
+% realize, however, is that to get at the individual items on the list, you
+% need to double index. You can think about this as combining the two
+% commands: 
+week2List = lockdownShoppingList{2}; 
+item1Week2 = week2List{1}; 
+compressedItem1 = lockdownShoppingList{2}{1}; 
+
+% So the "big index" goes first (the one that gets the right cell of the
+% top-level cell array) and then the "small index" (the one that retrieves
+% the particular item). 
+
+% *** 
+% Homework item (review): 
+% What would be the result if we used (1) instead of {1} as the lower-level
+% index to define compressedItem1?
+% *** 
+
+% We've been using fprintf a lot for really basic stuff, but it turns out
+% you can use it in combination with sprintf to do more interesting/helpful
+% things. 
+
+% sprintf: creates a string in the workspace (STRING print-formatted)
+% fpritf: prints to a file or to the command window (FILE print-formatted) 
+
+join(lockdownShoppingList{1}(1:end-1), ', ')
 
 
-
+[sprintf('%s, ', lockdownShoppingList{1}{1:end-1}), ' and ' lockdownShoppingList{1}{end}]
 
 
