@@ -6,5 +6,7 @@ Variables A, B, and C have the values of side1, side2, and side3 because the fun
 
 SB: not exactly overwrites. When we put a red dot "breakpoint" in the script, it makes the script pause when it gets to that line. That means that we're looking at a, b, and c while the script is paused. What happens if you hit "continue"? What are a, b, and c equal to now that the script has finished executing? Were the variables overwritten, or is something else going on[, Sarah asked in a leading manner]?
 
+AB: If we hit "continue", a, b, and c will now be equal to side1, side2, and side3. If I am understanding this correctly, a, b, and c are pretty much random/meaningless  variables until you get to the part of the script where they are assigned to a side of the triangle.
+
 Item 2
 vectorMin = 1
