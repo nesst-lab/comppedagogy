@@ -76,7 +76,27 @@ name(1) = upper(name(1));
 % Note: the function rem(x,y) or mod(x,y) may be helpful here! 
 % *** 
 
+% 3. Sometimes you have a number that you want to turn into a string, e.g.:
+trial = 15; 
 
+% If you want to concatenate this into, for example, a title for a plot,
+% you would have to first convert it into a string. Matlab has a function
+% for this: 
+num2str(trial)
+
+% Let's try concatenating into a string with both variables: 
+badString = ['trial ' trial]; 
+goodString = ['trial ' num2str(trial)]; 
+
+% Note that badString still WORKED, it just didn't give you the result it
+% wants. Remember that characters all have numbers assigned to them, as per
+% ASCII. 15 happens to be "shift in" which produces an empty rectangle in
+% badString. You could try with another trial number: 
+
+trial2 = 100; 
+trial2Concat = ['trial ' trial2]; 
+
+% 100 is the ASCII number for the letter 'd' so trial2Concat == 'trial d'
  
 
 %% String splitting
@@ -111,8 +131,23 @@ secondWord = sentenceParts{2};
 % 3. And you can loop over the contents of this array, like any other array
 
 for w = 1:length(sentenceParts)
+    word = sentenceParts{w}; 
     
+    % And then loop over the number of characters in each word, for example
+    for c = 1:length(word)
+       if rem(c,2)
+           word(c) = lower(word(c)); 
+       else
+           word(c) = upper(word(c)); 
+       end        
+    end
+    
+    % Put the bob-cased word back into sentenceParts
+    sentenceParts{w} = word; 
 end
+bobCow = join(sentenceParts,' '); 
+fprintf([bobCow{1} '\n']) % Remember that join() creates a cell, not a character array
+
 
 % 4. You've already concatenated using [] notation, but you can concatenate
 % in another way, which is basically like string splitting in reverse. Say
@@ -170,7 +205,11 @@ compressedItem1 = lockdownShoppingList{2}{1};
 % sprintf: creates a string in the workspace (STRING print-formatted)
 % fpritf: prints to a file or to the command window (FILE print-formatted) 
 
-join(lockdownShoppingList{1}(1:end-1), ', ')
+for w = 1:length(lockdownShoppingList)
+    week = 
+    
+    
+end
 
 
 [sprintf('%s, ', lockdownShoppingList{1}{1:end-1}), ' and ' lockdownShoppingList{1}{end}]
