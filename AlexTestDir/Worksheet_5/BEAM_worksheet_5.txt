@@ -1,0 +1,24 @@
+% Homework 1
+% Arugument 3:  signalOut
+% Argument 2:  a specific trial number or a set of trials like "bods"
+% Argument 5:  booleans (T/F)
+%
+% an argument can be empy if it is left with empty brackets []
+% audioGUI(cd, [1 2 3 4], 'signalIn', 0) would not set bSaveCheck to zero
+% because it is the fifth argument, not the fourth. It would be set to one here
+%
+% Homework 2
+% audioGUI(cd, [1 2 3 4], 'signalIn, [], 1)
+
+% Homework 3
+% A: The second argument in waverunner specifies trials.
+% B: waverunner([],[1 4 6])
+% C: lpc order 'nlpc'
+
+% Homework 4
+% A: defining variables, setting words equal to values
+% B: Yes, from checkDataVals
+% C: if duration is less than 200 ms, add it to list of short trials, or
+% if duration is more than 1 s, add it to list of long trials
+% D: we decided what the thresholds would be, based off of speech knowledge
+% the program doesn't actually know that something is wrong

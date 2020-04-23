@@ -8,7 +8,7 @@ oldWorkingDir = C:\\Users\Public\Documents\comppedagogy , WorkingDir = C:\\Users
 
 Item 2: What command would you ACTUALLY use if you wanted to make a variable called oldWorkingDir be the string workingDir?
 
-oldWorkingDir = newWorkingDir
+oldWorkingDir = workingDir (4/22)  
 
 # This isn't correct---check again what the question is asking you to do!
 # Updated answer  
