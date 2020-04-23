@@ -97,6 +97,14 @@ trial2 = 100;
 trial2Concat = ['trial ' trial2]; 
 
 % 100 is the ASCII number for the letter 'd' so trial2Concat == 'trial d'
+
+% 4. You can also go the other direction: 
+trialStr = '11'; 
+str2double(trialStr)
+
+% It also works with leading 0s: 
+trialStrZ = '024'; 
+str2double(trialStrZ)
  
 
 %% String splitting
