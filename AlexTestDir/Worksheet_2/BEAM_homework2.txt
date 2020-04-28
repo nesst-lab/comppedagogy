@@ -13,6 +13,7 @@ oldWorkingDir = workingDir (4/22)
 # This isn't correct---check again what the question is asking you to do!
 # Updated answer  
 # RK (4/13): still not correct! 
+# RK (4/28): still not correct! Try experimenting with it in Matlab. 
 
 
 Item 3: Are these two variables the same? How do you know?
