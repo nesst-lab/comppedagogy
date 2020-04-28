@@ -1,4 +1,4 @@
-Homework item 1: The values that i had assigned for each side have now become the values for a, b, and c. This is becuase the basic_pythagTripleFunction assigns whichever value you input as a, b, and c. (please comment because I am unsure!)
+Homework item 1: The values that i had assigned for each side have now become the values for a, b, and c. This is becuase the basic_pythagTripleFunction assigns whichever value you input as a, b, and c. (please comment because I am unsure!) % RK yes exactly! 
 
 Homework item 2: It should give me an output of 1 because that is the most minimal value contined in the vector. 
 
