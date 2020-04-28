@@ -1,6 +1,10 @@
 % Homework 1
 % Arugument 3:  signalOut
+% RK: will just plain signalOut work? 
+
 % Argument 2:  a specific trial number or a set of trials like "bods"
+% RK: What is "bods"? 
+
 % Argument 5:  booleans (T/F)
 %
 % an argument can be empy if it is left with empty brackets []
@@ -9,6 +13,7 @@
 %
 % Homework 2
 % audioGUI(cd, [1 2 3 4], 'signalIn, [], 1)
+% RK: you have a syntax error here
 
 % Homework 3
 % A: The second argument in waverunner specifies trials.
@@ -20,5 +25,7 @@
 % B: Yes, from checkDataVals
 % C: if duration is less than 200 ms, add it to list of short trials, or
 % if duration is more than 1 s, add it to list of long trials
+% RK: what is "it"? The duration? 
+
 % D: we decided what the thresholds would be, based off of speech knowledge
 % the program doesn't actually know that something is wrong

@@ -8,5 +8,11 @@ SB: not exactly overwrites. When we put a red dot "breakpoint" in the script, it
 
 AB: If we hit "continue", a, b, and c will now be equal to side1, side2, and side3. If I am understanding this correctly, a, b, and c are pretty much random/meaningless  variables until you get to the part of the script where they are assigned to a side of the triangle.
 
+RK: Not quite. The function definition is:
+
+basic_pythagTripleFunction(a,b,c)
+
+so whatever variables/values you put in when you call the function will be immediately treated as a, b, and c in this function's workspace (which is different from the "base" workspace. The part of the function that assigns the values to a, b, and c is thus the function call itself, not any of the code inside the function. 
+
 Item 2
 vectorMin = 1

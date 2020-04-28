@@ -26,6 +26,7 @@
         %elseif dataVals(i).dur > longThresh %check for too long trials
 %if the dataVal has a longer duration than the longThresh variable, it is
 %set into a longTrials category
+% RK: "the data Val" is put in that category? What particular aspect of the dataVal? 
             %longTrials = [longTrials dataVals(i).token];
             
 % d.The check_dataVals function figures out which trials to check by
