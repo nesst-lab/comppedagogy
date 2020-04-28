@@ -1,0 +1,7 @@
+1)yes you wouldexpect them to be the same value because they are set equal to each other. 
+2)you would do:
+workingDir = 'oldWorkingDir'
+3)you know that they are the same because you will get a logical answer of 1, if they are not the same you would get a llogical answer of 0
+4) no they are not equivalent. This is because they do not have the same dementions. One is a 1x6 and the other is a 6x1. You could slimply use the isequal command to see this in matlab.
+5) firstmatrix = [1 2 3; 4 5 6];
+secondmatrix = ['a' 'b' 'c'; 'd' 'e' 'f'] 
