@@ -48,11 +48,11 @@ load('myLongVector.mat');
 % 504th, and 830th items in myLongVector, which you'll probably notice is not sequential.
 % Yes, I am enjoying picking random numbers.
 
-%% strings and cells
+%% strings and cells                     
 % You may recall from the variable types sheet that we also have string and
 % cell data types. This gets a little tricky. Typically, words will be
 % concatenated in a cell array.
-load('myCells.mat')
+load('myCells.mat')  
 myCells % look, an assorted box of about 25 baker's dozen each Robins and Sarahs!
 % Remember that the curly braces denote a cell.
 % try this:
