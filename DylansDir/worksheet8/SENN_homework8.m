@@ -36,7 +36,10 @@ trials2run = 31:60;
 for wordNum = 1:length(words4trials)
     trialNum = trials2run(wordNum);
     word = words4trials{wordNum};
-    fprintf("The word for trial " + trialNum + " is " + word + "\n")
+    fprintf("The word for trial " + trialNum + " is " + word + "\n") % RK this isn't the most parsimonious use of fprintf, but it works
+    % (Remember you can use the placeholder characters %s for strings, %d for double, etc., e.g.
+    fprintf('The word for trial %d is %s\n',trialNum,word) %)
+    % Also the + for concatenation of strings might not work outside printf functions
 end
 
     

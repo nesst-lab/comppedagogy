@@ -1,5 +1,11 @@
 1. I would expect workingDir and oldWorkingDir to be the same value since we set OldWorkingDir to be equal to workingDir. When I checked my Workspace, I saw that they were both equal to /MATLAB Drive/comppedagogy, which is what I got when I used the pwd command.
+% RK: try again and make sure you follow all the instructions in the green text, as well as just running the commands! 
+
 2. To make oldWorkingDir a string you could use num2str(workingDir).
+% RK: is workingDir a number?
+
 3. These two variables are the same because they are the same dimensions with the same values at the same locations. The isequal function gave a 1, meaning the two variables are the same.
 4. columnVector's dimensions are 6x1, meaning 6 rows and 1 column. The two variables are not the same because they do not have the same dimensions. If you were to manipulate the vectors in some way you would get different outcomes. The isequal function gave 0, meaning they are not equal.
 5. In the comman window you would type variable = [1 2 3;4 5 6] to create that desired matrix. In a similar way you could type variable = ['a b c';'d e f'] to create the cell array.
+
+% RK: try again with the cell array! (Make note of your brackets) 
