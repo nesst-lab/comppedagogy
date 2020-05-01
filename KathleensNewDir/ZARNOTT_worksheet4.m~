@@ -1,0 +1,27 @@
+% Item #3
+if isempty(variable)
+    variable = 1;
+end
+
+% Item #4
+if strcmp('SMAC', variable)
+    fprintf('Your PI is Prof. Ben Parell')
+elseif strcmp('BLAB', variable)
+    fprintf('Your PI is Prof. Carrie Niziolek')
+else 
+    fprintf('Oh no! You have no PI')
+end
+
+% Item #5
+function [hypotenuse] = basic_pythagHypotenuse(leg1, leg2)
+% Returns the hypotenuse that would create a pythagorean triple with the given legs, if one exists
+
+hypotenuse = sqrt(leg1^2 + leg2^2); 
+% sqrt(
+
+if round(hypotenuse) ~= hypotenuse
+    hypotenuse = NaN; 
+    fprintf('No Pythagorean triple exists with these two leg lengths\n');
+end
+
+end
