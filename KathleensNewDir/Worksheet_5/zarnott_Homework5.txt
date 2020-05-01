@@ -1,13 +1,13 @@
 
-#1: For argumnet 3 - signalOut instead of signalIn, signalIn is the default. For argument 3 - when you want to look at certain trials only like [1 2 3] or a certain word only for some exipiriments instead of all trial numbers which is the default. For number 5 - we call that variable a boolean. 
+#1: For argument 2 - signalOut instead of signalIn, signalIn is the default. For argument 3 - when you want to look at certain trials only like [1 2 3] or a certain word only for some exipiriments instead of all trial numbers which is the default. For number 5 - we call that variable a boolean. 
 
-% RK: will just plain signalIn work? 
+% RK: will just plain signalIn work? KZ: yes 
 
 #2: audioGUI(cd, [1 2 3 4], 'signalIn', [], 1)
 
-#3: a: The argumnet of waverunner that specifies trials is the second. b: The example of waverunner call that only overwrites trials 1, 4, and 6 while leaving everything else on default is waverunner([], [1 2 4], [], [], []). c: Another parameter that you would alter in audioGUI that you could overwrite using waverunner is lpc order, {'nlpc'}. 
+#3: a: The argumnet of waverunner that specifies trials is the second. b: The example of waverunner call that only overwrites trials 1, 4, and 6 while leaving everything else on default is waverunner([], [1 2 5], [], [], []). c: Another parameter that you would alter in audioGUI that you could overwrite using waverunner is lpc order, {'nlpc'}. 
 
-% RK: b. Why are your numbers different? :) 
+% RK: b. Why are your numbers different? :) Kz: The numbers are different becasue they are indicative of the trials that we do not want to overwrite. We leave out the numbers that we do want to overwrite 
 
 #4: a:  When you take a word and set it equal to a value that means you are just defining a variable. b: I recognize these variables from when we run check dataVals in lab. c: It means that if your trial duration is shorter than 1 second, add the trial to the list of short trials. If you trial duration is longer that 1second, add that trial to the list of longer trials. d: It is more of educated guess that occurs based off of what we decided our parameters and variables to be based on what we already know about speech and the code we run reflects that knowledge, the program doesn't inherently know that something is wrong. 
 
