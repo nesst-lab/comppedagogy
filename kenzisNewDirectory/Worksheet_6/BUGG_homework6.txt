@@ -3,6 +3,9 @@ Carrie is in cell 415
 Ben is in 544
 To find Alexa you would type alexas = myCells(contains(myCells, 'alexa'))
 
+SB yes, but to be nitpicky and answer the specific yes/no question, you'd need anotehr statement to evaluate whether alexas is empty or not because the question was specifically yes/no (boolean). so:
+isalexaheretoo= ~isempty(alexas)
+
 #3 the ehVector contains the trial numbers in which the person is saying the vowel "eh".
 waverunner([],ehVector...)
 
