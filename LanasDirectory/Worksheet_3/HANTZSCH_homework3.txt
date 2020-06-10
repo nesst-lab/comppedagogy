@@ -1,0 +1,5 @@
+HW1. The variables in the new workspace pertain to the basic_pythagTripleFunction values. The input values (in this case side1, side2, side3) have been assigned to the input variables of a, b, and c. Thus, a = 15, b = 17, and c = 4
+
+HW2. 1
+
+
