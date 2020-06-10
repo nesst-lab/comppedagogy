@@ -1,0 +1,8 @@
+HW 1. You can test this by running the following:
+	strcmp('sting', 'String')
+The output is 0, indicating that these are not equal. Thus, strcmp is case sensitive!
+
+HW 2. I would expect "This exists!" to print. 
+	exist('basic_puthagHypotenuse) should return a 2, as it is a file. Anything that is not a 0 should register as a "yes" so the if statement should run all the way through.
+
+
