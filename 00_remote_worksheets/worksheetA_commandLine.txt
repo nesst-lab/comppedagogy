@@ -84,13 +84,13 @@ rm -rf testing/robinsNewDirectory
 # 2. When you're in git bash and doing git specific commands, you need to preface them with git, e.g. git status. 
 
 # 3. Another example is making a copy of a repository ("repo") on your local drive aka cloning the repository.
-git clone https://github.com/sbakst/comppedagogy
+git clone https://github.com/blab-lab/comppedagogy
 
 # This command clones the folder "comppedagogy" and any folders and files inside it into the directory where you have run the clone command from.
 
 # Application check: how can you test whether comppedagogy has anything inside it?
 
-# Note: now that you have cloned this repo, you can access the text file "worksheet" we are using today, from the directory 12Feb2020. If you want to review later, there is also a version WITH_ANSWERS. 
+# Note: now that you have cloned this repo, you can access the text file "worksheet" we are using today, from the directory 00_remote_worksheets.  
 
 # Now change directory to comppedagogy.
 cd comppedagogy
@@ -134,7 +134,7 @@ git push
 
 # 8. Now try making changes to your textfile. Follow the commands in steps 4-7. The steps remain the same even though that file already exists. Remember to type "i" to "insert" text! You can also try deleting some text and then pushing those changes.
 
-# 9. After you have toyed around editing and pushing, go to https://github.com/sbakst/comppedagogy. Do you see the commit messages in the second column? Try clicking on one and see how github represents the commit history.
+# 9. After you have toyed around editing and pushing, go to https://github.com/blab-lab/comppedagogy. Do you see the commit messages in the second column? Try clicking on one and see how github represents the commit history.
 
 
 ### MORE FUN WITH VI ###
