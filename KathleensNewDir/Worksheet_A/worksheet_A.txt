@@ -1,0 +1,7 @@
+
+application check #1: if you wanted to list the contents of a folder other than the one that you are currently in, without moving into it, how would you do that? - you would use the command ls ../ to tell it how far up you wanted it to go. 
+application check #2: what if you wanted to go up multiple levels of folders? you would keep using cd ../ until you got where you wanted to go. 
+application check #3: how can you test whether comppedagogy has anything inside it? - you would use the command ls 
+ 
+ 
+
