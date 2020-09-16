@@ -1,0 +1,10 @@
+
+1. I do not expect oldWorkingDir and workingDir to be the same because workingDir has been redefined to reflect the current working directory. 
+
+2. oldWorkingDir = 'workingDir'
+
+3. We know that the two variables the same because the logial vairable I got was 1 when I used the isequal function, meaning that newVector and anotherVector must be the same. 
+
+4. columnVector's dimension would be 6x1, not 1x6 which are the dimensions of newVector. We you use isequal(anotherVector,columnVector); you get 0 whiches means they are not equivalent. 
+
+5. To define a variable that is a matrix of 2 rows and 3 colums where the first row is 1,2,3 and the second row is 4,5,6, you would name it (I named it lastVector) and then enter the code and all of it would read as lastVector = [1,2,3;4,5,6]; because the ; seperates columns. For the cell array, I did the same thing but named it secondCellArray and used different brackets. The code looks like this secondCellArray = {'a','b','c';'d','e','f'}
