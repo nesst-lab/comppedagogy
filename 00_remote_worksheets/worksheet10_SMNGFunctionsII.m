@@ -7,6 +7,7 @@
 % --- Why loops?
 % --- For loops
 % --- Froot loops
+% --- how our experiments are set up in the lab
 %
 % Presented by Sarah Bakst and Robin Karlin
 % 
