@@ -1,2 +1,2 @@
 1. a, b, and c have the values of side1, side2, and side 3 which are 15, 17, and 4, respectively. This is because we redefined side1, side2, and side3.
-2. VectorMin would be 1.
+2. VectorMin is 1.
