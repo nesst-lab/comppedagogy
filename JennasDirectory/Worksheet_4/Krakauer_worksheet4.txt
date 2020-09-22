@@ -1,7 +1,5 @@
 1. strcmp(string1, string2) is case sensitive.
 myName = 'jenna';
 strcmp(myName,'Jenna')
-This will give me a logical 0. If I do strcmp(myName,'jenna') instead, I will get a logical 1 which prooves it's case sensitive.
-
-2. Yes, 'basic_pythagHypotenuse' will print 'This exists!' because 'basic_pythagHypotenuse' exists as a different object, and the function exist() returns different integers if whatever is in the quotes exists as a different object. Since this is true, matlab printed 'This exists!' as I told it to using fprintf. 
-
+This is a logical 0, so it is case sensitive.
+2. Yes, it will print 'This exists!' because it exists as a file.
