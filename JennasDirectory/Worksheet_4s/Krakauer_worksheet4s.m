@@ -1,5 +1,5 @@
 1) if a > 0 & b > 0
-	fprintf('hello world'\n)
+	fprintf('hello world'\n) % RPK 9/25/2020: careful where you're putting the \n! 
    end
 
    if round(a)==a & round(b)==b
@@ -64,7 +64,8 @@ switch condWord
 end
 fprintf('You may have at most %d events\n',max_events);
 
-2) If a were 4, nothing would print because a does not match either of the cases.
+2) If a were 4, nothing would print because a does not match either of the cases. 
+% RPK 9/25/2020: would the code run or would it error? 
 
 3) Switch/case statements are better because they're more condensed. However, they only operate over the expected values of a variable rather than logical statements, so you need to be specific. If/else is better because you can use logical statements.
 
@@ -85,7 +86,7 @@ fprintf('You may have at most %d events\n',max_events);
 name = 'sarah';
 switch name
 	case 'sarah'
-		almaMater = 'UC Berkeley'
+		almaMater = 'UC Berkeley' % RPK 9/25/2020: here I would recommend suppressing output with ; 
 	case 'robin'
 		almaMater = 'Cornell University'
 end
