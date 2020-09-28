@@ -1,0 +1,14 @@
+1) the new values I have in my work space are:
+
+hypotenuse = 17
+	this was side b but now it is labeled as the hypotenuse, also known as the longest side in the right triangle. I assume this was given this new value because the pythagorean theorem needs to define which side is the longest to know what a^2 + b^2 should egual
+
+nonHype = [15, 4]
+	these were thr two smaller numbers so they make up the values  a^2 and b^2 
+
+triangleSides = [15, 17, 4]
+	thhis is the last new value in my work space and I believe that these are defined so that matlab could recognize what the three values of the triangle sides were
+
+2) vectorMin = 1
+ 
+
