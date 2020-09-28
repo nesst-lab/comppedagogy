@@ -1,0 +1,7 @@
+1. you now which directory you are in by running cd
+2. ls will tell you what is in the folders
+
+application check #1: you can check contents of a different folder you aren't currently in by running ls followed by the folder name
+application check #2: you can move up multiple folders by doing cd ../../ (repeating '../' for as many folders as you need to move up
+application check #3: you can see if comppedagogy has anything in it by navagating to that folder and running ls or doing ls comppedagogy
+`   
