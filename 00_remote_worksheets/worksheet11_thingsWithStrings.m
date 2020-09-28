@@ -201,7 +201,7 @@ compressedItem1 = lockdownShoppingList{2}{1};
 % the particular item). 
 
 % *** 
-% Homework item (review): 
+% Homework item 4 (review): 
 % What would be the result if we used (1) instead of {1} as the lower-level
 % index to define compressedItem1?
 % *** 
@@ -211,7 +211,14 @@ compressedItem1 = lockdownShoppingList{2}{1};
 % things. 
 
 % sprintf: creates a string in the workspace (STRING print-formatted)
-% fpritf: prints to a file or to the command window (FILE print-formatted) 
+% fprintf: prints to a file or to the command window (FILE print-formatted) 
+
+% Observe the difference here: 
+aSprintfVar = sprintf('%s, ', lockdownShoppingList{1}{1:end-1}); 
+aFprintfVar = fprintf('%s, ', lockdownShoppingList{1}{1:end-1});
+
+% aSprintfVar is actually a string, and in fact the string you would
+% expect. Meanwhile, aFprintfVar is not at all a string of shopping list items. 
 
 for w = 1:length(lockdownShoppingList)
     week = 
@@ -220,6 +227,6 @@ for w = 1:length(lockdownShoppingList)
 end
 
 
-[sprintf('%s, ', lockdownShoppingList{1}{1:end-1}), ' and ' lockdownShoppingList{1}{end}]
+[sprintf('%s, ', lockdownShoppingList{1}{1:end-1}), 'and ' lockdownShoppingList{1}{end}]
 
 
