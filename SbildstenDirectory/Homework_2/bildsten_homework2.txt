@@ -1,0 +1,11 @@
+you would expect the two different variables to have the same output because they are set equal to eachother
+
+oldWorkingDir = 'workingDir'
+
+these two variables are the same. i know this because they have the same dementins and variables.
+
+yes they are equivalent because they have the same dimentions and values
+i would use the command isequal(columnVector,anothercolumnVector) to varify this. I would know I was correct if i recieved a logical variable as the answer.
+
+newMatrix = [1,2,3;4,5,6]
+ anotherMatrix = {'a' 'b' 'c' ; 'd' 'e' 'f'}
