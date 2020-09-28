@@ -1,0 +1,22 @@
+% Homework 2
+
+% I do not expact oldWorkingDir and workingDir to be the same value.
+% After setting oldWorkingDir to equal workingDir, we changed to a different
+% directory. This new directory was set to the variable workingDir. 
+% Therefore, oldWorkingDir is equal to the first workingDir in the worksheet,
+% and workingDir is the most recent one.
+
+% oldWorkingDir = '/MATLAB Drive'
+% Not sure that I am interpreting this question correctly, never got it
+% correct last semester.
+
+% newVector and anotherVector are the same because the isequal command
+% produced a '1'.
+
+% The dimensions of columnVector are 6x1
+% I do not think that columnVector and anotherVector are equivilant because 
+% one is a 6x1 array and the other is a 1x6 array.
+
+% matrix = [1 2 3; 4 5 6]
+% cellArray = {'a' 'b' 'c'; 'd' 'e' 'f'}
+
