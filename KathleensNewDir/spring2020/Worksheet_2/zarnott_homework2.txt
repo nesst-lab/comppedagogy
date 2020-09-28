@@ -1,5 +1,5 @@
 
-3. Yes, the two variables are the same. I know this because the logical variableI got was 1 when I used the isequal function, meaning that newVector and anotherVector must be the same. 1 means they are equal. 
+3. Yes, the two variables are the same. I know this because the logical variable I got was 1 when I used the isequal function, meaning that newVector and anotherVector must be the same. 1 means they are equal. 
 
 2. oldWorkingDir = 'workingDir'
 

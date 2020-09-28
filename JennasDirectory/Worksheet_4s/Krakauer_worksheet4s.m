@@ -1,63 +1,42 @@
-1)
-a = 2;
-b = -1;
+1) if a > 0 & b > 0
+	fprintf('hello world'\n) % RPK 9/25/2020: careful where you're putting the \n! 
+   end
 
-if a > 0 & b > 0
+   if round(a)==a & round(b)==b
 	fprintf('hello world'\n)
-end
+   end
 
-if round(a) == a & round(b) == b
+   if a~=0 & b~=0
 	fprintf('hello world'\n)
-end
-
-if a ~= 0 & b ~= 0
+   end
+   if ~isempty(a) & ~isempty(b)
 	fprintf('hello world'\n)
-end
+   end
 
-if isempty(a) & isempty(b)
+2) if a > 0 | b > 0
 	fprintf('hello world'\n)
-end
-
-2)
-if a > 0 | b > 0
+   end
+   if round(a)==a | round(b)==b
 	fprintf('hello world'\n)
-end
+   end
 
-if round(a) == a | round(b) == b
+   if a~=0 | b~=0
 	fprintf('hello world'\n)
-end
+   end
 
-if a~= 0 | b~= 0
+   if isempty(a) | ~isempty(b)
+  	fprintf('hello world'\n)
+   end
+
+3) if xor(a>0,b>0)
 	fprintf('hello world'\n)
-end
+   end
 
-if isempty(a) | ~isempty(b)
+   if xor(isempty(a),~isempty(b))
 	fprintf('hello world'\n)
-end
+   end
 
-3)
-if xor(a>0,b>0)
-	fprintf('hello world'\n)
-end
-
-if xor(isempty(a),~isempty(b))
-	fprintf('hello world'\n)
-end
-
-if xor(a>0,b>0)
-	fprintf('hello world'\n)
-end
-
-% !! I'm not sure what it's asking for how to assign a and b so that you would print something out
-
-4)
-a = 1;
-b = 1;
-c = 0;
-
-a&b&c % false
-a&b|c % true
-a|b&c % true
+4) a | (b & c) 
 
 %Short-circuiting
 1)
@@ -68,8 +47,8 @@ if a < 0 && b > 0 %if a is negative, then move onto the next statement. However,
 end
 % Is there a short-circuit version of xor? No, because xor means only one condition can be true.
 
-2) %would it be okay to write the statement as follows?
-if isempty(dataPath) || nargin < 1, dataPath = cd; end %No, nargin < 1 needs to be evaluated first.
+2) %would it be okay to write the statement as follows? if isempty(dataPath) || nargin < 1, dataPath = cd; end 
+	%No, nargin < 1 needs to be evaluated first.
 
 %Switch-case statements
 1) condWord = 'capper';
@@ -85,8 +64,10 @@ switch condWord
 end
 fprintf('You may have at most %d events\n',max_events);
 
-2) If a were 4, nothing would print because a does not match either of the cases.
-Switch/case statements are better because they're more condensed. However, they only operate over the expected values of a variable rather than logical statements, so you need to be specific. If/else is better because you can use logical statements.
+2) If a were 4, nothing would print because a does not match either of the cases. 
+% RPK 9/25/2020: would the code run or would it error? 
+
+3) Switch/case statements are better because they're more condensed. However, they only operate over the expected values of a variable rather than logical statements, so you need to be specific. If/else is better because you can use logical statements.
 
 %1. Switch/case to else/if statement:
 condWord = 'tapper';
@@ -105,7 +86,7 @@ fprintf('You may have at most %d events\n',max_events);
 name = 'sarah';
 switch name
 	case 'sarah'
-		almaMater = 'UC Berkeley'
+		almaMater = 'UC Berkeley' % RPK 9/25/2020: here I would recommend suppressing output with ; 
 	case 'robin'
 		almaMater = 'Cornell University'
 end
@@ -113,7 +94,8 @@ fprintf('%s earned her PhD at %s\n', name,almaMater);
 
 end
 
-%3. Can you translate the following to a switch/case statement? Why/why not?Yes because you can add "otherwise" to the switch/case statement for the unknown alma mater.
+%3. Can you translate the following to a switch/case statement? Why/why not? 
+	Yes because you can add "otherwise" to the switch/case statement for the unknown alma mater.
 name = 'ben';
 switch name
 	case 'sarah'
