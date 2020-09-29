@@ -1,0 +1,11 @@
+1) %% Indexing intro
+     200th item: 736, 504th item: 295, 830th item: 130
+  
+   %% strings and cells
+     myCells(1) returns {'robin'}, the cell of the array
+     myCells{1} returns 'robin', the value of the array
+
+2)
+  a. [logicVector] = contains(myCells,'carrie')
+  b. 
+   
