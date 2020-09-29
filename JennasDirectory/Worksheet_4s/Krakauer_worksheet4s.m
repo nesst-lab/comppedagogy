@@ -1,39 +1,39 @@
 1) if a > 0 & b > 0
-	fprintf('hello world'\n) % RPK 9/25/2020: careful where you're putting the \n! 
+	fprintf('hello world\n')
    end
 
    if round(a)==a & round(b)==b
-	fprintf('hello world'\n)
+	fprintf('hello world\n')
    end
 
    if a~=0 & b~=0
-	fprintf('hello world'\n)
+	fprintf('hello world\n')
    end
    if ~isempty(a) & ~isempty(b)
-	fprintf('hello world'\n)
+	fprintf('hello world\n')
    end
 
 2) if a > 0 | b > 0
-	fprintf('hello world'\n)
+	fprintf('hello world\n')
    end
    if round(a)==a | round(b)==b
-	fprintf('hello world'\n)
+	fprintf('hello world\n')
    end
 
    if a~=0 | b~=0
-	fprintf('hello world'\n)
+	fprintf('hello world\n')
    end
 
    if isempty(a) | ~isempty(b)
-  	fprintf('hello world'\n)
+  	fprintf('hello world\n')
    end
 
 3) if xor(a>0,b>0)
-	fprintf('hello world'\n)
+	fprintf('hello world\n')
    end
 
    if xor(isempty(a),~isempty(b))
-	fprintf('hello world'\n)
+	fprintf('hello world\n')
    end
 
 4) a | (b & c) 
@@ -64,9 +64,7 @@ switch condWord
 end
 fprintf('You may have at most %d events\n',max_events);
 
-2) If a were 4, nothing would print because a does not match either of the cases. 
-% RPK 9/25/2020: would the code run or would it error? 
-
+2) If a were 4, nothing would print because a does not match either of the cases.The code would display an error.
 3) Switch/case statements are better because they're more condensed. However, they only operate over the expected values of a variable rather than logical statements, so you need to be specific. If/else is better because you can use logical statements.
 
 %1. Switch/case to else/if statement:
