@@ -16,7 +16,7 @@ end
 hypotenuse = sqrt(leg1^2 + leg2^2); 
 % Adds the given legs together then takes the square root.
 
-if round(hypotenuse) ~= hypotenuse % If the rounded hypotenuse is not equal to the hypotenuse (?)
+if round(hypotenuse) ~= hypotenuse % If the hypotenuse is an integer it does not equal the hypotenuse.
     hypotenuse = NaN; % This will see if the hypotenuse is not a number. 
     % RK (4/13): not exactly! What does = do in Matlab? 
     fprintf('No Pythagorean triple exists with these two leg lengths\n'); %this is what will print if they are not equal
