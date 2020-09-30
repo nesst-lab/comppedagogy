@@ -1,12 +1,18 @@
-SB: please number your hw. I don't think I see #1 or 3? 
 
-Lines 138-141 are assigning values to short trials, long trials, jump trials, and wrongFtrials. I recognize the terms in lines 142-151 from check_dataVals.
+
+1. Argument 2: 'sAdapt,dataVals,sp100'
+Argument 3: 'signalOut'
+Argument 5: Boolean
+
+2. audioGUI(cd, [1 2 3 4], 'signalIn', [], 0)
+
+4. Lines 138-141 are assigning values to short trials, long trials, jump trials, and wrongFtrials. (b) I recognize the terms in lines 142-151 from check_dataVals.
 a. this is my bad for writing a bad question, but what is another more computery word for "terms" above? What is it called in computer when you make one of these terms?
 
-If the trial is too short, then add it my list of bad trials.
-Check dataVals decides which trials to mark as bad by comparing each trial to the set arguments and if they are too short, jumping, etc they will be added to the list of bad trials. 
+c. If the trial is too short, then add it my list of bad trials.
+d. Check dataVals decides which trials to mark as bad by comparing each trial to the set arguments and if they are too short, jumping, etc they will be added to the list of bad trials. 
 instead of analyzing all of the trials, you can put in a specific trial. You could also put in a set of trials you want analyzed rather than all of them at once. The argument with a b in front of it is called a boolean!
 d. Can you say a little more about how check_dataVals makes a decision about which trials are bad?
 
-audioGUI(cd [1 2 3 [4]], 'signalIn', 0)
+c. audioGUI(dataPath, [1 2 3 [4]], 'signalIn', 0)
 SB: not quite! cd here actually refers to the directory we're already in, if that caused some confusion. I added that into the hw now. [1 2 3 4] is a vector of numbers representing what input argument?
