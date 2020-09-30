@@ -8,10 +8,17 @@ sarahsLastYear= smngLabMembers(2).smngYears(end) %The answer I got is 2020! Yay!
 
 SB: Can you think of another way using the 'length' function in just one line? This is a little tricksy.
 
+KB: sarahsLastYear = smngLabMembers(2).smngYears(length(smngLabMembers(2).smngYears));
 
-3. ?
 
-4. ?
+3. cellArray = expt.listConds
+   doubleArray = expo.breakTrials
 
-5. ?
+4. Individual formants are stored in a column and the data points for that formant are in the rows. 
+    formant2 = formants(:,2);
+    
+    formant3 = data(30).formants(:,3)
+This does not work because there are not 30 trials. 
+
+5. myStruct = struct('letters', {'a', 'b', 'c'}, 'numbers', [1 2 3], 'trials', [5 6 7 8 9]);
 
