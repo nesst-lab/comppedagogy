@@ -1,0 +1,76 @@
+% Homework item 1:
+
+% a = 15
+% b = 17
+% c = 4
+
+% In the workspace side a, side b, and side c were previously 15, 17, and 4.
+% Now that we have run the function, these variables that we plugged in have
+% been changed to match the function, i.e. they have been changed to a, b, 
+% and c because those are the variable names the function uses.
+
+% Homework item 2:
+
+% vectorMin(testVector) should equal 1 (aka the minimum value of the vector)
+
+% Homework item 1:
+
+% a = 15
+% b = 17
+% c = 4
+
+% In the workspace side a, side b, and side c were previously 15, 17, and 4.
+% Now that we have run the function, these variables that we plugged in have
+% been changed to match the function, i.e. they have been changed to a, b, 
+% and c because those are the variable names the function uses.
+
+% Homework item 2:
+
+% vectorMin(testVector) should equal 1 (aka the minimum value of the vector)
+
+% Homework item 1:
+
+% a = 15
+% b = 17
+% c = 4
+
+% In the workspace side a, side b, and side c were previously 15, 17, and 4.
+% Now that we have run the function, these variables that we plugged in have
+% been changed to match the function, i.e. they have been changed to a, b, 
+% and c because those are the variable names the function uses.
+
+% Homework item 2:
+
+% vectorMin(testVector) should equal 1 (aka the minimum value of the vector)
+
+% Homework item 1:
+
+% a = 15
+% b = 17
+% c = 4
+
+% In the workspace side a, side b, and side c were previously 15, 17, and 4.
+% Now that we have run the function, these variables that we plugged in have
+% been changed to match the function, i.e. they have been changed to a, b, 
+% and c because those are the variable names the function uses.
+
+% Homework item 2:
+
+% vectorMin(testVector) should equal 1 (aka the minimum value of the vector)
+
+% Homework item 1:
+
+% a = 15
+% b = 17
+% c = 4
+
+% In the workspace side a, side b, and side c were previously 15, 17, and 4.
+% Now that we have run the function, these variables that we plugged in have
+% been changed to match the function, i.e. they have been changed to a, b, 
+% and c because those are the variable names the function uses.
+
+% Homework item 2:
+
+% vectorMin(testVector) should equal 1 (aka the minimum value of the vector)
+
+
