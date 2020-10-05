@@ -7,5 +7,13 @@
 
 2)
   a. [logicVector] = contains(myCells,'carrie')
-  b. 
-   
+  b. find(logicVector) = 415 %carrie is at place 415
+  c. [logicVector] = contains(myCells,'ben')
+     find(logicVector) = 544 %ben is at place 544 
+Bonus: Alexa is not here.
+ [logicVector] = contains(myCells,'alexa')
+ zeros(logicVector) %maybe?
+
+3)
+  a. ehVector contains an index of trials where all of the 'eh' vowels are located.
+  b. waverunner(cd, ehVector, 'signalIn',1,[])
