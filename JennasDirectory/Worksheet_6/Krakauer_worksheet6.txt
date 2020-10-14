@@ -14,6 +14,8 @@ Bonus: Alexa is not here.
  [logicVector] = contains(myCells,'alexa')
  zeros(logicVector) %maybe?
 
+% RK 10/14/2020: check what zeros()does! (It is not something that would help you figure this out except in a very oblique way)
+
 3)
   a. ehVector contains an index of trials where all of the 'eh' vowels are located.
   b. waverunner(cd, ehVector, 'signalIn',1,[])
