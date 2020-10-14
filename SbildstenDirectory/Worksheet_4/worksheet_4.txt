@@ -1,0 +1,29 @@
+Homework
+
+item 1:
+Yes, it is case sensitive. 
+You could run bSameString=strcmp(string1,string2) 
+
+item 2:
+no I wouldn't expect it to print because exists('nameOfSomething') can have multile outputs depening on which type of  file it is and all of those conditions haven't been specified for.
+
+item 3:
+
+if isempty(var)
+    var = 1
+else
+    continue
+end 
+
+item 4:
+
+if ~isempty(SMAC)
+   fprintf('Your PI is Prof. Ben Parrell')
+elseif ~isempty(BLAB)
+   fprintf('YOur PU is Prof. Carrie Niziolek')
+else
+   fprintf('Oh No! You have no PI')
+end 
+
+item 5:
+
