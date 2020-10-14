@@ -7,6 +7,8 @@
 2. sarahsLastYear = smngLabMembers(2).smngYears(end);
    Bonus: sarahsLastYear = length(smngLabMembers(2).smngYears); %this would give you 4, which you can plug in
           sarahsLastYear = smngLabMembers(2).smngYears(4);
+          
+          % RK 10/14/2020: Can you think of a way to do this one command? :) 
 
 3. cellArray = expt.conds;
    doubleArray = expt.allConds;
@@ -15,4 +17,7 @@
 formant2 = formants(:,2);
 formant3 = data(30).fmts(:,3)
 
-5. newStruct = struct('letters',{'a','b','c'}, 'numbers', [1 2 3], 'gradesStruct', struct('letterGrades', {'A','B','C','D','F'}, 'gpa', [4 3 2 1 0]));
+5. 
+% RK 10/14/2020: This creates a structure but I'm not sure if it's the structure you wanted---double check
+% that! 
+newStruct = struct('letters',{'a','b','c'}, 'numbers', [1 2 3], 'gradesStruct', struct('letterGrades', {'A','B','C','D','F'}, 'gpa', [4 3 2 1 0]));
