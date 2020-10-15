@@ -1,11 +1,20 @@
+#####
+% RK 10/14: I would recommend running your full solutions in Matlab after you've written them out to check and debug 
+
 Homework
 
 item 1:
 Yes, it is case sensitive. 
 You could run bSameString=strcmp(string1,string2) 
 
+#####
+% RK 10/14: what are examples of what the variables string1, string2 would have to be set to in order to test if strcmp is case sensitive? 
+
 item 2:
 no I wouldn't expect it to print because exists('nameOfSomething') can have multile outputs depening on which type of  file it is and all of those conditions haven't been specified for.
+
+#####
+% RK 10/14: look back at what if statements do with numbers! 
 
 item 3:
 
@@ -13,9 +22,13 @@ if isempty(var)
     var = 1
 else
     continue
+	##### 
+	% RK 10/14: you don't actually need this continue statement (or the else statement)
 end 
 
 item 4:
+##### 
+% RK 10/14: how are you defining what these variables SMAC and BLAB are? 
 
 if ~isempty(SMAC)
    fprintf('Your PI is Prof. Ben Parrell')
@@ -26,4 +39,7 @@ else
 end 
 
 item 5:
+
+#####
+% RK 10/14: :( poor item 5
 
