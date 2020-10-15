@@ -81,4 +81,4 @@ formant3 = data(30).fmts(:,3);
 % 
 % *** 
 
-newStruct = struct('letters',{'a','b','c'}, 'numbers', [1 2 3]); % and then something else
+newStruct = struct('letters',{'a','b','c'}, 'numbers', {1 2 3}); % and then something else

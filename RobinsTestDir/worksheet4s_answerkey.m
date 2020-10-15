@@ -18,7 +18,7 @@ b = -1;
 % - print out 'hello world' if...
 % --- both a and b are positive
 % <---
-if a > 0 || b > 0 
+if a > 0 && b > 0 
     fprintf('hello world\n')
 end
 % --- both a and b are integers
@@ -72,7 +72,7 @@ if xor(a>0, b>0)
     fprintf('hello world\n')
 end
 % --- either a is empty or b is not empty (but not both conditions) 
-if xor(isempty(a), ~isempty(b)
+if xor(isempty(a), ~isempty(b))
     fprintf('hello world\n')
 end
 % --->

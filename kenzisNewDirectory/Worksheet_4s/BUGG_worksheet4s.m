@@ -1,3 +1,4 @@
+
 if a > 0 & b > 0
     fprintf("hello world")
 end
@@ -45,8 +46,11 @@ a = [2]
 b = [-1]
 
 false, true, false
+% RK 10/14: are you sure about the last one? 
 
 a | (b & c)
+#####
+% RK 10/14: Is this false (as you predicted the last one would be)?
 
 % short circuiting
 
@@ -61,14 +65,20 @@ a | (b & c)
 % the variable greeting for a = 4 doesn't exist so it produces an error.
 % switch/case is that it can shorten the code so you don't have
 % to deal with each value individually. 
+
+#####
+% RK 10/14: Not sure what you mean by this, and how it is separate from your explanation of if statements below? 
+
 % if/else statements can help ease the process of dealing with multiple
 % cases that result in the same process at once. 
 
 % Practice translating switch/case to if/else
 
 condWord = 'tapper';
-if strcmp(conWord, 'capper') ||
+if strcmp(conWord, 'capper') || 
     strcmp(condWord, 'gapper')
+    ##### 
+    % RK 10/14: you're missing something here to allow you to break lines 
     max_events = 7;
 elseif strcmp(condWord, 'sapper') ||
     strcmp(condWord, 'zapper')
@@ -92,4 +102,6 @@ fprintf('%s earned her PhD at %s\n',name,almaMater);
 % you cannot convert that to a switch/case because it has an else statement
 % and that cannot be translated into a switch/case.
 
+#####
+% RK 10/14: you can, actually! Check back through the worksheet or do doc switch
 
