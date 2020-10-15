@@ -1,6 +1,6 @@
 3.
 if isempty(emptyVariable)
-        emptyVariable == 1; % RK 10/14/2020: are you trying to get a logical here or assign a value to a variable? 
+        emptyVariable = 1;
 end
 
 4.
