@@ -105,3 +105,10 @@ fprintf('%s earned her PhD at %s\n',name,almaMater);
 #####
 % RK 10/14: you can, actually! Check back through the worksheet or do doc switch
 
+#####
+% RK 10/14: So I notice your first and third answer in this question are identical to Kathleen's, in such a way
+% that it is almost impossible that there was not copying and pasting going on. Remember that these worksheets
+% are not done for a grade, and are meant to teach you the programming tools necessary to work on coding in
+% the lab. Simply copying and pasting someone else's answers won't help you at all, and allowing someone else
+% to just copy and paste your answers doesn't help them either (though of course everybody in the lab has 
+% access to this repository so that is not something you have total control over). 
