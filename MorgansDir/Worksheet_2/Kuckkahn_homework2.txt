@@ -2,7 +2,10 @@ Item 1: I would expect oldWorkingDir and workingDir to be different values. This
 
 Item 2: oldWorkingDir = 'workingDir' 
 
-Item 3: The two variables are the same because we entered the same numbers in the same order, we just ued commas for one which does the same thing as just spaces. We also know this because the ans = 1; which means true when we are in test mode. 
+Item 3: The two variables are the same because we entered the same numbers in the same order, we just ued commas for one which does the same thing as just spaces. We also know this because the ans = 1; which means true when we are in test mode.
+
+####
+% RK 10/18: relevance of test mode? (bTestMode is an example of a boolean variable, but the function will be true no matter if we've run something in test mode or not)  
 
 Item 4: The dimensions of comlumnVector would be 6x1 because there are 6 rows and 1 column. No, anotherVector and columnVector are not equivalent because even though they are the same numbers, the numbers are in a different position. To test this you would use the command isequal(anotherVector,columnVector). The answer you would receive is 0, which means false. 
 

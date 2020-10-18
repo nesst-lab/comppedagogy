@@ -7,7 +7,10 @@
 
 3. ntrials = length(data);
  for trialIX = 1:ntrials
-     trialFileName = [num2str(1) '.mat'];
+     trialFileName = [num2str(1) '.mat']; 
+     #####
+     % RK 10/18: Will this print out a different trial number for every
+     % iteration? 
      fprintf('The file name for trial %d will be %s\n',trialIX,trialFileName);
  end
  
@@ -20,4 +23,7 @@
    for i = 1:ntrials
        word = words4trials(i);
        fprintf('The word for trial %d is %s\n',i,word);
+       #####
+       % RK 10/18: Will this print out the correct trial number? (Remember
+       % we are trying to run for trials 31:60)
    end
