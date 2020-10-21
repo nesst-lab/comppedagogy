@@ -1,0 +1,11 @@
+I expeced the oldWorkingDir and the workingDir to be different values. I was right because we set a preexisting variable to a new variable which would offer different results. Therefore, the oldWorkingDir would not change.
+
+oldWorkingDir = 'workingDir'
+
+Yes the two variables are the same because the ans=1 which means true in test mode. Additionally, spaces and commas are equivalent when making both vectors; therefore, the variables are the same because we used the same numbers while one had spaces and the other had commas.
+
+The dimensions of the column vector are 6x1 since there 6 rows and 1 column. anotherVector and columnVector are not equivalent because while they have the same numbers, anotherVector has 6 columns and 1 row instead. We would use the isequal(anotherVector,columnVector) to test this and the ans should be 0.
+
+newmatrix=[1 2 3;4 5 6]
+anewCellArray={'a' 'b' 'c';'d' 'e' 'f'}
+
