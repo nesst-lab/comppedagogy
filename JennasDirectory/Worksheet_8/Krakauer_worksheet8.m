@@ -19,6 +19,8 @@
 5. ntrials = length(trials2run);
    for i = 1:ntrials
        trial = trials2run(i);
+       #####
+       % RK 10/21: any reason you are doing num2str? (Does words4trials{i} give you a number?)
        word = [num2str(words4trials{i})];
        fprintf('The word for trial %d is %s\n',trial,word);
    end
