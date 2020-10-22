@@ -25,6 +25,7 @@ hw 4 answer key
 
 'yes! basic_pythagHypotenuse is a file. exist should therefore return a 2. "if" here is really testing whether that number is 0 or not. This is a tricksy problem!!'
 
+% 3. 
 % Write an if statement that will: 
 % a. Check if a variable is empty
 % b. If it is, assign it a numeric value

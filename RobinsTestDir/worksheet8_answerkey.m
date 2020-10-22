@@ -44,10 +44,11 @@ end
 % process! We'll go over the right answer in a bit.
 % *** 
 goodEvilAvailable = [1 4 12 18]; 
+i = 1; 
 for charIx = goodEvilAvailable
     
     officeCharacters(charIx).goodEvil = goodEvil{i};   
-    
+    i = i+1; 
 end
 
 % or 

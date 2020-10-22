@@ -1,4 +1,7 @@
 
 #1. I believe that strcmp(string1, string2) is case sensitive because if there was an uppercase  in either of the string where they are not supposed to be, it would compare the correct strings and may say they are equivalent when they actually arent or vice versa. Examples that you could use instead of string1 and string 2, would be for instance the example in the worksheet with the names. You would type into matlab myName = 'sarah' and then strcmp(myName,'robin') which you will get a 0 for because it is not equivalent. So, then you use bSameString =strcmp(myName,'robin') to change that so they are equivalent. Now, if you run that code using 'Robin' instead of 'robin' you would not get a 1 (proof that they are equivalent) becuase you used an uppercase instead of a lowercase. 
 
+#####
+% RK 10/14: what are examples of strings you could use in place of string1, string 2 in order to test this? (Not sure what you mean by an "incorrect case") 
+
 #2. Yes, I would expect the statement 'This exists!' to print because the only way it would not print is if the if exist(...) function returned a zero, which would mean it does not exist. Even if the "something" exists as a different object and returns a 2, 3, 4, etc. it would still mean that it exists and there 'This exists!' would still print. 

@@ -250,8 +250,8 @@ formants = data(6).fmts; % what trial are we looking at?
 % Homework item 4: 
 % 
 % Audapter automatically spits out four formant measures. Are individual formants stored in a column, or in a
-% row? Why do you think this? Write a line of code that assigns the variable "formant2" to the second formant,
-% using the matrix "formants", and a comment explaining your reasoning. 
+% row? Why do you think this? Write a line of code that assigns the variable "formant2" to the second formant
+% of the 15th trial, using the matrix "formants", and a comment explaining your reasoning. 
 % 
 % In addition, write a single line of code that assigns the variable "formant3" to the third formant of the
 % 30th trial. Include both of your code solutions in your Matlab worksheet solution file. 

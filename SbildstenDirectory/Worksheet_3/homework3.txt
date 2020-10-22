@@ -9,6 +9,9 @@ nonHype = [15, 4]
 triangleSides = [15, 17, 4]
 	thhis is the last new value in my work space and I believe that these are defined so that matlab could recognize what the three values of the triangle sides were
 
+#####
+% RK 10/14: Actually looking for what a, b, and c are! (Compare what a, b, and c are before and after running basic_pythagTripleFunction)
+
 2) vectorMin = 1
  
 

@@ -5,3 +5,11 @@ application check #1: you can check contents of a different folder you aren't cu
 application check #2: you can move up multiple folders by doing cd ../../ (repeating '../' for as many folders as you need to move up
 application check #3: you can see if comppedagogy has anything in it by navagating to that folder and running ls or doing ls comppedagogy
 `   
+#####
+% RK 10/14: would doing ls comppedagogy work if you were in the folder
+
+C:/Users/Public/Documents/comppedagogy/SbildstenDirectory 
+
+? 
+
+(Just checking to make sure you fully got application checks 1 and 3!)

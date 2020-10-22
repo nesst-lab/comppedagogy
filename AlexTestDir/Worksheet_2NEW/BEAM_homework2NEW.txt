@@ -10,6 +10,9 @@
 % Not sure that I am interpreting this question correctly, never got it
 % correct last semester.
 
+#####
+% RK 10/14: much like workingDir is the string 'C:/Users/Public/Documents/comppedagogy' (or whatever), how would you make oldWorkingDir the string 'workingDir'? 
+
 % newVector and anotherVector are the same because the isequal command
 % produced a '1'.
 

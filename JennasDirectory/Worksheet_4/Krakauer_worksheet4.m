@@ -1,6 +1,6 @@
 3.
 if isempty(emptyVariable)
-        emptyVariable == 1;
+        emptyVariable = 1;
 end
 
 4.
