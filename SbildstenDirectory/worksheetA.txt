@@ -4,4 +4,6 @@
 application check #1: you can check contents of a different folder you aren't currently in by running ls followed by the folder name
 application check #2: you can move up multiple folders by doing cd ../../ (repeating '../' for as many folders as you need to move up
 application check #3: you can see if comppedagogy has anything in it by navagating to that folder and running ls or doing ls comppedagogy
-`   
+
+RK 10/14
+no that would not work because I would not be in the comppedagogy folder. you hahave to be in the folder you wish to see the contents of to run ls`   
