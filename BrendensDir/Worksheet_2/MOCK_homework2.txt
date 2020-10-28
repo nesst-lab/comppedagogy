@@ -8,5 +8,4 @@ Homework item 4: The column vector is six rows and one column. Therefor anotherV
 
 Homework item 5: 
 newMatrix = [1, 2, 3; 4, 5, 6]
-aCharCellArray = ({'a b';'d e f'}) # RK 4/16: you don't actually need the parentheses, but this will give you the same result (it's not wrong, just unnecessary, but I do things that Matlab says is unnecessary all the time, so who am I to judge? :) )
- 
+aCharCellArray = {'a b c';'d e f'}

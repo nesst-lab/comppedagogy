@@ -15,21 +15,28 @@
 a = 2; 
 b = -1; 
 
-% - print out 'hello world' if...
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Homework item 1
+%
+% - Write the if statements that would print out 'hello world' if...
 % --- both a and b are positive
 % --- both a and b are integers
 % --- both a and b are nonzero
 % --- neither a nor b are empty 
-
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % 2. | (logical or): You may also want to act if any of a set of conditions is true. The operator | is an
 % inclusive or: at least one condition has to be true. 
 
-% - print out 'hello world' if...
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Homework item 2
+%
+% - Write the if statements that would print out 'hello world' if...
 % --- either a or b is positive
 % --- either a or b is an integer
 % --- either a or b is nonzero
 % --- either a is empty or b is not empty
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % 3. xor(x, y) (exclusive or): Exclusive or just means that ONLY one thing can be true, not both. For example,
 % you might offer a child an exclusive or choice: you can have either a lollipop or an ice cream, but not 
@@ -37,11 +44,15 @@ b = -1;
 
 xor(a>0,b>0)
 
-% - print out 'hello world' if...
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Homework item 3
+%
+% - Write the if statements that would print out 'hello world' if...
 % --- either a or b is positive, but not both
 % --- either a is empty or b is not empty (but not both conditions) 
 % ------ how would you assign a and b such that you would actually print something out? How about another way
 % to not print anything out (other than a = 2 and b = -1)? 
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % 4. You can also combine things. Easy example: 
 
@@ -49,6 +60,9 @@ a = 1;
 b = 1; 
 c = 0; 
 
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Homework item 4
+%
 % What will the results be? 
 a & b & c 
 a & b | c
@@ -57,6 +71,7 @@ a | b & c
 % Which expression is the third expression (above) equivalent to?
 (a | b) & c
 a | (b & c)
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %% Short-circuiting 
 
@@ -80,7 +95,11 @@ end
 
 % a is positive, so it doesn't matter if b is positive or negative; at least one of the conditions is true. 
 
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Homework item 5
+%
 % Food for thought: is there a short-circuit version of xor? 
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % 2. One of the reasons we use short-circuiting is because it is more efficient---in some cases, the computer
 % has to do less. However, we also use these forced operators in cases where evaluating the second (or third, 
@@ -125,10 +144,14 @@ audioGUI
 
 isempty(dataPath)
 
-% So you want Matlab to stop evaluating the or statement as soon as it figures out that nargin is 0. Would it
-% be okay to write the statement as follows? Why or why not? 
+% So you want Matlab to stop evaluating the or statement as soon as it figures out that nargin is 0. 
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Homework item 6
+% Would it be okay to write the statement as follows? Why or why not? 
 
 if isempty(dataPath) || nargin < 1, dataPath = cd; end
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %% Switch-case statements
 
@@ -175,8 +198,11 @@ switch a
 end
 fprintf('Charlotte says %s!\n', greeting); 
 
-% *** 
-% Question: what would happen if a were 4? (Before you try to evaluate this, clear your "greeting" variable) 
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Homework item 7
+% 
+% What would happen if a were 4? (Before you try to evaluate this, clear your "greeting" variable) 
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % 3. If you have multiple cases that would result in the same process, you can combine them (much like an "or"
 % in an if/else): 
@@ -207,12 +233,17 @@ switch a
 end
 fprintf('Charlotte says %s!\n', greeting); 
 
-% ***
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Homework item 8
+%
 % Question: what are the advantages/disadvantages of using if/else vs. switch/case? 
+%
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%% Practice translating switch/case to if/else and vice versa
+%% Homework item 9
+% Practice translating switch/case to if/else and vice versa
 
-% 1. Translate the following to an if/else statement: 
+% a. Translate the following to an if/else statement: 
 condWord = 'tapper'; 
 switch condWord
     case {'capper','gapper'}
@@ -224,7 +255,7 @@ switch condWord
 end
 fprintf('You may have at most %d events\n',max_events); 
 
-% 2. Translate the following to a switch/case statement: 
+% b. Translate the following to a switch/case statement: 
 name = 'sarah'; 
 if strcmp(name,'sarah')
     almaMater = 'UC Berkeley'; 
@@ -233,7 +264,7 @@ elseif strcmp(name,'robin')
 end
 fprintf('%s earned her PhD at %s\n',name,almaMater); 
 
-% 3. Can you translate the following to a switch/case statement? Why/why not? 
+% c. Can you translate the following to a switch/case statement? Why/why not? 
 name = 'ben'; 
 if strcmp(name,'sarah')
     almaMater = 'UC Berkeley'; 

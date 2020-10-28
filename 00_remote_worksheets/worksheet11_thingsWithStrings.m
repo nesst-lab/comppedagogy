@@ -218,15 +218,61 @@ aSprintfVar = sprintf('%s, ', lockdownShoppingList{1}{1:end-1});
 aFprintfVar = fprintf('%s, ', lockdownShoppingList{1}{1:end-1});
 
 % aSprintfVar is actually a string, and in fact the string you would
-% expect. Meanwhile, aFprintfVar is not at all a string of shopping list items. 
+% expect. Meanwhile, aFprintfVar is not at all a string of shopping list '
+% items. Instead, something printed to the command line (basically the
+% content of aSprintVar) and then you got the number 65 saved as
+% aFprintfVar. 
 
+% Note also that using indexing that will pull multiple strings (1:end-1)
+% means the string will print iteratively! So what goes into the %s is each
+% string from the cell array in turn (except for the last one). 
+
+
+% ***
+% Homework item 5
+% 
+% The prose descriptions for each line of code are given in the for loop
+% below. Provide the code versions of the descriptions. 
+% 
+% ***
+
+% A loop to tell you, in natural-sounding English, what the shopping list
+% is for each week, with a line break between each week. 
+% --- The list should take the form "milk, eggs, and bread", not "milk, 
+% eggs, bread". 
+% --- The sentence should say "The ingredient/s you need for week X IS/ARE
+% LIST. That is, if there is only one ingredient for the week, it should
+% use "is" and "ingredient", and if there is more than one, it should use 
+% "are" and "ingredients"
+
+lockdownShoppingList{3} = {'chocolate'}; 
 for w = 1:length(lockdownShoppingList)
-    week = 
+    
+    % 1. Determine what form of the verb and noun you will be using 
+    
+    
+    % 2. Create the string of ingredients (e.g. "milk, eggs, and bread").
+    % Hint 1: that you already know how to iteratively create a string, and
+    % also you know how to chain multiple strings together. 
+    % Hint 2: you will have to have two different ways of determining the
+    % string based on how many items there are
+    
+    % 3. Print the sentence. 
+    
     
     
 end
 
+% ***
+% BONUS
+% 
+% Usually with English punctuation you would only use commas if you have
+% more than two ingredients, e.g. "milk, eggs, and bread" but "milk and
+% bread" (note "milk, and bread"). Alter your loop to accommodate the
+% following shopping list: 
 
-[sprintf('%s, ', lockdownShoppingList{1}{1:end-1}), 'and ' lockdownShoppingList{1}{end}]
+lockdownShoppingList{4} = {'tomatoes' 'cheese'}; 
+
+% *** 
 
 

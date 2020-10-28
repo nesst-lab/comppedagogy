@@ -1,0 +1,6 @@
+
+#1: 200th = 736, 504th = 295, 830th = 130
+
+#2: The command that you would type in the command line to get [logicVector] is [logicVector] = contains(myCells, 'carrie') then after this I used the code find(logicVector) to find Carrie - she is at 415. Then I used [logicVector] = contains(myCells, 'ben') and again used the code find(logicVector) to find Ben - he is at 544. To find if Alexa is in the vector I could use [logicVector] = contains(myCells, 'alexa') then I could use alexa = ans(logicVector) and I found out that she was not there. 
+
+#3. The eh vector contains the index of all of the trials where the 'eh vowels' exist, these are the vowels that the participant produces that sound like "eh". waverunner([], ehVector, [], [] ...)
