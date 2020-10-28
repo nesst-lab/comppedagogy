@@ -1,8 +1,8 @@
 
-
-1. Argument 2: 'sAdapt,dataVals,sp100'
+1. Argument 2: '10'
 #####
 % RK 10/14: this won't work 
+% MB 10/28: Okay, I think I understand now. So argument 2 is trial number so you could put in a specific trial number like 10?
 
 Argument 3: 'signalOut'
 Argument 5: Boolean
@@ -11,6 +11,9 @@ Argument 5: Boolean
 
 #####
 RK 10/14: question 3? 
+3. A.
+b. 
+c. LPC order
 
 4. 
 a. Lines 138-141 are assigning values to short trials, long trials, jump trials, and wrongFtrials. 
@@ -20,10 +23,15 @@ a. Lines 138-141 are assigning values to short trials, long trials, jump trials,
 ##### 
 % RK 10/14: Still need to address Sarah's comment! 
 % SB this is my bad for writing a bad question, but what is another more computery word for "terms" above? What is it called in computer when you make one of these terms?
+MB 10/28: A variable. 
 
 c. If the trial is too short, then add it my list of bad trials.
 #####
 % RK 10/14: Please write a full line-by-line prose comment of the if statement
+% MB: elseif dataVals(i).dur < shortThresh %This checks if the trial is too short
+         shortTrials = [shortTrials dataVals(i).token]; If it is too short, add it to short trials
+      elseif dataVals(i).dur > longThresh % This checks if the trial is too long
+         longTrials = [longTrials dataVals(i).token]; If it is too long, add it to the long trials.
 
 d. Check dataVals decides which trials to mark as bad by comparing each trial to the set arguments and if they are too short, jumping, etc they will be added to the list of bad trials. 
 instead of analyzing all of the trials, you can put in a specific trial. You could also put in a set of trials you want analyzed rather than all of them at once. The argument with a b in front of it is called a boolean!
@@ -31,5 +39,6 @@ instead of analyzing all of the trials, you can put in a specific trial. You cou
 #####
 % RK 10/14: Still need to address Sarah's comment! 
 % SB: Can you say a little more about how check_dataVals makes a decision about which trials are bad?
+MB 10/28: It makes the decision because it compares it to a set of values we set and if a trial does not fall within the values check_dataVals guesses it is not a good trial.
 
 
