@@ -47,10 +47,12 @@ b = [-1]
 
 false, true, false
 % RK 10/14: are you sure about the last one? 
+% MB 10/28: No, it is true.
 
 a | (b & c)
 #####
 % RK 10/14: Is this false (as you predicted the last one would be)?
+% MB 10/28: No, it is true too.
 
 % short circuiting
 
@@ -68,6 +70,7 @@ a | (b & c)
 
 #####
 % RK 10/14: Not sure what you mean by this, and how it is separate from your explanation of if statements below? 
+% MB 10/28: I meant that switch/case creates short cuts through the code so you don't have to alter each individual variable and it takes less time. With if/else statements I meant that it can shorten the process of dealing with multiple variables that would have used the same process anyway. So, instead of doing the same thing multiple times you use an if/else statement to do it all at once. 
 
 % if/else statements can help ease the process of dealing with multiple
 % cases that result in the same process at once. 
@@ -104,6 +107,7 @@ fprintf('%s earned her PhD at %s\n',name,almaMater);
 
 #####
 % RK 10/14: you can, actually! Check back through the worksheet or do doc switch
+% MB 10/28: Could you do this because you could eliminate the else if and use a case instead? I know the two types of functions are very similar so just changing out the if and if else's for switch and case would successfully change it to a switch/case?
 
 #####
 % RK 10/14: So I notice your first and third answer in this question are identical to Kathleen's, in such a way
