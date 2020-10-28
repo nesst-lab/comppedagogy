@@ -9,13 +9,4 @@ application check #3: you can see if comppedagogy has anything in it by navagati
 RK 10/14
 no that would not work because I would not be in the comppedagogy folder. you hahave to be in the folder you wish to see the contents of to run ls`   
 =======
-`   
-#####
-% RK 10/14: would doing ls comppedagogy work if you were in the folder
-
-C:/Users/Public/Documents/comppedagogy/SbildstenDirectory 
-
-? 
-
-(Just checking to make sure you fully got application checks 1 and 3!)
 >>>>>>> 140c77a5a9f36db88858af1fec913eee11612b38
