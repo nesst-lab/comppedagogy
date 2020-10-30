@@ -1,3 +1,5 @@
+%% Homework 9 answer key
+
 %%
 % *** 
 % Homework item 1: rewrite the little piggies loop as a while loop. 
@@ -9,7 +11,7 @@ for i = 2:10
     fprintf('%d little piggies\n',i)
 end
 
-% CHanges to
+% Changes to
 
 fprintf('1 little piggy\n')
 i = 2; 
@@ -18,6 +20,8 @@ while i <= 10
    i = i+1; 
     
 end
+% There are a couple of ways to do this so if you have something different it isn't necessarily wrong---just
+% run your code to make sure it does the thing you want!
 
 %%
 % *** 

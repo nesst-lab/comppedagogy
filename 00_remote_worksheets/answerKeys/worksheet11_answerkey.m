@@ -1,3 +1,4 @@
+%% Worksheet 11 answer key
 
 %% Question 1: 
 
@@ -16,6 +17,7 @@ goodSentence = [upper(sentence(1)) sentence(2:10) upper(sentence(11)) sentence(1
 
 % Or
 
+goodSentence = sentence; 
 capitalIndices = [1 11 39:42 48:51 61:64]; 
 for i = capitalIndices
    goodSentence(i) = upper(sentence(i));  
@@ -25,10 +27,7 @@ end
 sprintf(goodSentence)
 
 
-%% Question 2: 
-
-% ***
-% Homework item 2:
+%% Homework item 2:
 % Now write a loop that will assign the same original sentence with "sponge-bob capitalization" to the
 % variable bobSentence. (Here, sponge-bob capitalization simply means that every other letter is lower/upper
 % case.)
@@ -37,7 +36,7 @@ sprintf(goodSentence)
 % *** 
 
 for i = 1:length(sentence)
-    if rem(i,2) % If odd i---means it'll start lower
+    if rem(i,2) % If odd i---means it'll start lower case
         bobSentence(i) = lower(sentence(i)); 
     else
         bobSentence(i) = upper(sentence(i)); 
