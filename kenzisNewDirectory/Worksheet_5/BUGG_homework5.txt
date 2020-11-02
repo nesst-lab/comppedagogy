@@ -11,8 +11,8 @@ Argument 5: Boolean
 
 #####
 RK 10/14: question 3? 
-3. A.
-b. 
+3. A.The second argument 
+b. waverunner(cd, [1 4 6], 'signalIn', 1, [])
 c. LPC order
 
 4. 
