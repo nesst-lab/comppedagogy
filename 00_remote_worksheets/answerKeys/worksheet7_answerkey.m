@@ -1,5 +1,7 @@
-% ***
-% Homework item 1: Add the information of the other fields to Sarah's entry! Include your commands in your
+%% Homework 7 answer key
+
+%% Homework item 1
+% Add the information of the other fields to Sarah's entry! Include your commands in your
 % Matlab worksheet. 
 % 
 % - her lab is BLAB
@@ -11,10 +13,7 @@ smngLabMembers(2).lab = 'BLAB';
 smngLabMembers(2).phdYear = 2017;
 smngLabMembers(2).smngYears = 2017:2020;
 
-
-
-% ***
-% Homework item 2:
+%% Homework item 2:
 % 
 % Okay, so the first year is easy. How would you get the LAST year, without knowing exactly how many years
 % each person worked? Write your solution in your Matlab worksheet file. 
@@ -22,13 +21,13 @@ smngLabMembers(2).smngYears = 2017:2020;
 % BONUS: there are actually two ways to do this, though one is definitely more succinct. What is the second
 % way? (Hint: check out worksheet 3 for inspiration!)
 % ***
+
 sarahsLastYear = smngLabMembers(2).smngYears(end);
 
 % BONUS: 
 sarahsLastYear = smngLabMembers(2).smngYears(length(smngLabMembers(2).smngYears)); 
 
-% ***
-% Homework item 3:
+%% Homework item 3:
 % 
 % In the expt, find one field that is a cell array, and one that is a double array. Define a variable as the
 % cell array and another as the cell array. Include the code for this in your Matlab worksheet file. 
@@ -37,8 +36,7 @@ sarahsLastYear = smngLabMembers(2).smngYears(length(smngLabMembers(2).smngYears)
 aCellArray = expt.conds; % vowels, etc.
 aDoubleArray = expt.allWords; % durHold, allColors, etc. 
 
-% ***
-% Homework item 4: 
+%% Homework item 4: 
 % 
 % Audapter automatically spits out four formant measures. Are individual formants stored in a column, or in a
 % row? Why do you think this? Write a line of code that assigns the variable "formant2" to the second formant
@@ -56,8 +54,7 @@ formant2 = formants(:,2);
 
 formant3 = data(30).fmts(:,3); 
 
-% *** 
-% Homework item 5: 
+%% Homework item 5: 
 % There is actually another way of creating structures, which involves taking separate cell
 % arrays/vectors/etc. and putting them together into a structure array. 
 % 
@@ -81,4 +78,4 @@ formant3 = data(30).fmts(:,3);
 % 
 % *** 
 
-newStruct = struct('letters',{'a','b','c'}, 'numbers', {1 2 3}); % and then something else
+newStruct = struct('letters',{'a','b','c'}, 'numbers', {1 2 3}, 'weirdField', {[1 2 3] [4 5 6] [7 8 9]}); % and then something else

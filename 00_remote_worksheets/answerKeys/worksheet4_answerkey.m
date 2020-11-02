@@ -1,15 +1,17 @@
-hw 4 answer key
+%% Homework 4 answer key
 
-
+%% Homework item 1
 % 
 % Is strcmp(string1, string2) case sensitive? How would you find this out without looking it up with either
 % the doc command or by googling it? Write your solution in the worksheet_4 homework file using vi.
 % 
 % ***
-'yes it is case sensitive. You could test by typing strcmp("test","Test") and see if same or different'
 
-% ***
-% Homework item 2: 
+% Yes it is case sensitive. 
+% You could test by typing strcmp('test', 'Test') and see if you get a 1 or
+% a 0
+
+%% Homework item 2
 % 
 % The function exist('nameOfSomething') returns different integers if that "something" exists as a different
 % object. For example, if it exists as a variable, it returns 1, if it exists as a file, it returns 2, etc.  
@@ -23,19 +25,28 @@ hw 4 answer key
 % document that you created with vi.
 % ***
 
-'yes! basic_pythagHypotenuse is a file. exist should therefore return a 2. "if" here is really testing whether that number is 0 or not. This is a tricksy problem!!'
+% Yes. basic_pythagHypotenuse is a file. exist should therefore return a 2
+% (this indicates that it is a file rather than some other thing like a
+% variable; different things return different numbers). All if cares about
+% is if the value it is fed is 0 or not (i.e. it isn't "is it 1 and only 1,
+% or something else" but rather "is it anything other than 0?") 
 
-% 3. 
+%% Homework item 3 
 % Write an if statement that will: 
 % a. Check if a variable is empty
 % b. If it is, assign it a numeric value
 % c. Do nothing if not 
 % ***
 
-if isempty(ThoughtsandPrayers)
-    ThoughtsandPrayers = 2;
+myStomach = []; 
+if isempty(myStomach)
+    myStomach = 2;
 end
+% Note that for "do nothing" you can just omit the else statement. If you
+% want to be thorough you can do some kind of non-action, like myStomach =
+% myStomach or a print statement. 
 
+% ***
 % Write an if statement that will: 
 % a. Check if a variable is 'SMAC'. If so, print 'Your PI is Prof. Ben Parrell'
 % b. If not, check if that variable is 'BLAB'. If so, print 'Your PI is Prof. Carrie Niziolek'
@@ -54,7 +65,7 @@ else
     fprintf('Oh no! You have no PI!')
 end
 
-% Homework item 5: 
+%% Homework item 5: 
 % 
 % The function basic_pythagHypotenuse is largely uncommented in the body of the function. Copy the body of the
 % function (i.e., don't include the function...end statements) into your homework Matlab document. Using the
@@ -64,10 +75,16 @@ end
 % them!). 
 % ***
 
-hypotenuse = sqrt(leg1^2 + leg2^2); % here we calculate the hypotenuse
+hypotenuse = sqrt(leg1^2 + leg2^2); 
+% here we calculate the hypotenuse, which is the square root of the sum of
+% squares of the given sides
 
-if round(hypotenuse) ~= hypotenuse % if the closest integer to hypotenuse doesn't give an equal number to hypotenuse
-    hypotenuse = NaN; % then hypotenuse is not a number!!!!!
-    fprintf('No Pythagorean triple exists with these two leg lengths\n'); % this must not be a pythagorean triple
-end % boop
+if round(hypotenuse) ~= hypotenuse 
+    % This checks if hypotenuse is an integer by checking if a rounded
+    % hypotenuse is the same as the original hypotenuse. If it's not, 
+    hypotenuse = NaN; % then set hypotenuse to NaN (this will be your variable output) 
+    fprintf('No Pythagorean triple exists with these two leg lengths\n'); 
+    % And tell the person who ran the script that no pythagorean triple
+    % exists
+end 
     

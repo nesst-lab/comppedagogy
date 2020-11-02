@@ -1,0 +1,27 @@
+
+HW item 1:
+ strcmp is a case sensitive comparison, I was able to find this out by comparing two variables I know to be equal but modifying the case of one letter in a variable. I found that I did not receive an output of 1/logical, therefore I knew strcmp is case sensitive. 
+
+HW item 2: I would expect it to print because ‘basic_pythagHypotenuse’ does exist and we have asked it to print some text in that case. 
+
+HW item 3: 
+if isempty(emptyVariable)
+    emptyVariable = 1
+end
+
+HW item 4:
+if emptyVariable == 'SMAC'
+    fprintf('Your PI is Prof. Ben Parrell\n')
+elseif emptyVariable == 'BLAB'
+    fprintf('Your PI is Prof. Carrie Niziolek\n')   
+else
+    fprintf('Oh no! You have no PI\n')
+end
+
+HW item 5:
+hypotenuse = sqrt(leg1^2 + leg2^2); %This line defines a hypotenuse
+
+if round(hypotenuse) ~= hypotenuse %First this line rounds the number to nearest integer and then checks if it meets the classification of hypotenuse.
+    hypotenuse = NaN; %Identify if the value is a number or not.
+    fprintf('No Pythagorean triple exists with these two leg lengths\n'); %If either of the two lines above are true, print string. 
+

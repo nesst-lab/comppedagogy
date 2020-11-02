@@ -29,7 +29,7 @@ fprintf('The file name for trial %d will be %s\n',trialIx,trialFileName);
 % ***
 
 for trialIx = 1:length(data)
-   trialFileName = [num2str(trialIx) '.mat']; 
+   trialFileName = [num2str(trialIx) '.mat']; % Note that the prompt for this just used (1) instead of the variable trialIx, but if you keep 1 here it won't print properly!
    fprintf('The file name for trial %d will be %s\n',trialIx,trialFileName); 
     
 end
@@ -56,7 +56,7 @@ end
 for i = 1:length(goodEvilAvailable)
     
     charIx = goodEvilAvailable(i); % so this gives you the first, second, third, and fourth values in goodEvilAvailable
-    officeCharacters(charIx).goodEvil = goodEvil{i};   
+    officeCharacters(charIx).goodEvil = goodEvil{i}; % And uses that value as an index
     
 end
 

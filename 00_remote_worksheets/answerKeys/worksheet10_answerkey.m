@@ -3,21 +3,25 @@
 
 %% HW Question 1
 % What is happening in line 118 (for itrial = firstTrial:lastTrial) ?
-This is a for loop: a set of functions is executed for every trial between the first and final trials.
+% ***
+
+% This is a for loop: a set of functions is executed for every trial between the first and final trials.
 
 %% HW Question 2
 % Look at the 'if' statement in lines 210-219. How does the
 % experiment "know" when to give participants a break? 
+% ***
 
-If the current trial (itrial) is equal to a predetermined trial with a break.
+% If the current trial (itrial) is equal to a predetermined trial with a break 
 
 %% HW Question 3
 % How does the experiment "know" what word to display (line 135)? Hint:
 % what kind of object is expt? What kind of object/data type is expt.listWords? How
 % can you tell, given the notation on line 135?
+% ***
 
-There's a predetermined list containing all the words, and this is a list in expt. expt is a struct (structure).
-This list is a cell, and you can tell from the brace notation.
+% There's a predetermined list containing all the words, and this is a list in expt. expt is a struct (structure).
+% This list is a cell, and you can tell from the brace notation (it uses {})
 
 %%
 % 4. Now open run_modelExpt_expt.m (same folder as run_modelExpt_audapter.m).
@@ -40,7 +44,7 @@ This list is a cell, and you can tell from the brace notation.
 % the run_modelExpt_expt script? Hint: what are the input arguments to
 % run_modelExpt_audpater? Second hint: this is related to HW question 3.
 
-The run_modelExpt_expt creates the expt structure and gives that information to the run_modelExpt_audapter file to run.
+% The run_modelExpt_expt creates the expt structure and gives that information to the run_modelExpt_audapter file to run.
 
 %% HW Question 5
 % Suppose you are running an experiment that plays a different noise level
@@ -57,9 +61,13 @@ listNoise = noiseLevels(noisevector);
 
 % b. Suppose the noise level were picked How would the experiment "know" which noise level to play on a given
 % trial (itrial), noise2play? Your answer should be stated as an equation:
-noise2play = % Your answer here, minus the percent sign.
+
 % Hint: look at the lines in run_modelExpt_audapter that set, e.g., the
 % text or color to display.
 
-a. expt.listNoise = listNoise;
-b. noise2play = expt.listNoise{itrial}
+% a. 
+expt.listNoise = listNoise;
+% b. 
+noise2play = expt.listNoise{itrial}; 
+
+
