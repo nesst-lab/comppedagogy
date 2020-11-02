@@ -1,4 +1,6 @@
-%% Homework 1: 
+%% Homework 6 answer key
+
+%% Homework item 1 
 % load myLongVector.mat by either double-clicking it or by
 % typing (make sure you're in the 00_remote_worksheets folder):
 load('myLongVector.mat');
@@ -28,37 +30,48 @@ homework1answer = myLongVector([200 504 830]);
 % a) suppose you're looking for carrie first. She's not in her
 % office, so maybe she's in the vector. What is the command you will type
 % at the command line to get [logicVector] ?
+% ***
+
 carrieIx = contains(myCells,'carrie'); 
 benIx = contains(myCells,'ben'); 
 
+% ***
 % Now you need the find function. It returns indices at which there is a
 % nonzero element (item). It takes a doubles vector as input, eg
 % find(logicVecgtor).
 
 % b) Where is carrie?
 % c) Where is ben?
+% ***
 
 carrieIsAt = find(carrieIx); 
 benIsAt = find(benIx); 
 
+% ***
 % BONUS Question: Is alexa in the vector, or is she at home playing smooth
 % jazz? Can you think of a theoretical way to find out the answer to this
 % question without using the "find" function? Hint: the question "is alexa
 % in the vector" is a yes/no question, or boolean, and logicVector is just
 % a long row of zeros and potentially ones.
+% ***
 
 alexas = myCells(contains(myCells,'alexa')); 
 isAlexaHere = ~isempty(alexas); 
 
 %% Homework 3 
 % a) what does ehVector contain?
+% *** 
 
-% *** It looks like a list of indices for eh vowels in this particular data structure? (eh was said 200 times
+% It is a list of indices for eh vowels in this particular data structure (eh was said 200 times
 % in this epxeriment, it appears) 
 
+% ***
 % b) Given what we have learned about arguments and optional arguments, what
 % is an example of what a waverunner command might look like if you ran it
 % just over the eh indices?
+% ***
 
-% *** I can't find waverunner right now, as I don't think I have the right directories without going remote,
-% but I think it'll just be waverunner([ehVector]) except ehVector goes in for the trial index input arg. 
+% If you look at the waverunner function definition, there is a variable
+% called "trialinds" in second position. So you would put ehVector there: 
+
+waverunner([], ehVector)

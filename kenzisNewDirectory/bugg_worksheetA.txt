@@ -1,0 +1,4 @@
+Application check number 1: To view the contents of a folder you are not currently in you can use the ls command and the ../ command combined. For example if I am in comppedagogy and want to list the contents of my Documents folder I would type ls ../ and it would list the contents of my Documents folder!
+Application check number 2: If I wanted to move up multiple folders at once, let's say from Documents to Users I would type the command: cd ../../
+Application check number 3: to check whether comppedagogy has anything inside of it you would type the command: ls. This will list the contents inside of comppedagogy! 
+
