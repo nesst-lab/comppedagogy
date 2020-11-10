@@ -1,0 +1,5 @@
+Homework Item 1: Yes, strcmp(string1, string2) is case sensitive. I found this out by running both strcmp('hello', 'Hello') which resulted in 0 and strcmp('hello', 'hello') which resulted in 1. 
+
+Homework Item 2: Yes, I would expect it to print "This Exists!" This is becasue 'basic_pythagHypotenuse' is already a defiined function in the pathway.
+
+ 
