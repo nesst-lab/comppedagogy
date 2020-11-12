@@ -1,0 +1,25 @@
+Homework 1
+
+for 2: b is booleans. 3 use signalOut. 2 put numbers within the brackets. ex: [30]
+
+Homework 2
+audioGUI(cd, [1 2 3 4], 'signalIn',[],0)
+
+Homework 3
+a. argument 2
+b. waverunner(pwd,[1 4 6]); 
+c. nlpc
+
+Homework 4
+initiating and setting
+They look like the words used to find bad trials in data analysis in check_dataVals GUI
+
+if i
+    trial = 1; 
+elseif dataVals(i).dur < shortThresh  
+        shortTrials = [shortTrials dataVals(i).token]; 
+elseif dataVals(i).dur > longThresh  
+        longTrials = [longTrials dataVals(i).token];      
+end
+
+d. I think it's an educated guess. check_dataVals just flags potential problems and we review them.
