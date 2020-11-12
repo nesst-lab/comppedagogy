@@ -1,0 +1,17 @@
+Homework 1
+200th = 736
+504th = 295
+830th = 130
+
+Homework 2
+carrieIx = contains(myCells,'carrie'); 
+>> benIx = contains(myCells,'ben');
+carrieIsAt = find(carrieIx); 
+benIsAt = find(benIx);
+
+alexas = myCells(contains(myCells,'alexa')); 
+isAlexaHere = ~isempty(alexas); 
+
+Homework 3
+a. indices for where all of the 'eh' vowels are located
+b. waverunner([ehVector]) or averunner(cd, ehVector, 'signalIn',1,[]) (i'm not completely sure)
