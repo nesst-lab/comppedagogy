@@ -1,0 +1,85 @@
+Homework Item 1:
+if a >  0 & b >0 
+fprintf('hello world\n')
+end
+
+if round(a) == a & round(b) == b
+fprintf('hello world\n')
+end
+
+if  a  ~= 0 & b ~= 0
+fprintf('hello world\n')
+end
+
+if ~isempty(a) & ~isempty(b)
+fprintf('hello world\n')
+end
+
+Homework Item 2:
+if a > 0 | | b > 0
+fprintf('hello world\n')
+end
+
+if round(a) == a | | round(b) == b
+fprintf('hello world\n')
+end
+
+if a ~= 0 | | b ~= 0
+fprintf('hello world\n')
+end
+
+if ~isempty(a) | | ~isempty(b)
+fprintf('hello world\n')
+end
+
+Homework Item 3:
+if xor(a>0, b>0)
+fprintf('hello world\n')
+end
+
+if xor(isempty(a), isempty(b))
+fprintf('hello world\n')
+end
+
+Homework Item 4:
+false
+true
+true
+
+a | (b & c)
+
+Homework item 5:
+I would assume there is no short-circuit version of xor because that function inherently demands both variables are checked to answer if only one of them is true. 
+
+Homework item 6:
+No,  because you should first check if the number of arguments is greater than 0. If not, you will get an error.
+
+Homework item 7:
+If a were a 4 I don't think MATLAB would print anything because we didn't define what we want it to print in the case that it is 4. We only did that for 5 and 6. 
+
+Homework item 8:
+It would be nice to use if/else when you maybe don't need to be as particular or only want to know the characteristic of a variable, like if it is greater than zero. Switch cases might be nice in a scenario when you want to be quite particular about a smaller number of variables and need to know if the variables are an exact output. 
+
+Homework item 9:
+a.
+if strcmp(condWord, 'capper') || strcmp(condWord, 'gapper') 
+max_events = 7; 
+elseif strcmp(condWord, 'sapper') || strcmp(condWord, 'zapper') 
+max_events = 6; 
+elseif strcmp(condWord, 'sea') || strcmp(condWord, 'C') || strcmp(condWord, 'Z') || strcmp(condWord, 'czar') ...
+|| strcmp(condWord, 'gar') || strcmp(condWord, 'cod') || strcmp(condWord, 'god')
+max_events = 5; 
+end
+
+b. 
+switch name
+case 'sarah'
+almaMater = 'UC Berkeley'; 
+case 'robin'
+almaMater = 'Cornell University'; 
+otherwise
+almaMater = '???';
+end
+
+c. 
+Although I would have gotten this one wrong if not for checking in with the study guide, yes. You can change the else to otherwise to accomplish this.
