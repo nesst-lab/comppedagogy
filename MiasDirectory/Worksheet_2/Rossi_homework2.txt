@@ -1,0 +1,6 @@
+1. I expect oldWorkingDir and workingDir to be different values. We changed the variable for the new directory; however that doesn't mean that the values within also change.
+2. oldWorkingDir = 'workingDir'
+3. This command gave me the logical variable of 1 as an answer. These two variables are the same since the ans = 1 means that it is true. 
+4. The dimensions of a columnVector is 6x1, anotherVector and columnVector are not equivalent because their dimensions differ (one is in the x-direction and one is in the y-direction). I used the command isequal(anotherVector,columnVector) and it gave me a logical variable of 0 which means false. 
+5. matrix = [1 2 3; 4 5 6]
+   aCellArray = {'a' 'b' 'c'; 'd' 'e' 'f'}

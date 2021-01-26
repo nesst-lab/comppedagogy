@@ -1,0 +1,115 @@
+%HW 1: 
+a = 2;
+b = -1;
+both a and b are positive:
+if a>0 & b>0
+   fprintf('hello world\n')
+end
+both a and b are integers:
+if round(a) == a & round(b) == b
+    fprintf('hello world\n')
+end
+both a and b are nonzero
+if a~=0 & b~=0
+    fprintf('hello world\n')
+end
+neither a nor b are empty
+if ~isempty(a) & ~isempty(b)
+    fprintf('hello world\n')
+end
+
+%HW 2:
+either a or b is positive
+if a>0 | b>0
+    fprintf('hello world\n')
+end
+either a or b is an integer
+if round(a) == a | round(b) == b
+    fprintf('hello world\n')
+end
+either a or b is a nonzero
+if a~=0 | b~=0
+    fprintf('hello world\n')
+end
+either a is empty or b is not empty
+if isempty(a) | ~isempty(b)
+    fprintf('hello world\n')
+end
+
+%HW 3:
+if xor(a>0, b>0)
+    fprintf('hello world\n')
+end
+
+if xor(isempty(a), ~isempty(b))
+    fprintf('hello world\n')
+end
+%4
+
+a = 1;
+b = 1;
+c = 0;
+
+% What will the results be?
+a & b & c % ans = 0 so false
+a & b | c % ans = 1 so true
+a | b & c % ans = 1 so true
+
+%the third epxression is equivalent to a | (b & c)
+
+%% Short-circuiting
+
+%1
+if a < 0 && b > 0 % if a is negative, you can now check if b is positive, and ifb is positive then
+	fprintf('hello world!\n') 
+end
+
+% HW 5: no, a short-circuit version of xor does not exist since you have to account for both conditions (if first command is true, only then can you look a 2nd command)
+
+% HW 6: would it be okay to write the statement as follows?
+if isempty(dataPath) || nargin < 1, dataPath = cd; end
+% NO, because there are no arguments since nargin < 1
+
+%% Switch-case statements
+% HW 7: an error pops up (greeting not defined)
+
+%HW8: switch/case is more efficient for small set of cases of fixed datal values, if/else is better for variable conditions.
+
+%HW 9:
+
+if strcmp(condWord, 'capper') || strcmp(condWord, 'gapper')
+    max_events = 7;
+elseif strcmp(condWord, 'sapper') || strcmp(condWord, 'zapper')
+    max_events = 6;
+elseif strcmp(condWord, 'sea') || strcmp(condWord, 'C') || strcmp(condWord, 'Z') || strcmp(condWord, 'czar') ...
+        || strcmp(condWord, 'gar') || strcmp(condWord, 'cod') || strcmp(condWord, 'god')
+    max_events = 5;
+end
+
+%
+
+switch name
+    case 'sarah'
+        almaMater = 'UC Berkeley';
+    case 'robin'
+        almaMater = 'Cornell University';
+    otherwise
+        almaMater = '???'; 
+end
+
+%
+for switch/case statements you can use otherhwise instead of else. Yes, if you utilize otherwise.
+
+switch name
+    case 'sarah'
+        almaMater = 'UC Berkeley';
+    case 'robin'
+        almaMater = 'Cornell University';
+    case 'ben'
+        almaMater = 'USC';
+    case 'carrie'
+        almaMater = 'MIT';
+    otherwise
+        almaMater = 'unknown';
+end
+
