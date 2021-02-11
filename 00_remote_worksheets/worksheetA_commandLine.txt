@@ -20,7 +20,7 @@
 # 2. Have installed either git bash (if you are on a PC) or know how to open the terminal (mac) 
 
 # COMMAND LINE BASICS
-# 1. Open git bash (PC) or your command line (terminal program, mac)
+# 1. Open git bash (PC) or your command line (terminal program, mac). 
 # 2. How do you know what directory you're in?  
 pwd # print working directory (this is also a Matlab command) 
 
