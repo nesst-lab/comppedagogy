@@ -27,6 +27,11 @@ pwd # print working directory (this is also a Matlab command)
 # 3. Now you want to switch into a different directory. How do we know what's available to us? 
 ls # lists the contents of the working directory 
 # Check for a directory inside your current directory 
+# ***Note: the # symbol denotes a "comment", i.e. everything that follows the # in the same line is ignored when running commands. So, running 
+ls # comment comment comment
+
+# is equivalent to running 
+ls
 
 # 4. Okay, now that we know what directories exist, we can move into one! 
 cd DirectoryName # this will take you downward, into a subfolder
