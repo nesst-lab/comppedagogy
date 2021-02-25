@@ -126,7 +126,7 @@ The steps remain the same even though that file already exists. Remember to type
 Do you see the commit messages in the second column? Try clicking on one and see how github represents the commit history.
 
 -----------------
-### You are now ready to proceed to [Worksheet 3](http://github.com/blab-lab/comppedagogy/00_remote_worksheets/worksheetC.md)
+### You are now ready to proceed to [Worksheet 3](http://github.com/blab-lab/comppedagogy/blob/master/00_remote_worksheets/worksheetC.md)
 
 ------------------
 ### MORE FUN WITH VI ###
