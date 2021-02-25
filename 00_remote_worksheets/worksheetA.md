@@ -2,9 +2,9 @@
 ### Worksheet A: intro to using the command line 
  
 #### Skills introduced: 
-* Command line basics
-  * Navigating through directories
-  * Creating, deleting, removing directories and files 
+* Basic navigation and listing
+* Paths and directory structure
+* Altering the directory structure from the command line
 
 ----------------------------------------------------------------------------------
 #### Before going through this worksheet, you should:**
@@ -14,7 +14,8 @@
 ### Basic navigation and listing
 
 #### 1. Open git bash (PC) or your command line (terminal program, mac). 
-#### 2. When you open an instance of your command line, you will automatically start in your "home" folder. That folder varies from computer to computer, so you might want to ask your command line to print out where you currently are located. To do that, type the following command into your terminal and hit enter: 
+#### 2. When you open an instance of your command line, you will automatically start in your "home" folder. 
+That folder varies from computer to computer, so you might want to ask your command line to print out where you currently are located. To do that, type the following command into your terminal and hit enter: 
 
 `pwd` 
 
@@ -26,7 +27,8 @@ This stands for "**p**rint **w**orking **d**irectory". Your working directory is
 
 This "**l**i**s**ts" the contents of your current directory. 
 
-#### 4. Now that we know what directories (folders) exist, we can move into one! Pick a directory. Directories should have a / after the name; files should have their file extension (.mat, .doc, .pdf, etc.). 
+#### 4. Now that we know what directories (folders) exist, we can move into one! 
+Pick a directory. Directories should have a / after the name; files should have their file extension (.mat, .doc, .pdf, etc.). 
 
 `cd DirectoryName`
 
@@ -38,22 +40,26 @@ Where you put in the name of your directory instead of DirectoryName. If you get
 
 (cd stands for **c**hange **d**irectory)
 
-#### 5. Now type `pwd` again. Your new working directory should be the directory you just moved into. 
-#### 6. You can go infinitely downward into folders using just `cd` and directory names, but what if you wanted to move into the folder that CONTAINS your working directory? The command line uses .. to denote moving up a folder. Try this, to get back into your original working directory: 
+#### 5. Now type `pwd` again. 
+Your new working directory should be the directory you just moved into. 
+#### 6. You can go infinitely downward into folders using just `cd` and directory names, but what if you wanted to move into the folder that CONTAINS your working directory? 
+The command line uses `..` to denote moving up a folder. Try this, to get back into your original working directory: 
 
 `cd ../`
 
 If you type in `pwd` again and hit enter, you should get your original working directory. 
 
-#### 7. As you found out in item 3, `ls` simply lists the contents of your working directory, but doesn't list the contents of other directories contained in your directory. But you can actually list the contents of other directories if you put the name of the directory after `ls`, like you did for `cd`. For example, using the same directory name that you used in item 6, enter: 
+#### 7. As you found out in item 3, `ls` simply lists the contents of your working directory, but doesn't list the contents of other directories contained in your directory. 
+But you can actually list the contents of other directories if you put the name of the directory after `ls`, like you did for `cd`. For example, using the same directory name that you used in item 6, enter: 
 
 `ls DirectoryName`
 
 This should list the contents of the directory with DirectoryName. 
 
-#### 8. You can also combine the `..` functionality with ls to list the contents of a directory higher up in the tree. What would this command look like?
-1. First, change directory into your chosen DirectoryName. 
-2. Then, using `ls` and the `..` functionality, list the contents of the directory you were previously in. (You can play around until you get this) 
+#### 8. Check your understanding! 
+You can also combine the `..` functionality with ls to list the contents of a directory higher up in the tree. What would this command look like?
+a. First, change directory into your chosen DirectoryName. 
+b. Then, using `ls` and the `..` functionality, list the contents of the directory you were previously in. (You can play around until you get this) 
 
 -------
 ### Paths and directory structure
@@ -72,115 +78,146 @@ If you are on a Mac, enter:
 
 What we've just done is provide the command line with the FULL path---to use an analogy you're more familiar with, it has the "address" including all information from the country to house number. 
 
-#### 10. However, you don't need to provide the full path to things all the time. You've already experimented with this, using `..` and `cd DirectoryName`. You just need to tell the command line which path to take from the location you currently are. 
+#### 10. However, you don't need to provide the full path to things all the time. You've already experimented with this, using `..` and `cd DirectoryName`. You just need to tell the command line which path to take from the location you currently are. Take a look at this picture: 
 
+![example of what a directory tree looks like](directoryPictureExamples/directoryTreeExample.gif)
 
+This is a really simple example of what folder structure looks like. At the top we have the folder WebSite, which contains three folders: Application1, Application2, Application3. Application3 also contains two files and the folder Media, and Media contains two picture files. 
 
-# Application check: What if you wanted to go up multiple levels of folders?  Say you were in C:/Users/Public/Documents and you wanted to go to C:/Users
+Say we are in the folder Application3, and want to get to Picture2.gif. The path is pretty straightforward: first we want to go to Media, then to Picture2.gif. We already know that we can `cd` into a folder that is contained by your current working directory without any fancy path stuff, just using `DirectoryName`. So the path here would be
 
-# Note: if you have a computer with multiple drives, switch with cd /letter, i.e. to get to the M: drive, cd /m (for git bash), or cd /Volumes if you are on a Mac.
+`Media/Picture2.gif` 
 
-# 5. You can also create directories from the command line: 
-mkdir robinsNewDirectory # "make directory" 
+(This won't work on your computer because you don't actually have these folders)
 
-# 6. Whoops, you put this directory in the wrong spot! You want it in the directory above the one you're currently in. 
-mv robinsNewDirectory ../ # "move" 
+#### 11. If we wanted to go to a folder that isn't directly contained in your working directory, we have to give a more complicated path. 
+So say again that we're starting in Application3, and want to go to its "sister" folder, Application2. First we have to go up to WebSite:
+ 
+`cd ../`
 
-# 7. Ope, turns out you were right to begin with, you did want it in the original directory. How do you move it back? 
-mv robinsNewDirectory # _____? 
+And then we can go down to Application2. 
 
-# This will produce an error for you. Why? 
+`cd Application2`
 
-# Remember to define your target directory relative to where you are! It is currently in the directory above you, so how would you refer to its path? 
+Fortunately you don't actually have to move one step with cd every time! You can combine these two commands into one. Assuming we're back in Application2, the combined command would be: 
 
-# 8. Okay, now we know the first half of this command, but we need to know what destination is. How do we refer to the directory we're currently in? : mv ../robinsNewDirectory/
-./ # 
+`cd ../Application2`
 
-# Now try the whole command. 
+You can see this path at work in this picture: 
 
-# 9. All right, now we've got the directory back where we want it, in the working directory (wd). What will this do? 
-mv robinsNewDirectory testdir
+![moving to a sister folder](directoryPictureExamples/directoryTreeExampleApp3-App2.gif)
 
-# Assuming you don't have a directory in your wd that is called "testdir", it will RENAME the directory "testdir"
+#### 12. Check your understanding! 
+If you were in Application2, how would you access PageB.htm? 
 
-# 10. Change the name back to the original name, and now create another directory called "testdir"
+#### 13. Try it out on your own computer! 
+a. Make sure you are in your comppedagogy folder (what is the command to print your working directory?) 
+b. Using the command line, navigate into the folder called **welcomeToTheLabyrinth**. This folder is contained in **00_remote_worksheets**, which is contained in **comppedagogy**. Verify where you are by using your print working directory command. 
+c. From welcomeToTheLabyrinth, navigate into **whichWhich**. This folder is a *sister* folder to welcomeToTheLabyrinth. 
+d. Now navigate back into **comppedagogy**. Can you do this in just one command? 
 
-# 11. What do you think will happen if you do this command now? 
-mv robinsNewDirectory testdir
+*Note: if you have a computer with multiple drives, switch with cd /letter, i.e. to get to the M: drive, cd /m (for git bash), or cd /Volumes if you are on a Mac.*
 
-# 12. Okay, now we're done with these directories. You can remove them with the command line as well, with rmdir (ReMove DIRectory). How would you remove JUST robinsNewDirectory (i.e., how do you refer to robinsNewDirectory from your wd)? 
-rmdir testing/robinsNewDirectory
-# or
-rm -rf testing/robinsNewDirectory
+-------
+### Altering the directory structure from the command line
 
-# Now also remove the "testing" directory
+#### 14. Moving yourself around using the command line is cool, but it's not really that USEFUL. The command line has many other functions, such as making a new directory.
+1. First, navigate into the comppedagogy folder.  
+2. Then run the following command, substituting your own name for "robin" (*note: if you have a name that is shared with someone else in the lab, the folder may already exist. Use an initial or a nickname to make your new directory*): 
 
-################################
-# Intro to git
+`mkdir robinsNewDirectory` 
 
-# 1. Okay, now we're ready to start getting into git. Navigate into C:/Users/Public/Documents. 
+mkdir: **m**a**k**e **dir**ectory. Note that you're using the same path specification that you've used in previous commands! You're creating this directory in the directory you're currently in. 
 
-# All of you should have been added to the git repository comppedagogy, and also accepted your invite---if you haven't, do that now. 
+#### 15. Whoops, you put this directory in the wrong spot! You want it in the directory above the one you're currently in, which is Documents. We can do that too: 
 
-# 2. When you're in git bash and doing git specific commands, you need to preface them with git, e.g. git status. 
+`mv robinsNewDirectory ../` 
 
-# 3. Another example is making a copy of a repository ("repo") on your local drive aka cloning the repository.
-git clone https://github.com/blab-lab/comppedagogy
+mv = **m**o**v**e. This command is unique compared to the other ones you've used before because it takes TWO arguments (arguments let a command know exactly how to perform its task): 
+1. the path to the thing you want to move (here just `robinsNewDirectory`)
+2. the path to the place you want to move it (here, the folder above you, i.e. `..`)
 
-# This command clones the folder "comppedagogy" and any folders and files inside it into the directory where you have run the clone command from.
+#### 16. Check your understanding!
+It turns out you were right to begin with, you did want it in the comppedagogy (the folder you're currently in). How do you move it back? Some hints: 
+1. Remember that you have to specify the path to the folder you want to move, and your folder has changed location since you last referenced it
+2. `../` references the folder ABOVE you. To reference the folder you're currently in, use `./' 
 
-# Application check: how can you test whether comppedagogy has anything inside it?
+#### 17. `mv` also performs a slightly different function. 
+1. First, enter the command in the command line to get the list of items in your working directory (which should be comppedagogy)
+2. Make sure that your new directory is in there, and that there is no directory called **whatDoesThisDo** (if there is, you can go into your file explorer and delete that folder manually) 
+3. Substituting your new directory name for `robinsNewDirectory`, enter: 
 
-# Note: now that you have cloned this repo, you can access the text file "worksheet" we are using today, from the directory 00_remote_worksheets.  
+`mv robinsNewDirectory whatDoesThisDo` 
 
-# Now change directory to comppedagogy.
-cd comppedagogy
+4. Enter the command to list the items in your working directory. Where is your new directory? Where is **whatDoesThisDo**? 
 
-# 4. Now we are going to create a new text file and put it in comppedagogy without ever leaving the command line! We are going to use a program called vi. It's best to think of this program as one where you are telling someone else to do the writing for you, like "now we are going to write some text! Now we are going to save! Now we are going to write some text again!" Once you are familiar with the program, you'll see how it can be a convenient tool that avoids some weird things like ghost characters that notepad or other programs can introduce. Anyway, end vi talk.
+So `mv` can rename things as well! Note that this stems from how paths work. Renaming and moving are actually the same thing---you're changing the "address" of the object. 
 
-# vi myfirstvi_yourlastname.txt
-# so for example
+#### Check your understanding: 
+Using the command line, rename the new directory **whatDoesThisDo** to your original directory name (like robinsNewDirectory)
 
-vi myfirstvi_Bakst.txt
-vi myfirstvi_Karlin.txt
+#### 18. When you've got your folder back to its original position in comppedagogy, enter the following two commands: 
 
-# When you first open up vi, you are in command mode. That is, vi accepts commands, which are combinations of characters.
-# Now type the letter i, which will take you into "insert" mode; now vi will know that the keys you are typing are intended to create text in your document rather than send commands to the program.
-# you'll see --INSERT-- appear at the bottom left corner of the window. I am currently writing this in vi, so that is what I see at the bottom left corner of my own terminal window. 
-# Type whatever you want, eg "vi is the best!" 
-# When you are done typing, press esc.
-# To save, type :w (the colon is important, as is the lowercase w) and press enter.
-# To quit, type :q (again, colon and lowercase q are important). Press enter.
-# The file has gone away! But where am I? 
-# Check where you are...
-# Did I create a new file?
-# Check the contents of the current directory.
+`ls`
+`mv robinsNewDirectory iContainMultitudes`
 
-# 5. Awesome, you created a file! Now suppose you want to track changes to this file and make sure that this version appears on the computer of everyone who wants to have access to everything in the repository. Github needs to track the file, and to do that, it needs to know the existence of it.
+(Again substituting your own folder name in for robinsNewDirectory). Where is your directory? Why do you think this is different from what you did in 17? 
 
-git add myfirstvi_NAME.txt # instead of NAME, your last name of course.
-# alternatively, try tab completion.
+#### 19. Okay, now we're done with these directories. You can remove them with the command line as well, with rmdir (ReMove DIRectory). For example, try making a pointless folder: 
 
-# 6. Now you have added the file to a list of changes to be tracked by git. But now you need to "commit" your change, or get it ready to send off to the repository. You must also add a message (with the -m "flag") saying what new changes there are to the file. This is important for tracking changes to the file over time.
+`mkdir aPointlessFolder`
 
-git commit -m 'created my first file in vi' # you must use quotes around your message (in git bash you can also use double quotes, "created my first file"). Don't use an apostrophe in the message itself. 
+List the files in your directory to make sure it exists. Then, 
 
-# 7. Ok, time to send off your changes! A "push" takes whatever is in your own local version of the repository and essentially overwrites what's in the repository online. That means it's good practice to make sure your version is totally up-to-date with whatever is online. For example, if you and your co-author are both editing the same file at the same time and one of you pushes your changes and then the other does, one person's changes could get overwritten. For us right now, this shouldn't matter because we are all working on unique files, but this is a very good habit to be in. So first:
+`rmdir aPointlessFolder`
 
-git pull # bring in changes from the repository. Normally this will not cause any problems.
+And list again. The pointless folder should be gone! 
 
-# then
+#### 20. Now we can remove your folder, which is currently in iContainMultitudes. 
+Unlike other commands, *rmdir isn't really a command you want to test and play around with*: you should do it correctly the first time. However, comppedagogy is a safe sandbox and if you delete something we can always put it back with git (which you will learn about in the next worksheet). Here are hints to make sure you get it right the first time: 
 
-git push
+1. You must use the exact path to the exact file or directory you want to remove
+2. You cannot "stack" commands, like how we did `cd ../` followed by `cd Application2`. Instead, you must do it all in one command, like `cd ../Application2`. If you do the command piecemeal, you will end up deleting the folder that contains your target folder! 
 
-# 8. Now try making changes to your textfile. Follow the commands in steps 4-7. The steps remain the same even though that file already exists. Remember to type "i" to "insert" text! You can also try deleting some text and then pushing those changes.
+This should be all the information you need to run this command correctly the first time! But for the faint of heart, the answer is below the bullet points
 
-# 9. After you have toyed around editing and pushing, go to https://github.com/blab-lab/comppedagogy. Do you see the commit messages in the second column? Try clicking on one and see how github represents the commit history.
+* <br>
+* 
+* 
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
 
-
-### MORE FUN WITH VI ###
-Excited about vi? See more on basic commands here: https://www.cs.colostate.edu/helpdocs/vi.html and some fancier things here: https://www.ccsf.edu/Pub/Fac/vi.html
-
+`rmdir iContainMultitudes/robinsNewDirectory`
 
 
 Originally presented by Robin Karlin and Sarah Bakst on February 12, 2020.
