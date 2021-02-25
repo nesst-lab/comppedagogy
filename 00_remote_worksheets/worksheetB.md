@@ -15,8 +15,8 @@
 ### Introduction to vim
 
 #### 1. Last week, we created directories with the command mkdir, but then deleted it. 
-a. Navigate to comppedagogy in your command line interface
-b. Make your own directory again (check worksheet A if you have forgotten how to do this)
+a. Navigate to comppedagogy in your command line interface <br>
+b. Make your own directory again (check worksheet A if you have forgotten how to do this) <br>
 
 #### 2. Now we are going to create a new text file without ever leaving the command line! 
 We are going to use a program called vi. It's best to think of this program as one where you are telling someone else to do the writing for you, like "now we are going to write some text! Now we are going to save! Now we are going to write some text again!" Once you are familiar with the program, you'll see how it can be a convenient tool that avoids some weird things like ghost characters that notepad or other programs can introduce. Anyway, end vi talk. 
@@ -70,13 +70,13 @@ This is because multiple people may be working on the same bit of code. For exam
 * I fix this and save it to my computer. Then I try to push it to the master repo, but there's a problem! When Git compares the master version to my version, it notices that it is different in more places than what I just fixed. This is called a "conflict". This conflict can be avoided by practicing good Git etiquette (getiquette!). 
 
 #### 7. Best practices: 
-1. When you sit down to work on something, first check if there are any updates to the master (bad Robin!). Git commands are prefaced with "git": 
+a. When you sit down to work on something, first check if there are any updates to the master (bad Robin!). Git commands are prefaced with "git": 
 
 `git status`
 
 You can try this when you're in comppedagogy! This command tells you if you are ahead or behind by certain commits, and if you have any files hanging out waiting to be committed. 
 
-2. Sometimes git status is a little lazy and doesn't go out and check if someone else makes changes. You can think about this like if you are asking your roommate if there was any mail today. Maybe they checked at 9 am, but not since. They might say that there wasn't any mail---but that was actually the last time they checked, and their info might be out of date. To get the latest information you have to actually go to the mailbox and check if anything has been left since the last time you checked. 
+b. Sometimes git status is a little lazy and doesn't go out and check if someone else makes changes. You can think about this like if you are asking your roommate if there was any mail today. Maybe they checked at 9 am, but not since. They might say that there wasn't any mail---but that was actually the last time they checked, and their info might be out of date. To get the latest information you have to actually go to the mailbox and check if anything has been left since the last time you checked. 
 
 `git fetch`
 
@@ -86,7 +86,7 @@ This forces it to "go out to the mailbox"
 
 And report back what it just found. (You can also string these two commands together using `&&`: `git fetch && git status`) 
 
-3. You might be behind the master repo by some number of commits. This means that someone else has committed to the master repo since the last time you looked. In the picture below it says that our branch is behind origin/master by 15 commits, and can be fast-forwarded
+c. You might be behind the master repo by some number of commits. This means that someone else has committed to the master repo since the last time you looked. In the picture below it says that our branch is behind origin/master by 15 commits, and can be fast-forwarded
 
 ![behind by commits](directoryPictureExamples/behindByCommits.png)
 
@@ -96,7 +96,7 @@ To do this, enter the command
 
 (Since we already asked you to do a pull at the beginning of class, you probably won't have anything new now.)
 
-4. When you are done working for the day, do another check for changes to the master, and then push your changes (we will do the actual commands for this later). 
+d. When you are done working for the day, do another check for changes to the master, and then push your changes (we will do the actual commands for this later). 
 
 #### 8. Now suppose you want to track changes to the text file you just made, and make sure that this version appears on the computer of everyone who wants to have access to everything in the repository. Github needs to track the file, and to do that, it needs to know the existence of it.
 
@@ -130,7 +130,7 @@ Do you see the commit messages in the second column? Try clicking on one and see
 Excited about vi? See more on basic commands here: https://www.cs.colostate.edu/helpdocs/vi.html and some fancier things here: https://www.ccsf.edu/Pub/Fac/vi.html
 
 ### NOT EXCITED ABOUT VI? ###
-VI is excited about you! Vi is the default text editor that pops up on the lab computers if you need to complete a **merge** (merge commits from different people into one big commit). 
+Vi is excited about you! Vi is the default text editor that pops up on the lab computers if you need to complete a **merge** (merge commits from different people into one big commit). 
 
 ### For more practice with Git ###
 https://kb.wisc.edu/smng/internal/106230
