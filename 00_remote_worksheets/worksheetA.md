@@ -7,7 +7,7 @@
 * Altering the directory structure from the command line
 
 ----------------------------------------------------------------------------------
-#### Before going through this worksheet, you should:**
+#### Before going through this worksheet, you should:
 * Have a github account. If not, create one, and tell Robin so that you can add your own files to this repository. 
 * Have installed either git bash (if you are on a PC) or know how to open the terminal (mac). If you don't have this, [here is a guide](https://kb.wisc.edu/smng/internal/106101)
 ----------------------------------------------------------------------------------
