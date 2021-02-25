@@ -11,7 +11,7 @@
 * Have a github account. If not, create one, and tell Robin so that you can add your own files to this repository. 
 * Have installed either git bash (if you are on a PC) or know how to open the terminal (mac). If you don't have this, [here is a guide](https://kb.wisc.edu/smng/internal/106101)
 ----------------------------------------------------------------------------------
-### Directory structure, paths, navigation
+### Basic navigation and listing
 
 #### 1. Open git bash (PC) or your command line (terminal program, mac). 
 #### 2. When you open an instance of your command line, you will automatically start in your "home" folder. That folder varies from computer to computer, so you might want to ask your command line to print out where you currently are located. To do that, type the following command into your terminal and hit enter: 
@@ -55,7 +55,26 @@ This should list the contents of the directory with DirectoryName.
 1. First, change directory into your chosen DirectoryName. 
 2. Then, using `ls` and the `..` functionality, list the contents of the directory you were previously in. (You can play around until you get this) 
 
-# Application check: if you wanted to list the contents of a folder other than the one that you are currently in, without moving into it, how would you do that? 
+-------
+### Paths and directory structure
+
+#### 9. So far, we've just been navigating between two folders. But there are tons of directories! What if you want to switch to a folder that is not immediately related to the folder you're currently in, or containing the folder you're in? Here it is important to understand paths. 
+
+A path specifies the exact location in your computer's directory structure for any file or directory. It is called "path" because when you are navigating in your directory structure, you have to tell your computer exactly what PATH to take to get to the directory/file you want. 
+
+First, let's get to your comppedagogy folder (if you haven't got this already, visit [this page](https://kb.wisc.edu/smng/internal/106139) to figure out how to do that). If you are on a PC, enter: 
+
+`cd C:/Users/yourusername/Documents/comppedagogy` 
+
+If you are on a Mac, enter: 
+
+`cd ~/Documents/comppedagogy`
+
+What we've just done is provide the command line with the FULL path---to use an analogy you're more familiar with, it has the "address" including all information from the country to house number. 
+
+#### 10. However, you don't need to provide the full path to things all the time. You've already experimented with this, using `..` and `cd DirectoryName`. You just need to tell the command line which path to take from the location you currently are. 
+
+
 
 # Application check: What if you wanted to go up multiple levels of folders?  Say you were in C:/Users/Public/Documents and you wanted to go to C:/Users
 
