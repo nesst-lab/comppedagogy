@@ -125,7 +125,10 @@ The steps remain the same even though that file already exists. Remember to type
 #### 12. After you have toyed around editing and pushing, go to https://github.com/blab-lab/comppedagogy. 
 Do you see the commit messages in the second column? Try clicking on one and see how github represents the commit history.
 
+-----------------
+### You are now ready to proceed to [Worksheet 3](http://github.com/blab-lab/comppedagogy/00_remote_worksheets/worksheetC.md)
 
+------------------
 ### MORE FUN WITH VI ###
 Excited about vi? See more on basic commands here: https://www.cs.colostate.edu/helpdocs/vi.html and some fancier things here: https://www.ccsf.edu/Pub/Fac/vi.html
 
