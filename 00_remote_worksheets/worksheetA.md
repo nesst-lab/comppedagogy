@@ -111,10 +111,10 @@ You can see this path at work in this picture:
 If you were in Application2, how would you access PageB.htm? 
 
 #### 13. Try it out on your own computer! 
-a. Make sure you are in your comppedagogy folder (what is the command to print your working directory?) 
-b. Using the command line, navigate into the folder called **welcomeToTheLabyrinth**. This folder is contained in **00_remote_worksheets**, which is contained in **comppedagogy**. Verify where you are by using your print working directory command. 
-c. From welcomeToTheLabyrinth, navigate into **whichWhich**. This folder is a *sister* folder to welcomeToTheLabyrinth. 
-d. Now navigate back into **comppedagogy**. Can you do this in just one command? 
+a. Make sure you are in your comppedagogy folder (what is the command to print your working directory?) <br>
+b. Using the command line, navigate into the folder called **welcomeToTheLabyrinth**. This folder is contained in **00_remote_worksheets**, which is contained in **comppedagogy**. Verify where you are by using your print working directory command. <br>
+c. From welcomeToTheLabyrinth, navigate into **whichWhich**. This folder is a *sister* folder to welcomeToTheLabyrinth. <br>
+d. Now navigate back into **comppedagogy**. Can you do this in just one command? <br>
 
 *Note: if you have a computer with multiple drives, switch with cd /letter, i.e. to get to the M: drive, cd /m (for git bash), or cd /Volumes if you are on a Mac.*
 
@@ -122,8 +122,8 @@ d. Now navigate back into **comppedagogy**. Can you do this in just one command?
 ### Altering the directory structure from the command line
 
 #### 14. Moving yourself around using the command line is cool, but it's not really that USEFUL. The command line has many other functions, such as making a new directory.
-1. First, navigate into the comppedagogy folder.  
-2. Then run the following command, substituting your own name for "robin" (*note: if you have a name that is shared with someone else in the lab, the folder may already exist. Use an initial or a nickname to make your new directory*): 
+a. First, navigate into the comppedagogy folder.  <br>
+b. Then run the following command, substituting your own name for "robin" (*note: if you have a name that is shared with someone else in the lab, the folder may already exist. Use an initial or a nickname to make your new directory*):  <br>
 
 `mkdir robinsNewDirectory` 
 
@@ -134,18 +134,18 @@ mkdir: **m**a**k**e **dir**ectory. Note that you're using the same path specific
 `mv robinsNewDirectory ../` 
 
 mv = **m**o**v**e. This command is unique compared to the other ones you've used before because it takes TWO arguments (arguments let a command know exactly how to perform its task): 
-1. the path to the thing you want to move (here just `robinsNewDirectory`)
-2. the path to the place you want to move it (here, the folder above you, i.e. `..`)
+a. the path to the thing you want to move (here just `robinsNewDirectory`) <br>
+b. the path to the place you want to move it (here, the folder above you, i.e. `..`) <br>
 
 #### 16. Check your understanding!
 It turns out you were right to begin with, you did want it in the comppedagogy (the folder you're currently in). How do you move it back? Some hints: 
-1. Remember that you have to specify the path to the folder you want to move, and your folder has changed location since you last referenced it
-2. `../` references the folder ABOVE you. To reference the folder you're currently in, use `./' 
+a. Remember that you have to specify the path to the folder you want to move, and your folder has changed location since you last referenced it <br>
+b. `../` references the folder ABOVE you. To reference the folder you're currently in, use `./`  <br>
 
 #### 17. `mv` also performs a slightly different function. 
-1. First, enter the command in the command line to get the list of items in your working directory (which should be comppedagogy)
-2. Make sure that your new directory is in there, and that there is no directory called **whatDoesThisDo** (if there is, you can go into your file explorer and delete that folder manually) 
-3. Substituting your new directory name for `robinsNewDirectory`, enter: 
+a. First, enter the command in the command line to get the list of items in your working directory (which should be comppedagogy)  <br>
+b. Make sure that your new directory is in there, and that there is no directory called **whatDoesThisDo** (if there is, you can go into your file explorer and delete that folder manually)  <br>
+c. Substituting your new directory name for `robinsNewDirectory`, enter:  <br>
 
 `mv robinsNewDirectory whatDoesThisDo` 
 
@@ -176,8 +176,8 @@ And list again. The pointless folder should be gone!
 #### 20. Now we can remove your folder, which is currently in iContainMultitudes. 
 Unlike other commands, *rmdir isn't really a command you want to test and play around with*: you should do it correctly the first time. However, comppedagogy is a safe sandbox and if you delete something we can always put it back with git (which you will learn about in the next worksheet). Here are hints to make sure you get it right the first time: 
 
-1. You must use the exact path to the exact file or directory you want to remove
-2. You cannot "stack" commands, like how we did `cd ../` followed by `cd Application2`. Instead, you must do it all in one command, like `cd ../Application2`. If you do the command piecemeal, you will end up deleting the folder that contains your target folder! 
+a. You must use the exact path to the exact file or directory you want to remove <br>
+b. You cannot "stack" commands, like how we did `cd ../` followed by `cd Application2`. Instead, you must do it all in one command, like `cd ../Application2`. If you do the command piecemeal, you will end up deleting the folder that contains your target folder!  <br>
 
 This should be all the information you need to run this command correctly the first time! But for the faint of heart, the answer is below the bullet points
 
