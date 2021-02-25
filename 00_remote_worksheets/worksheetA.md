@@ -219,6 +219,8 @@ This should be all the information you need to run this command correctly the fi
 
 `rmdir iContainMultitudes/robinsNewDirectory`
 
-
-Originally presented by Robin Karlin and Sarah Bakst on February 12, 2020.
+---------------
+### You are now ready to move onto [Worksheet B](http://github.com/blab-lab/comppedagogy/blob/master/00_remote_worksheets/worksheetB.md)
+---------------
+Originally presented by Robin Karlin and Sarah Bakst on February 12, 2020.<br>
 Subsequent edits by Robin Karlin and Chris Naber (February 2021) 
