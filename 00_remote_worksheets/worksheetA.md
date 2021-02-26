@@ -32,7 +32,7 @@ Pick a directory. Directories should have a / after the name; files should have 
 
 `cd DirectoryName`
 
-`cd` stands for **c**hange **d**irectory. Where you put in the name of your directory instead of DirectoryName. If you get back an error, some common culprits:
+`cd` stands for **c**hange **d**irectory. Put in the name of your directory instead of DirectoryName. If you get back an error, some common culprits:
 * There is a typo in your directory's name (every little thing matters)
 * There is a space in your directory name, and command line doesn't like that. Try putting quotes around "Your Directory Name", e.g. 
 
