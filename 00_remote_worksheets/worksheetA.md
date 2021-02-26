@@ -32,7 +32,7 @@ Pick a directory. Files should have their file extension (.mat, .doc, .pdf, etc.
 
 ![ls example on git bash](directoryPictureExamples/resultsOfLs_gitbash.png)
 
-And here is an example on terminal: 
+And here is an example on terminal. The directories are highlighted in blue. Notice that there is no / on the end of them (unlike git bash) and no color coding. But you can still see that the other things are files because of their extensions (.ost, .pcf, .m are all extensions you'll be getting used to in Matlab!).  
 
 ![ls example on terminal](directoryPictureExamples/resultsOfLs_terminal.png)
 
