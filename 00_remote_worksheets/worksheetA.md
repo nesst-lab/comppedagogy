@@ -32,13 +32,13 @@ Pick a directory. Directories should have a / after the name; files should have 
 
 `cd DirectoryName`
 
-Where you put in the name of your directory instead of DirectoryName. If you get back an error, some common culprits:
+`cd` stands for **c**hange **d**irectory. Where you put in the name of your directory instead of DirectoryName. If you get back an error, some common culprits:
 * There is a typo in your directory's name (every little thing matters)
 * There is a space in your directory name, and command line doesn't like that. Try putting quotes around "Your Directory Name", e.g. 
 
 `cd "Actual Final Drafts"`
 
-(cd stands for **c**hange **d**irectory)
+*Still having difficulties? Common characters that mess with command line are ', ", /, $. [Check out this page on escape characters](https://www.shellscript.sh/escape.html).*
 
 #### 5. Now type `pwd` again. 
 Your new working directory should be the directory you just moved into. 
@@ -218,6 +218,11 @@ This should be all the information you need to run this command correctly the fi
 *
 
 `rmdir iContainMultitudes/robinsNewDirectory`
+
+---------------
+### Excited about command line? Checkout some cool shortcuts! 
+* [Bash, Terminal](https://www.howtogeek.com/howto/ubuntu/keyboard-shortcuts-for-bash-command-shell-for-ubuntu-debian-suse-redhat-linux-etc/)
+* [For windows command line](https://www.howtogeek.com/254401/34-useful-keyboard-shortcuts-for-the-windows-command-prompt/) 
 
 ---------------
 ### You are now ready to move onto [Worksheet B](http://github.com/blab-lab/comppedagogy/blob/master/00_remote_worksheets/worksheetB.md)
