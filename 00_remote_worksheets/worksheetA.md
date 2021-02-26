@@ -64,8 +64,8 @@ This should list the contents of the directory with DirectoryName.
 
 #### 8. Check your understanding! 
 You can also combine the `..` functionality with ls to list the contents of a directory higher up in the tree. What would this command look like?
-a. First, change directory into your chosen DirectoryName. 
-b. Then, using `ls` and the `..` functionality, list the contents of the directory you were previously in. (You can play around until you get this) 
+a. First, change directory into your chosen DirectoryName. <br>
+b. Then, using `ls` and the `..` functionality, list the contents of the directory you were previously in. (You can play around until you get this) <br>
 
 -------
 ### Paths and directory structure
