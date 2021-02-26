@@ -28,7 +28,13 @@ This stands for "**p**rint **w**orking **d**irectory". Your working directory is
 This "**l**i**s**ts" the contents of your current directory. 
 
 #### 4. Now that we know what directories (folders) exist, we can move into one! 
-Pick a directory. Files should have their file extension (.mat, .doc, .pdf, etc.) after them, and directories will either have / after the name (in git bash) or nothing (terminal). 
+Pick a directory. Files should have their file extension (.mat, .doc, .pdf, etc.) after them, and directories will either have / after the name (in git bash) or nothing (terminal). Here is an example of what it looks like on git bash (which also color codes them for you!):
+
+![ls example on git bash](directoryPictureExamples/resultsOfLs_gitbash.png)
+
+And here is an example on terminal: 
+
+![ls example on terminal](directoryPictureExamples/resultsOfLs_terminal.png)
 
 `cd DirectoryName`
 
