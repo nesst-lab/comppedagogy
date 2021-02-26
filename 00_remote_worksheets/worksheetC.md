@@ -62,4 +62,6 @@ When you've finished this worksheet, push your worksheet and this new directory 
 
 *Note: if you don't want people to know what street you live on in Madison, just use Highland Ave (the Waisman Center address).*
 
-You are now ready to proceed with Worksheets 1-10! You will need Matlab to open them. 
+--------------
+### You are now ready to proceed with Worksheets 1-10! 
+You will need Matlab to open them. 
