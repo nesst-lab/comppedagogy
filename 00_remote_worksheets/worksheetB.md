@@ -127,6 +127,7 @@ b. Read the message to see if it is telling you anything odd (e.g. if someone el
 
 c. Do your work <br>
 d. Push your work. 
+
 `git fetch && git status`
 (`git pull`)
 `git add FILENAMES`
