@@ -111,12 +111,26 @@ This "adds" your version of the file to the staging area so it can be put into t
 You must use quotes around your message (in git bash you can also use double quotes, "created my first file"). Don't use an apostrophe in the message itself. 
 
 #### 10. Ok, time to send off your changes! 
-A "push" takes whatever is in your own local version of the repository and essentially overwrites what's in the repository online. That means it's good practice to make sure your version is totally up-to-date with whatever is online. For example, if you and your co-author are both editing the same file at the same time and one of you pushes your changes and then the other does, one person's changes could get overwritten. For us right now, this shouldn't matter because we are all working on unique files, but this is a very good habit to be in. So first:
+A "push" takes whatever is in your own local version of the repository and essentially overwrites what's in the repository online. 
+
+`git push`
+
+*Note: Before you start an add-commit-push process, you should pull first. That will help guard against having to do merges if someone else has worked on files in between the time you started working (when you probably did a pull to get in all the changes since the last time you worked) and the time you are adding your own files. So the full process should be:*
+
+a. You get on your computer. 
+
+`git fetch && git status`
+
+b. Read the message to see if it is telling you anything odd (e.g. if someone else forgot to push their changes on the lab computer before). Typically you will see how many commits you are behind. 
 
 `git pull`
 
-To bring in changes from the repository. Normally this will not cause any problems. Then, 
-
+c. Do your work <br>
+d. Push your work. 
+`git fetch && git status`
+(`git pull`)
+`git add FILENAMES`
+`git commit -m "my most informative message"`
 `git push`
 
 #### 11. Now try making changes to your text file. Follow the commands in steps 2-3. 
