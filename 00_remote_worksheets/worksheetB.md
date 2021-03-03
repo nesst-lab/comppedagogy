@@ -128,10 +128,10 @@ b. Read the message to see if it is telling you anything odd (e.g. if someone el
 c. Do your work <br>
 d. Push your work. 
 
-`git fetch && git status`
-(`git pull`)
-`git add FILENAMES`
-`git commit -m "my most informative message"`
+`git fetch && git status` <br>
+(`git pull`)<br>
+`git add FILENAMES`<br>
+`git commit -m "my most informative message"`<br>
 `git push`
 
 #### 11. Now try making changes to your text file. Follow the commands in steps 2-3. 
