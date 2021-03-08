@@ -89,7 +89,7 @@ ans
 basic_howManyDaysLeft
 
 % You should get an error from this---Unrecognized function or variable 'basic_howManyDaysLeft'. This is because this
-% function is in the folder 00_remote_worksheets, which is not currently in your path. There are two ways to solve this
+% function is in the folder sampleBasicData, which is not currently in your path. There are two ways to solve this
 % problem: 
 
 % 2. Navigate into the 00_remote_worksheets directory, either by using the Matlab command window, or by double clicking on
