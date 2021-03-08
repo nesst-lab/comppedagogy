@@ -1,0 +1,8 @@
+Homework Item 1: 
+
+I am confused -- I did not end up getting a breakpoint the final time I attempted this.  The first time, I think I was able to, but was confused about what was going on, so I tried it again.  This final time, I assigned the values 8, 12, and 13 to a, b, and c respectively and was able to run the function with the arguments a, b, and c.
+
+Homework Item 2: 
+
+1
+
