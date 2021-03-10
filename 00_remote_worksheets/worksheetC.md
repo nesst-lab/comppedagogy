@@ -10,7 +10,7 @@
 1. Pull before pushing
 2. Don't delete anything that belongs to someone else. 
 
-**Before starting this worksheet, use Terminal (/git bash) to create a new directory called Worksheet_1s in your personal directory inside comppedagogy. Use vi to create and edit your homework file, LASTNAME_worksheet1s.txt. **
+**Before starting this worksheet, use Terminal (/git bash) to create a new directory called Worksheet_1s in your personal directory inside comppedagogy. Use vi to create and edit your homework file, LASTNAME_worksheetC.txt. **
  
 -------------
 ### DIRECTIONS 
