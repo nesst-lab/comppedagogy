@@ -92,7 +92,7 @@ basic_howManyDaysLeft
 % function is in the folder sampleBasicData, which is not currently in your path. There are two ways to solve this
 % problem: 
 
-% 2. Navigate into the 00_remote_worksheets directory, either by using the Matlab command window, or by double clicking on
+% 2. Navigate into the sampleBasicData directory, either by using the Matlab command window, or by double clicking on
 % that folder in the Current Folder window.  Now run the command again: 
 basic_howManyDaysLeft
 
@@ -106,13 +106,13 @@ basic_howManyDaysLeft
 % variable temporarily (changes won't be saved for the next time you open Matlab) or permanently (changes will be saved). 
 % 
 % TEMPORARY METHOD(S)
-% a. In the Current Folder window, right click on the 00_remote_worksheets folder, and click Add to Path > Selected Folders 
+% a. In the Current Folder window, right click on the sampleBasicData folder, and click Add to Path > Selected Folders 
 % 
 % b. Run the following command
-addpath('00_remote_worksheets') 
+addpath('sampleBasicData') 
 
-% This last method will only work properly if you are currently in comppedagogy. Otherwise, you can give its full path:
-addpath('C:\Users\Public\Documents\comppedagogy\00_remote_worksheets')
+% This last method will only work properly if you are currently in 00_remote_worksheets. Otherwise, you can give its full path:
+addpath('C:\Users\Public\Documents\comppedagogy\00_remote_worksheets\sampleBasicData')
 
 % NOTE: if you are running your own Mac laptop's version of Matlab, you may have to change all the file separator \ to /
 
@@ -140,14 +140,14 @@ basic_howManyDaysLeft
 % 
 % TEMPORARY METHOD(s)
 %
-% a. In the Current Folder window, right click on the 00_remote_worksheets folder, and click Remove from Path > Selected 
+% a. In the Current Folder window, right click on the sampleBasicData folder, and click Remove from Path > Selected 
 % Folders 
 % 
 % b. Run the command
-rmpath('00_remote_worksheets') % (or with full path)
+rmpath('sampleBasicData') % (or with full path)
 
 % PERMANENT METHOD
-% Use the Set Path button again, but this time highlight the 00_remote_worksheets folder from the menu list and hit Remove,
+% Use the Set Path button again, but this time highlight the sampleBasicData folder from the menu list and hit Remove,
 % Save, Close. 
 
 %%
