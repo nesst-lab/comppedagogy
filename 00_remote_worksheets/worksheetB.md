@@ -138,8 +138,9 @@ d. Push your work.
 The steps remain the same even though that file already exists. Remember to type "i" to "insert" text! You can also try deleting some text and then pushing those changes.
 
 #### 12. After you have toyed around editing and pushing, go to https://github.com/blab-lab/comppedagogy. 
-Do you see the commit messages in the second column? Try clicking on one and see how github represents the commit history.
+Do you see the commit messages in the second column? Try clicking on one and see how github represents the commit history. 
 
+#### From now on you should push your worksheets into the remote repo. 
 -----------------
 ### You are now ready to proceed to [Worksheet C](http://github.com/blab-lab/comppedagogy/blob/master/00_remote_worksheets/worksheetC.md)
 
