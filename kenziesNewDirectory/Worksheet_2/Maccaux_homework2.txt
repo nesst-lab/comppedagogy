@@ -1,1 +1,11 @@
-I thought that oldWorkingDir and workingDir to be the same value at first because I didn't necessarily undertand how moving into a different directory would affect the value of the variable. So once I checked the workspace variables, I saw that ans and oldWorkingDir had the same value of comppedagogy, whereas workingDir meant 00_remote_worksheets because I navigated into that folder. 
+I thought that oldWorkingDir and workingDir to be the same value at first because I didn't necessarily undertand how moving into a different directory would affect the value of the variable. So once I checked the workspace variables, I saw that ans and oldWorkingDir had the same value of comppedagogy, whereas workingDir meant 00_remote_worksheets because I navigated into that folder.
+
+homework item 2: you would use the command oldWorkingDir = 'workingDir'
+
+homework item 3: yes, these two variables are the same because it answered with 1, which means it is true. they also are virtually the same command, one is just separating with commas, and the other is separating with solely spaces.
+
+homework item 4: the dimensions would be 6x1; anotherVector and columnVector are not equivalent. I don't have exact reasoning but I know if you multiplied a row vector with column vector compared to another row vector, you would get different values. 
+
+homework item 5: I would define this variable as a matrix that is 2x3, where 1 2 3 is stacked on top of 4 5 6. so the first column would be 1 4, the second would be 2 5, and the third would be 3 6. so the command for this would be variable=[1 2 3; 4 5 6]
+for the cell array, this would be variable= ['a' 'b' 'c'; 'd' 'e' 'f']
+ 
