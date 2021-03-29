@@ -1,0 +1,60 @@
+homework item 1: 
+if a > 0 & b > 0
+fprintf('hello world')
+end
+
+bNNan = ~isnan(a & b)
+if bNNan == 1
+fprintf('hello world')
+end
+
+bNequal = a & b ~=0
+if bNequal == 1
+fprintf('hello world')
+end
+
+bNempty = ~isempty(a & b)
+if bNempty == 1
+fprintf('hello world')
+end
+
+
+homework item 2:
+
+if a > 0 || b > 0
+fprintf('hello world')
+end
+
+bNNan = ~isnan(a || b)
+if bNequal == 1
+fprintf('hello world')
+end
+
+bNequal = a || b ~=0
+if bNequal == 1
+fprintf('hello world')
+end
+
+bNempty = ~isempty(a || b)
+if bNempty == 1
+fprintf('hello world')
+end
+
+
+homework item 3: 
+
+if xor(a>0,b>0)
+fprintf('hello world')
+end
+
+if xor(isempty(a),~isempty(b))
+fprintf('hello world')
+end
+
+homework item 4:
+
+a and b and c (1 & 1 & 0)
+a and b or c (1 & 1 or 0)
+a or b and c (1 or 1 and 0) is equal to (a | b) & c
+
+

@@ -1,5 +1,0 @@
-homework item 1: i think that strcmp(string1, string2) is case sensitive. A way to test this out is to create a random string like strcmp('Hello', 'hello')
-
-homework item 2: i would expect it to print because the function does exist, since we worked with it before.
-
-
