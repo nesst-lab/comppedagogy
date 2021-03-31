@@ -1,4 +1,5 @@
-homework item 1: 
+homework item 1:
+
 if a > 0 & b > 0
 fprintf('hello world')
 end
@@ -41,7 +42,7 @@ fprintf('hello world')
 end
 
 
-homework item 3: 
+homework item 3:
 
 if xor(a>0,b>0)
 fprintf('hello world')
@@ -51,10 +52,34 @@ if xor(isempty(a),~isempty(b))
 fprintf('hello world')
 end
 
+
 homework item 4:
 
 a and b and c (1 & 1 & 0)
 a and b or c (1 & 1 or 0)
 a or b and c (1 or 1 and 0) is equal to (a | b) & c
+
+
+homework item 5: 
+
+I think that using the || would be an adequate short-circuit for xor. 
+
+
+homework item 6: 
+
+I don't think so for two reasons: 
+1. dataPath may not exist
+2. You can have empty arguments
+But I am also unsure.
+
+
+homework item 7:
+ 
+my initial thought is that it would print out 'Charlotte says !' because there is no greeting for 4, only 5 and 6. 
+
+
+homework item 8:
+
+the advantages of using if/else is that it can operate logical statements, compared to switch/case. however, that is also an advantage of switch/case, is that it is a simple opertation for variables. 
 
 
