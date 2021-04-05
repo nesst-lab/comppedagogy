@@ -83,3 +83,25 @@ homework item 8:
 the advantages of using if/else is that it can operate logical statements, compared to switch/case. however, that is also an advantage of switch/case, is that it is a simple opertation for variables. 
 
 
+homework item 9:
+
+a.
+if max_events = 7
+fprintf('capper','gapper')
+elseif max_events = 6
+fprintf('sapper','zapper')
+else max_events = 5
+fprintf('sea','C','Z','czar','gar','cod','god')
+end
+
+b.
+switch 'sarah'
+case 'sarah'
+almaMater= 'UC Berkeley'
+case 'robin'
+almaMater = 'Cornell University'
+end
+
+c.
+I think you could translate it into a switch/case statement because its anatomy is fairly similar to that of else/if. I couldn't see why you couldn't add more variables to a switch/case statement. 
+
