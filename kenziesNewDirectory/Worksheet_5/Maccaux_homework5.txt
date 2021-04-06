@@ -1,0 +1,9 @@
+homework 1: 
+
+I am honestly pretty clueless on this question.
+
+homework 2:
+
+audioGUI(cd, [1 2 3 4], 'signalIn', [], 0)
+
+
