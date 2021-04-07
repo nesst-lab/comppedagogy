@@ -1,0 +1,10 @@
+homework item 1:
+
+a=15
+b=17
+c= 4
+They changed because the original a b and c we entered did not make up a Pythagorean triple. Our functions changed the variables so that they would be (using the variables we entered for side1, side2 and side3)
+
+homework item 2:
+vector min will be 1
+
