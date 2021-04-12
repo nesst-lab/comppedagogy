@@ -1,9 +1,23 @@
 homework 1: 
 
 I am honestly pretty clueless on this question.
+bSaveCheck
 
 homework 2:
 
 audioGUI(cd, [1 2 3 4], 'signalIn', [], 0)
 
+homework 3: 
+
+a. the second argument and trials2track
+b. waverunner(datapath,all trials,signalIn,bsavecheck,[1,4,6])
+
+homework 4:
+
+a. variables
+b. I don't recognize lines 142-151
+c. trialparams. sigpoc_params = sigproc_params; (sets variable)
+if exist('bCopyParams','var') & bCopyParams == 1 (if bCopyParams exists)
+trialparams.event_params = event_params; (then trialparams.event_params is set to event_params)
+d. I think that it is an educated guess, by figuring out which trials are bad and only checking the good ones. This could be due to gaps in the audio or such, or the person checking it marks it as bad.
 
