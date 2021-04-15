@@ -39,15 +39,21 @@ aDoubleArray = expt.allWords; % durHold, allColors, etc.
 %% Homework item 4: 
 % 
 % Audapter automatically spits out four formant measures. Are individual formants stored in a column, or in a
-% row? Why do you think this? Write a line of code that assigns the variable "formant2" to the second formant
-% of the 15th trial, using the matrix "formants", and a comment explaining your reasoning. 
+% row? Why do you think this? Write a line of code that would define the variable "formant2" as the second formant
+% of a hypothetical 15th trial, using the matrix "formants", and a comment explaining your reasoning. 
 % 
-% In addition, write a single line of code that assigns the variable "formant3" to the third formant of the
-% 30th trial. Include both of your code solutions in your Matlab worksheet solution file. 
+% In addition, write a single line of code that would define the variable "formant3" as the third formant of a
+% hypothetical 30th trial. Include both of your code solutions in your Matlab worksheet solution file. 
+% 
+% (You won't be able to run and test your solutions without altering data. Why not? How would you alter data to make this
+% work?)
 % ***
 
 % audapter saves formants in columns: each row is another timepoint/frame. There are four columns and lots and
 % lots of rows and we know that four is a more likely number for formants
+
+% data is only 10 trials long, so data(15) doesn't exist. But you can add additional rows by defining a single field in any
+% new row (everything else undefined will be empty). 
 
 formants = data(15).fmts; 
 formant2 = formants(:,2); 
