@@ -1,0 +1,13 @@
+hi
+hey
+hello
+vi is pretty cool
+i like vi
+:w
+:q
+
+vi is exciting
+:w
+
+ok
+vi is the best
