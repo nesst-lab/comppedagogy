@@ -1,0 +1,10 @@
+homework item 1
+
+a=15
+b=17 
+c=4 
+they changed due to the original abc not maching the table 
+
+homework item 2
+vector min will be 1
+
