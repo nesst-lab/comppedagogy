@@ -1,0 +1,3 @@
+Homework 1: a = 15, b = 17, and c = 4 because those were the original values of side1 (15), side2 (17), and side3 (4), which were then assigned to variables a (a = side1), b (b = side2), and c (c = side3).
+
+Homework 2: The value of vectorMin is 1, which I was able to figure out before checking in Matlab because I knew the values of testVector were 10, 3, 3, 8, 1, 2, and 9, so I could determine that 1 was the lowest/ minimum value.                                                                    
