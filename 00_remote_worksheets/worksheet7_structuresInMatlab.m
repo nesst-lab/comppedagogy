@@ -250,14 +250,17 @@ formants = data(6).fmts; % what trial are we looking at?
 % Homework item 4: 
 % 
 % Audapter automatically spits out four formant measures. Are individual formants stored in a column, or in a
-% row? Why do you think this? Write a line of code that assigns the variable "formant2" to the second formant
-% of the 15th trial, using the matrix "formants", and a comment explaining your reasoning. 
+% row? Why do you think this? Write a line of code that would define the variable "formant2" as the second formant
+% of a hypothetical 15th trial, using the matrix "formants", and a comment explaining your reasoning. 
 % 
-% In addition, write a single line of code that assigns the variable "formant3" to the third formant of the
-% 30th trial. Include both of your code solutions in your Matlab worksheet solution file. 
+% In addition, write a single line of code that would define the variable "formant3" as the third formant of a
+% hypothetical 30th trial. Include both of your code solutions in your Matlab worksheet solution file. 
+% 
+% (You won't be able to run and test your solutions without altering data. Why not? How would you alter data to make this
+% work?)
 % ***
 
-% 4. Let's take a look at the field "params". We can assign ALL 150 "params" values to a single variable by
+% 4. Let's take a look at the field "params". We can assign ALL 10 "params" values to a single variable by
 % telling Matlab that we want the array:
 rpkParams = [data.params]; 
 
@@ -265,11 +268,11 @@ rpkParams = [data.params];
 % command:
 data.params
 
-% This should have spit out an annoying line of answers at you! Basically this just loops through all 150
+% This should have spit out an annoying line of answers at you! Basically this just loops through all 10
 % entries and tells you what the "params" field is. We don't want that! Now try this:
 [data.params] % what we assigned to rpkParams
 
-% Now "ans" should be a single, 1x150 struct, the same as rpkParams. But what's this?? How is this a structure
+% Now "ans" should be a single, 1x10 struct, the same as rpkParams. But what's this?? How is this a structure
 % array? Didn't we extract this from a structure array??
 
 % Yes! Let's look just at trial 9's params: 
