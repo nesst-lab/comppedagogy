@@ -1,0 +1,7 @@
+a = 15
+b = 17
+c =4
+
+these are different from our original values because now these values are the same as the values of side1, side2, and side3, since we redefined them.
+
+vectorMin = 1
