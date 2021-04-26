@@ -1,0 +1,19 @@
+homework 1: 
+
+somewhat confused. One option could be putting 25 for trail number 25?? Pretty lost on this one. 
+
+Homework 2: audioGUI(cd, [1 2 3 4], 'signalIn', 0) --> audioGui(cd, [1 2 3 4], 'signalIn', [], 0)
+
+Homework 3: 
+
+a. second argument and trial trials 2 track. 
+b. waverunner(datapath, all trials, signalIn, bsavecheck,[1,4,6]
+
+Homework 4: 
+
+a. variables.
+b. terms on the side when doing check_dataVals
+c. trialparams. sigpoc_params = sigproc_params; (sets variable)
+if exist('bCopyParams','var') & bCopyParams == 1 (if bCopyParams exists)
+trialparams.event_params = event_params; (then trialparams.event_params is set to event_params)
+d. educated guess that is based on the values assigned when going through trials. 
