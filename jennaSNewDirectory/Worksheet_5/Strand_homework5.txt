@@ -1,0 +1,21 @@
+Homework 1: For argument 2, possible inputs that could be fed into audioGUI instead of the default are any numbers that are the number of trials for that argument. For argument 3, you could enter 'signalIn' since it was assigned to buffertype.
+
+For number 5, we call the b variable 'boolean.'
+
+Homework 2: audioGUI(cd, [1 2 3 4], 'signalIn', [], 0).
+
+Homework 3: a. The second argument of waverunner specifies trials.
+	b. An example of a waverunner call that only overwrites trials 1, 4, and 6 would be waverunner(dataPath, bufferType, bSaveCheck, params2overwrite, [1 4 6]).
+
+	c. Another parameter that could be altered in audioGUI that I could overwrite using waverunner other than preemph and amp is the lpc.
+
+Homework 4: a. It is assigning values to specific variables, which in this case, are words.
+
+	b. The words in lines 142-151 are from check_dataVals.
+
+	c. elseif dataVals(i).dur < shortThresh
+		shortTrials = [shortTrials dataVals(i).token];
+		else if dataVals(i).dur > longThresh
+
+	d. check_dataVals figures out which trials to check by comparing the assigned values to the set values, so kind of like an educated guess. 
+
