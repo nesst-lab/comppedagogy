@@ -1,0 +1,15 @@
+sarahsLastYear = smngLabMembers(2).smngYears(end)
+
+
+homework 3
+cellAray= expt.colorvals 
+doubleArray= expt.allWords 
+
+homework 4 
+formants = data(15).fmts;
+formant2 - dormants (:,2);
+formant3 - data(30).fmts(:,3):
+
+Homework 5
+newStruct = struct('numbers',{'1', '2', '3'}, 'colors', {'red', 'green', 'blue'}, 
+
