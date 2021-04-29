@@ -1,0 +1,64 @@
+1. if a > 0 & b> 0
+fprintf('hello world\n')
+end
+if round(a) == a & round(b) == b
+fprintf('hello world\n')
+end
+if ~isempty(a) & ~isempty(b)
+fprintf('hello world\n')
+end
+ 
+2. if a > 0 | b > 0
+fprintf('hello worl/\n')
+end
+if round(a)==a | round(b)==b
+fprintf('helloworld\n')
+end
+if isempty(a) | ~isempty(b)
+fprintf('hello world\n')
+end
+
+3. if xor(a>0, b>0)
+fprintf('hello world\n')
+end
+if xor(isempty(a), ~isempty(b))
+fprintf('hello world\n')
+end
+
+4. logical, 0
+logical, 1
+logical, 1
+a | (b & c) is equivalent to the third expression above
+
+short-circuiting
+this translates to:if a is less than 0 and b is greater than 0, then print 'hello world'
+
+5. I think there is a short-circuit version of xor, because Matlab is very smart and efficient, however I'm not sure what that short-circuit version is
+
+6. it is not okay to write the statement as follows because we have not yet defined dataPath and nargin<1 needs to be evaluated.
+
+7. if a were 4, you would get an error message, because a does not fit in with either of these cases.
+
+8. it is good to use switch/case when there are expected values of a variable, and good to use if/else statements when we are solving for logical statements. Switch/case also seems more efficient.
+
+9.
+a: condWord = 'tapper';
+>> if strcmp(condWord,'capper') || strcmp(condWord,'gapper')
+max_events = 7;
+elseif strcmp(condWord,'sapper')|| strcmp(condWord,'zapper')
+max_events = 6;
+elseif strcmp(condWord,'sea') || strcmp(condWord,'C') || strcmp(condWord,'Z') || strcmp(condWord,'czar') || strcmp(condWord,'gar') || strcmp(condWord,'cod') || strcmp(condWord,'god')
+max_events = 5;
+end
+fprintf('You may have at most %d events\n',max_events)
+
+b. condWord = 'sarah';
+>> switch conWord
+case 'sarah'
+almaMater = 'UC Berkeley';
+case 'robin'
+almaMater = 'Cornell University';
+end
+>> fprintf('%s earned her phD at %s', name, almaMater);
+ 
+c. yes, we can translate the following to switch/case statement because ben is clearly defined, so there shouldn't be an issue. For the unknown case, we would use 'otherwise'
