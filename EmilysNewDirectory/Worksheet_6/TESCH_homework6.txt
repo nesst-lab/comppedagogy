@@ -1,0 +1,9 @@
+Homework 1: 200th=736, 504th=295, 830th=130
+Homework 2: a) [logicVector]=contains(myCells, 'carrie')
+b) Carrie is at index 415
+c) Ben is at index 544
+bonus: alexa isn't in the vector 
+alexas=myCells(contains(myCells,'alexa'))
+isalexaHere = ~isempty(alexas)
+Homework 3: a) ehVector contains 200 columns of accending numbers
+b) waverunner([],ehVector)
