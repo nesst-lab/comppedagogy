@@ -1,0 +1,16 @@
+Homework 1:
+(1) this is the argument for trials that you want to use, so i think that you can include a list of numbers, or....? (2) for the third argument, I think that you could also use the 'signalOut' (3) the final argument is a boolean value
+
+Homework 2:
+audioGUI(cd, [1 2 3 4], 'signalIn', [], 0)
+
+Homework 3:
+(a) the second argument, trialinds
+(b) waverunner([], [1 4 6], [], [], [])
+(c) not really........
+
+Homework 4: 
+These lines are setting the error thresholds. so the shortThresh is the shortest length of time that something can be, the longThresh is the longest length of time, the jumpThresh is the threshold for the greatest amount of change that the F1 format can experience in Hz between any two samples.  The fishyFThresh is the range of values in Hz that F1 can take.
+I do not recognize the variables in lines 142-151.
+(c) for every trial in dataVals, if the duration is less than the shortThresh, add it to the list of shortTrials, if the duration is greater than longThresh, add the trial to the list longTrials, if there isn't a value for F1, then add the trial to the list nanFTrails, if the jump in F1/F2 is greater than the jumpThresh, then determine whether the jump occured for F1 or F2 and add the trials to the list jumpF1Trials or jumpF2Trials depending on where the jump occured.
+(d) I think that check_dataVals checks all of the trials in the variable dataVals.  This is because, the for loop goes through the value 1 through the end of dataVals, in other words, the first loop goes through trial 1, then 2, then 3, all the way until the end of the dataVals. the trails that check_dataVals goes through is dependent on the variable dataVals.
