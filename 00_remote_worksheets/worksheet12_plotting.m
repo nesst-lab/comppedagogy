@@ -1,7 +1,37 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % SMNG's BASIC (BLAB And SMAC Intro to Computing) series
 % Remote BASIC series 
-% Worksheet 15: writing a function
+% Worksheet 12
+% 
+% INCOMPLETE, IF YOU HAVE GOTTEN HERE CONGRATULATIONS! YOU HAVE FINISHED ALL EXISTING WORKSHEETS! 
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
 % 
 % - Skills introduced: 
 % --- Function structure
