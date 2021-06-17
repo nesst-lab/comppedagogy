@@ -1,0 +1,35 @@
+Homework Item 1:
+this was done on Matlab...
+
+Homework Item 2:
+
+smngLabMembers(2).smngYears(end)
+
+Homework Item 3:
+one field that is a cell array is the conds field.  I found this with the code:
+
+class(expt.conds)
+ans = 'cell'
+
+aCellArray = expt.conds
+
+one field that is a double array is the allWords field.  I found this with the code:
+
+class(expt.allWords)
+
+ans = 'double'
+
+aDoubleArray = expt.allWords
+
+Homework Item 4:
+
+Individual formants are stored in a column, this is probably because each trial has all four formants, so you can index by trial number first then by the formant that you want from that trial.
+
+the line of code to get the second formant from the hypothetical 15th trial, using the matrix 'formants' is : forment2 = formants(15, 2)
+
+the line of code to get the third forment from the hypothetical 30th trial is:
+formant3 = formants(30, 3)
+
+Homework Item 5:
+can be found in the file BAUMGARDT_worksheet7
+
