@@ -14,7 +14,7 @@
  
 -------------
 ### DIRECTIONS 
-Navigate to the directory welcomeToTheLabyrinth, in 00_remote_worksheets. We're going to do some "traveling" thorugh directories. Whenever you see "travel to" or "go to" (or some other variant), that means you should change directory to the specified place. 
+Navigate to the directory welcomeToTheLabyrinth, in worksheetsAndAccompaniments. We're going to do some "traveling" thorugh directories. Whenever you see "travel to" or "go to" (or some other variant), that means you should change directory to the specified place. 
 
 Some notes: 
 * Cities that are in Germany are directories in the Germany directory, cities that are in Wisconsin are directories in the Wisconsin directory, and so on and so forth. 
@@ -64,4 +64,4 @@ When you've finished this worksheet, push your worksheet and this new directory 
 
 --------------
 ### You are now ready to proceed with Worksheets 1-10! 
-You will need Matlab to open them. 
+You will need to get access to the online Matlab drive to work on these. 
