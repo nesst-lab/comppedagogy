@@ -118,7 +118,7 @@ If you were in Application2, how would you access PageB.htm?
 
 #### 13. Try it out on your own computer! 
 a. Make sure you are in your comppedagogy folder (what is the command to print your working directory?) <br>
-b. Using the command line, navigate into the folder called **welcomeToTheLabyrinth**. This folder is contained in **00_remote_worksheets**, which is contained in **comppedagogy**. Verify where you are by using your print working directory command. <br>
+b. Using the command line, navigate into the folder called **welcomeToTheLabyrinth**. This folder is contained in **worksheetsAndAccompaniments**, which is contained in **comppedagogy**. Verify where you are by using your print working directory command. <br>
 c. From welcomeToTheLabyrinth, navigate into **whichWhich**. This folder is a *sister* folder to welcomeToTheLabyrinth. <br>
 d. Now navigate back into **comppedagogy**. Can you do this in just one command? <br>
 
@@ -144,7 +144,7 @@ a. the path to the thing you want to move (here just `robinsNewDirectory`) <br>
 b. the path to the place you want to move it (here, the folder above you, i.e. `..`) <br>
 
 #### 16. Check your understanding!
-It turns out you were right to begin with, you did want it in the comppedagogy (the folder you're currently in). How do you move it back? Some hints: 
+It turns out you were right in the first place; you actually want it comppedagogy. How do you move it there? Some hints: 
 a. Remember that you have to specify the path to the folder you want to move, and your folder has changed location since you last referenced it <br>
 b. `../` references the folder ABOVE you. To reference the folder you're currently in, use `./`  <br>
 
@@ -231,7 +231,7 @@ This should be all the information you need to run this command correctly the fi
 * [For windows command line](https://www.howtogeek.com/254401/34-useful-keyboard-shortcuts-for-the-windows-command-prompt/) 
 
 ---------------
-### You are now ready to move onto [Worksheet B](http://github.com/blab-lab/comppedagogy/blob/master/00_remote_worksheets/worksheetB.md)
+### You are now ready to move onto [Worksheet B](http://github.com/blab-lab/comppedagogy/blob/master/worksheetsAndAccompaniments/worksheetB.md)
 ---------------
 Originally presented by Robin Karlin and Sarah Bakst on February 12, 2020.<br>
 Subsequent edits by Robin Karlin and Chris Naber (February 2021) 
