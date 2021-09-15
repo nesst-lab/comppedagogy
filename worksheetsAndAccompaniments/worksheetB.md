@@ -16,7 +16,8 @@
 
 #### 1. Last week, we created directories with the command mkdir, but then deleted it. 
 a. Navigate to comppedagogy in your command line interface <br>
-b. Make your own directory again (check worksheet A if you have forgotten how to do this) <br>
+b. Find the directory with the current academic year in (if you are a returning student, you can use your original folder). E.g. if it is the fall semester of 2021, navigate into the folder 2021-2022. 
+b. Make your own directory again (check worksheet A if you have forgotten how to do this), then navigate into it. <br>
 
 #### 2. Now we are going to create a new text file without ever leaving the command line! 
 We are going to use a program called vi. It's best to think of this program as one where you are telling someone else to do the writing for you, like "now we are going to write some text! Now we are going to save! Now we are going to write some text again!" Once you are familiar with the program, you'll see how it can be a convenient tool that avoids some weird things like ghost characters that notepad or other programs can introduce. Anyway, end vi talk. 
@@ -142,7 +143,7 @@ Do you see the commit messages in the second column? Try clicking on one and see
 
 #### From now on you should push your worksheets into the remote repo. 
 -----------------
-### You are now ready to proceed to [Worksheet C](http://github.com/blab-lab/comppedagogy/blob/master/00_remote_worksheets/worksheetC.md)
+### You are now ready to proceed to [Worksheet C](http://github.com/blab-lab/comppedagogy/blob/master/worksheetsAndAccompaniments/worksheetC.md)
 
 ------------------
 ### MORE FUN WITH VI ###
