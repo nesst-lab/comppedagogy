@@ -231,7 +231,7 @@ This should be all the information you need to run this command correctly the fi
 * [For windows command line](https://www.howtogeek.com/254401/34-useful-keyboard-shortcuts-for-the-windows-command-prompt/) 
 
 ---------------
-### You are now ready to move onto [Worksheet B](http://github.com/blab-lab/comppedagogy/blob/master/worksheetsAndAccompaniments/worksheetB.md)
+### You are now ready to move onto [Worksheet B](http://github.com/blab-lab/comppedagogy/blob/master/startHere/worksheetB.md)
 ---------------
 Originally presented by Robin Karlin and Sarah Bakst on February 12, 2020.<br>
 Subsequent edits by Robin Karlin and Chris Naber (February 2021) 
