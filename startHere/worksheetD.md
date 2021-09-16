@@ -121,6 +121,9 @@ a. Read the error message carefully. What does git suggest that we do?
 b. Follow the directions, then finish your push. 
 
 ----------------------------------
+In these scenarios, we knew exactly what was happening and which commits needed to be merged. However, in an actual merging scenario, you will likely not know exactly what files need to be fixed up. You can always use `git diff`, but if you don't recognize the files in the different commits, you may not necessarily know if you're accidentally overwriting someone else's more recent work. This is one reason why git etiquette is so important: although git repos can be walked back to previous steps, it can be a pain to figure out exactly what version of each file needs to be restored. 
+
+----------------------------------
 ### You are now ready to proceed with Worksheets 1-10! 
 You will need to get access to the online Matlab drive to work on these. 
 
