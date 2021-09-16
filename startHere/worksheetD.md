@@ -117,7 +117,7 @@ d. To let git know that you've solved the conflict, get rid of these three lines
 #### 9. Now let's try to pull again. 
 
 #### 8. Oh no! That didn't work! 
-a. Read the error message carefully. What does git suggest that we do? 
+a. Read the error message carefully. What does git suggest that we do? <br>
 b. Follow the directions, then finish your push. 
 
 ----------------------------------
