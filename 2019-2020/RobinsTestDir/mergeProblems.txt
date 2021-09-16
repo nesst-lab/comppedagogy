@@ -1,1 +1,3 @@
-This is the very first line of the original merge conflict document. 
+This is the very first line of the original merge conflict document.
+
+And now I'm adding a commit without having pulled first because I'm baaaaad to the bone
