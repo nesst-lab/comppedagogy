@@ -1,4 +1,4 @@
-This is the very first line of the original merge.
+Fixyfixy the conflicty
 
 It felt weird to not pull after I just pushed! 
 And now I'm adding a commit without having pulled first because I'm baaaaad to the bone!!!
