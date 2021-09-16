@@ -17,3 +17,19 @@ for trialIx=1
 end
 
 
+%Homework item 4:
+goodEvilReal= [1 4 12 18]
+for goodEvilReal = 1:length(goodEvil)
+   officeCharacters(goodEvilReal).goodEvil = goodEvil{goodEvilReal};  
+   
+end
+
+% Homework item 5: 
+% 
+trials2run = 31:60; 
+for i = 1:length(words4trials)
+    trialNo = trials2run(i); 
+    trialWord = words4trials{i}; 
+    fprintf('The word for trial %d is %s\n',trialNo,trialWord)
+    
+end
