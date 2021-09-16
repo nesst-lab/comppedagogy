@@ -1,0 +1,1 @@
+This is the very first line of the original merge conflict document. 
