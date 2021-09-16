@@ -106,7 +106,7 @@ c. What do you think the long string of letters and numbers is? (HINT: in git, w
 #### 7. Now let's fix the conflict. 
 a. This is just a text file, so we can once again use vim. Open the file in vim. <br>
 b. You'll notice that the text you saw in git diff is there: the file has been changed to actually tell you where the conflict is. <br>
-c. To fix the conflict, pick one of the versions---or delete the first sentence altogether! 
+c. To fix the conflict, pick one of the versions---or delete the first sentence altogether! <br>
 d. To let git know that you've solved the conflict, get rid of these three lines: 
 * the line with `<<<<<<< HEAD`
 * The line with `=======` (dividing the head version from master)
