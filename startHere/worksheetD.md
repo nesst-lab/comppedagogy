@@ -77,7 +77,7 @@ Are we done? Have you pushed your latest commit? If you don't know, how would yo
 ----------------------------
 ### Merging with conflicts
 
-In the previous example, we were editing two different files: one on your local branch, and one on the master branch. For this reason, there was no **conflict**. However, the git etiquette breach with Chris and Robin produces a conflict, because they were both working on the same file. We will now practice a merge that involves a conflict, using a very similar method as the previous scenario. 
+In the previous example, we were editing two different files: one on your local branch, and one on the master branch. For this reason, there was no **conflict**. However, if you work on the same parts of the same file, you will produce a conflict. We will now practice a merge that involves a conflict, using a very similar method as the previous scenario. 
 
 #### 1. Use the browser access to the comppedagogy repo to open one of the files you created in the first scenario. 
 a. You can do this by clicking on the file name in the browser <br>
