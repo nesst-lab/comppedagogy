@@ -32,11 +32,15 @@ What do we do now? Because there are potentially a lot of people working with th
 
 You may have already come across a merge issue in your git travels. This is in fact something that can happen if you get "sniped"---you pull, someone else pushes while you're writing your push command, and then you push. To simulate this, 
 
-#### 1. Open git bash (PC) or your command line (terminal program, mac). Navigate into your personal directory and use vim to create a new text file called something like "myLocalFile.txt". In the body of this document, put any sentence at all.  
+#### 1. Open git bash (PC) or your command line (terminal program, mac). 
+
+Navigate into your personal directory and use vim to create a new text file called something like "myLocalFile.txt". In the body of this document, put any sentence at all.  
 
 #### 2. Using good git etiquette, push this file to the master repo. 
 
-#### 3. Now use your browser to navigate to your personal directory. The link to the comppedagogy repo is http://github.com/blab-lab/comppedagogy. From there, you can click on the folder names just as you do in your file explorer to get to your personal directory. 
+#### 3. Now use your browser to navigate to your personal directory. 
+
+The link to the comppedagogy repo is http://github.com/blab-lab/comppedagogy. From there, you can click on the folder names just as you do in your file explorer to get to your personal directory. 
 
 #### 4. You should see the file you just pushed in that directory (if you don't, make sure you actually added/committed/pushed in git bash). 
 
@@ -44,19 +48,29 @@ You may have already come across a merge issue in your git travels. This is in f
 
 #### 6. Name your file something like "myMasterFile.txt" (make sure you include the .txt extension). You can put whatever words you like into the body of this file. 
 
-#### 7. Scroll down to the bottom. There will be a dialog box to create a new commit. Enter a commit message (this is the browser equivalent of `git commit -m "message about this commit here"`). Make sure the radio button for "Commit directly to the master branch" is selected, then click "Commit new file". 
+#### 7. Scroll down to the bottom. There will be a dialog box to create a new commit. 
 
-#### 8. Now go back to git bash. *WITHOUT pulling*, re-open your original text file from step 1, using vi. Change something about the body of the text file, e.g. add "baaaad to the bone" to the bottom. 
+Enter a commit message (this is the browser equivalent of `git commit -m "message about this commit here"`). Make sure the radio button for "Commit directly to the master branch" is selected, then click "Commit new file". 
+
+#### 8. Now go back to git bash. *WITHOUT pulling*, re-open your original text file from step 1, using vi. 
+
+Change something about the body of the text file, e.g. add "baaaad to the bone" to the bottom. 
 
 #### 9. Now try to add, commit, and push your new changes to your original text file. 
 
 #### 10. Oh no, an error! What does this error tell you? Does it make sense with what you know has just happened? 
 
-#### 11. Now do a `git fetch && git status`. Carefully read the message describing the status. What is the 1 commit on your branch and the 1 commit on the master branch? 
+#### 11. Now do a `git fetch && git status`. Carefully read the message describing the status. 
+
+What is the 1 commit on your branch and the 1 commit on the master branch? 
 
 #### 12. Helpfully, in this message, git actually tells us what we should do. Perform the suggested action. 
 
-#### 13. You should now be in a completely different looking screen. In many computers, you have gotten yourself into a vim screen; in others, it might be using Notepad or some other text editing program. Once again, this message also tells you what to do! Complete the suggested action, then exit the text editing program. 
+#### 13. You should now be in a completely different looking screen. 
 
-#### 14. Now read the results of your action. Are we done? Have you pushed your latest commit? (How do you find out? If you haven't pushed, push now.) 
+In many computers, you have gotten yourself into a vim screen; in others, it might be using Notepad or some other text editing program. Once again, this message also tells you what to do! Complete the suggested action, then exit the text editing program. 
+
+#### 14. Now read the results of your action. 
+
+Are we done? Have you pushed your latest commit? (How do you find out? If you haven't pushed, push now.) 
 ----------------------------
