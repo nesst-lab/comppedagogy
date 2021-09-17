@@ -23,7 +23,7 @@ Recall that in SMNG we keep all our experiment code in a git repo. In Worksheet 
 
 `dummyWord = 'caper'`; ---> should be `dummyWord = 'capper'; `
 
-* I fix this and save it to my computer. Then I try to push it to the master repo, but there's a problem! When Git compares the master version to my version, it notices that it is different in more places than what I just fixed. This is called a "conflict". 
+* I fix this and save it to my computer. Then I try to push it to the master repo, but there's a problem! When Git compares the master version to my version, it notices that it is different in more places than what I just fixed. This will require a merge. 
 
 What do we do now? Because there are potentially a lot of people working with the same functions and making edits, it is very important to follow good git etiquette to avoid problems. However, even if everybody perfectly follows git etiquette, you might just get "sniped" and have someone push a new commit as you're typing your final push command! In this worksheet we will deliberately break git etiquette by ourselves so that you can get acquainted with what happens when there are conflicts, and learn how to fix them. 
 
