@@ -17,11 +17,11 @@ Recall that in SMNG we keep all our experiment code in a git repo. In Worksheet 
 
 * I've written the function gen_ostUserEvents_timeAdapt, and pushed it to the master repo. Chris is using it and notices a bug: 
 
-`expt.name = 'tmieAdapt'`; --> should be `expt.name = 'timeAdapt';` 
+`expt.name = 'tmieAdapt';` --> should be `expt.name = 'timeAdapt';` 
 
 * He fixes it and saves it to his computer, and pushes the fixed version to the master. The next day, I come in and immediately start using the script, but without checking if there's a new version on the master repo. As I'm using the script, I notice another bug: 
 
-`dummyWord = 'caper'`; ---> should be `dummyWord = 'capper'; `
+`dummyWord = 'caper';` ---> should be `dummyWord = 'capper'; `
 
 * I fix this and save it to my computer. Then I try to push it to the master repo, but there's a problem! When Git compares the master version to my version, it notices that it is different in more places than what I just fixed. This will require a merge. 
 
