@@ -4,24 +4,22 @@
 #### Skills practiced: 
 * Camel case
 * Navigating complicated path directions
-* Vi
 
-#### Reminder to use good Gitiquette!! 
-1. Pull before pushing
-2. Don't delete anything that belongs to someone else. 
-
-**Before starting this worksheet, use Terminal (/git bash) to create a new directory called Worksheet_1s in your personal directory inside comppedagogy. Use vi to create and edit your homework file, LASTNAME_worksheetC.txt. **
+#### Tools: 
+* You will need to use Matlab online for this. Matlab will use all the same path navigation commands that you learned in Worksheet A. 
+* To open text files in Matlab, use the command `open nameoftextfile.txt`
  
 -------------
 ### DIRECTIONS 
-Navigate to the directory welcomeToTheLabyrinth, in worksheetsAndAccompaniments. We're going to do some "traveling" thorugh directories. Whenever you see "travel to" or "go to" (or some other variant), that means you should change directory to the specified place. 
+Navigate to the directory welcomeToTheLabyrinth, in worksheetsAndMaterials. We're going to do some "traveling" thorugh directories. Whenever you see "travel to" or "go to" (or some other variant), that means you should change directory to the specified place. 
 
 Some notes: 
 * Cities that are in Germany are directories in the Germany directory, cities that are in Wisconsin are directories in the Wisconsin directory, and so on and so forth. 
 * In the Wisconsin cities, streets may also have their own directories, using camelCase instead of spaces: e.g. Park St's directory will be called ParkSt; Grand Canyon Rd would be GrandCanyonRd. 
 * Specific locations have text files---in some really small cities, you might just get a specific location with no street address! 
 * If you don't know what exists in a city, remember to use `ls`. If you forget where you are, remember to use `pwd`! 
-* At the end of every question, you'll open/preview a .txt file. Copy down the letter that appears in the last line---at the end of your travels you'll have a message! Put this message in your homework txt file. 
+* At the end of every question, you'll open/preview a .txt file. 
+* Copy down the letter that appears in the last line---at the end of your travels you'll have a message! Put this message in your homework txt file. 
 -------------
 
 1. First, let's go to Germany. Most direct flights from O'Hare go to Frankfurt, so we'll land at the Frankfurt airport: airport.txt.  
