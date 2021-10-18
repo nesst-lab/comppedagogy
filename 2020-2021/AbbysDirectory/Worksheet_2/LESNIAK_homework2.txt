@@ -1,0 +1,16 @@
+I expected they would be different! because we ran pwd for workingDir again, that means it overrides the last answer to that variable. I was right :)
+
+to get the strinig, oldWorkingDir= 'workingDir'  
+use quotes
+
+The two vectors ARE equal because isequal comes back as 1 in the workspace, and since it is a logical variable, 1 indicates TRUE
+
+ColumnVector would be 6x1, meaning six rows and one column. 
+
+anotherVector and ColumnVector are not equivalent, since they are fundamentally different vectors in a different setup. run isequal(anotherVector, columnVector) to find out. 
+(they are not, ans=0)
+
+matrix=[1 2 3;4 5 6]
+
+cellArray= {'a' 'b' 'c'; 'd' 'e' 'f'}
+
