@@ -1,5 +1,5 @@
 ## SMNG's BASIC (BLAB And SMAC Intro to Computing) series
-### Worksheet B: git and vim
+### Worksheet C: git and vim
  
 #### Skills introduced: 
 * Creating text files from the command line using vim
@@ -143,7 +143,7 @@ Do you see the commit messages in the second column? Try clicking on one and see
 
 #### From now on you should push your worksheets into the remote repo. 
 -----------------
-### You are now ready to proceed to [Worksheet C](http://github.com/blab-lab/comppedagogy/blob/master/startHere/worksheetC.md)
+### You are now ready to proceed to [Worksheet D](http://github.com/blab-lab/comppedagogy/blob/master/sorksheets2/worksheetD.md)
 
 ------------------
 ### MORE FUN WITH VI ###
