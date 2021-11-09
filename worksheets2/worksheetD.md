@@ -13,7 +13,7 @@
 ----------------------------------------------------------------------------------
 ### Why git etiquette? 
 
-Recall that in SMNG we keep all our experiment code in a git repo. In Worksheet B, we talked about an example where two people found typos independently, but only one person (Chris) followed good git etiquette: 
+Recall that in SMNG we keep all our experiment code in a git repo. In Worksheet C, we talked about an example where two people found typos independently, but only one person (Chris) followed good git etiquette: 
 
 * I've written the function gen_ostUserEvents_timeAdapt, and pushed it to the master repo. Chris is using it and notices a bug: 
 
@@ -124,6 +124,5 @@ b. Follow the directions, then finish your push.
 In these scenarios, we knew exactly what was happening and which commits needed to be merged. However, in an actual merging scenario, you will likely not know exactly what files need to be fixed up. You can always use `git diff`, but if you don't recognize the files in the different commits, you may not necessarily know if you're accidentally overwriting someone else's more recent work. This is one reason why git etiquette is so important: although git repos can be walked back to previous steps, it can be a pain to figure out exactly what version of each file needs to be restored. 
 
 ----------------------------------
-### You are now ready to proceed with Worksheets 1-10! 
-You will need to get access to the online Matlab drive to work on these. 
-
+### You are now ready to proceed with Worksheets 11-15! 
+You can access these either from comppedagogy (if you have Matlab installed on your computer) or the online Matlab drive. 
