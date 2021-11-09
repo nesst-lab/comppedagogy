@@ -74,15 +74,11 @@ b. Then, using `ls` and the `..` functionality, list the contents of the directo
 
 A path specifies the exact location in your computer's directory structure for any file or directory. It is called "path" because when you are navigating in your directory structure, you have to tell your computer exactly what PATH to take to get to the directory/file you want. 
 
-First, let's get to your comppedagogy folder (if you haven't got this already, visit [this page](https://kb.wisc.edu/smng/internal/106139) to figure out how to do that). If you are on a PC, enter: 
+First, let's open up MATLAB online. The default view will show you your current folder view in the top left panel. You should see comppedagogy in there---if not, make sure you've accepted the invitation and added the folder to your drive (see [this article](https://kb.wisc.edu/smng/internal/106101) for instructions). You will then see a **command window**: basically MATLAB's command line. There will be a >> on the first line. Type: 
 
-`cd C:/Users/yourusername/Documents/comppedagogy` 
+`cd '/MATLAB Drive/comppedagogy'` 
 
-If you are on a Mac, enter: 
-
-`cd ~/Documents/comppedagogy`
-
-What we've just done is provide the command line with the FULL path---to use an analogy you're more familiar with, it has the "address" including all information from the country to house number. 
+and hit enter. (Don't forget the single quotes!) What we've just done is provide the command window with the FULL path---to use an analogy you're more familiar with, it has the "address" including all information from the country to house number. 
 
 #### 10. However, you don't need to provide the full path to things all the time. You've already experimented with this, using `..` and `cd DirectoryName`. You just need to tell the command line which path to take from the location you currently are. Take a look at this picture: 
 
@@ -118,7 +114,7 @@ If you were in Application2, how would you access PageB.htm?
 
 #### 13. Try it out on your own computer! 
 a. Make sure you are in your comppedagogy folder (what is the command to print your working directory?) <br>
-b. Using the command line, navigate into the folder called **welcomeToTheLabyrinth**. This folder is contained in **worksheetsAndAccompaniments**, which is contained in **comppedagogy**. Verify where you are by using your print working directory command. <br>
+b. Using the command line, navigate into the folder called **welcomeToTheLabyrinth**. This folder is contained in **worksheets**, which is contained in **comppedagogy**. Verify where you are by using your print working directory command. <br>
 c. From welcomeToTheLabyrinth, navigate into **whichWhich**. This folder is a *sister* folder to welcomeToTheLabyrinth. <br>
 d. Now navigate back into **comppedagogy**. Can you do this in just one command? <br>
 
@@ -128,14 +124,14 @@ d. Now navigate back into **comppedagogy**. Can you do this in just one command?
 ### Altering the directory structure from the command line
 
 #### 14. Moving yourself around using the command line is cool, but it's not really that USEFUL. The command line has many other functions, such as making a new directory.
-a. First, navigate into the comppedagogy folder.  <br>
+a. First, navigate into the **moreFolders** folder in the comppedagogy folder.  <br>
 b. Then run the following command, substituting your own name for "robin" (*note: if you have a name that is shared with someone else in the lab, the folder may already exist. Use an initial or a nickname to make your new directory*):  <br>
 
 `mkdir robinsNewDirectory` 
 
 mkdir: **m**a**k**e **dir**ectory. Note that you're using the same path specification that you've used in previous commands! You're creating this directory in the directory you're currently in. 
 
-#### 15. Whoops, you put this directory in the wrong spot! You want it in the directory above the one you're currently in, which is Documents. We can do that too: 
+#### 15. Whoops, you put this directory in the wrong spot! You want it in the directory above the one you're currently in, which is comppedagogy. We can do that too: 
 
 `mv robinsNewDirectory ../` 
 
@@ -144,13 +140,13 @@ a. the path to the thing you want to move (here just `robinsNewDirectory`) <br>
 b. the path to the place you want to move it (here, the folder above you, i.e. `..`) <br>
 
 #### 16. Check your understanding!
-It turns out you were right in the first place; you actually want it comppedagogy. How do you move it there? Some hints: 
+It turns out you were right in the first place; you actually want it moreFolders. How do you move it there? Some hints: 
 a. Remember that you have to specify the path to the folder you want to move, and your folder has changed location since you last referenced it <br>
 b. `../` references the folder ABOVE you. To reference the folder you're currently in, use `./`  <br>
 
 #### 17. `mv` also performs a slightly different function. 
-a. First, enter the command in the command line to get the list of items in your working directory (which should be comppedagogy)  <br>
-b. Make sure that your new directory is in there, and that there is no directory called **whatDoesThisDo** (if there is, you can go into your file explorer and delete that folder manually)  <br>
+a. First, enter the command in the command line to get the list of items in your working directory (which should be moreFolders)  <br>
+b. Make sure that your new directory is in there, and that there is no directory called **whatDoesThisDo** (if there is, you can use the current folder view to delete that folder manually)  <br>
 c. Substituting your new directory name for `robinsNewDirectory`, enter:  <br>
 
 `mv robinsNewDirectory whatDoesThisDo` 
