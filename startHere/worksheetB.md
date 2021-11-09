@@ -1,5 +1,5 @@
 ## SMNG's BASIC (BLAB And SMAC Intro to Computing) series
-### Worksheet C: practice with paths
+### Worksheet B: practice with paths
  
 #### Skills practiced: 
 * Camel case
@@ -11,15 +11,15 @@
  
 -------------
 ### DIRECTIONS 
-Navigate to the directory welcomeToTheLabyrinth, in worksheetsAndMaterials. We're going to do some "traveling" thorugh directories. Whenever you see "travel to" or "go to" (or some other variant), that means you should change directory to the specified place. 
+Navigate to the directory welcomeToTheLabyrinth, in worksheets (in the Matlab comppedagogy folder). We're going to do some "traveling" thorugh directories. Whenever you see "travel to" or "go to" (or some other variant), that means you should change directory to the specified place. 
 
 Some notes: 
 * Cities that are in Germany are directories in the Germany directory, cities that are in Wisconsin are directories in the Wisconsin directory, and so on and so forth. 
 * In the Wisconsin cities, streets may also have their own directories, using camelCase instead of spaces: e.g. Park St's directory will be called ParkSt; Grand Canyon Rd would be GrandCanyonRd. 
 * Specific locations have text files---in some really small cities, you might just get a specific location with no street address! 
 * If you don't know what exists in a city, remember to use `ls`. If you forget where you are, remember to use `pwd`! 
-* At the end of every question, you'll open/preview a .txt file. 
-* Copy down the letter that appears in the last line---at the end of your travels you'll have a message! Put this message in your homework txt file. 
+* At the end of every question, you'll open/preview a .txt file. Use the command `open filename` in the Matlab command window. 
+* Copy down the letter that appears in the last line---at the end of your travels you'll have a message! Put this message in a separate text file. 
 -------------
 
 1. First, let's go to Germany. Most direct flights from O'Hare go to Frankfurt, so we'll land at the Frankfurt airport: airport.txt.  
@@ -61,4 +61,4 @@ When you've finished this worksheet, push your worksheet and this new directory 
 *Note: if you don't want people to know what street you live on in Madison, just use Highland Ave (the Waisman Center address).*
 
 --------------
-### You are now ready to proceed to [Worksheet D](http://github.com/blab-lab/comppedagogy/blob/master/startHere/worksheetD.md)
+### You are now ready to proceed to Worksheet 1 in the folder "worksheets" in the Matlab comppedagogy folder. 
