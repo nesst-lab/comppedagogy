@@ -8,12 +8,12 @@
 
 ----------------------------------------------------------------------------------
 #### Before going through this worksheet, you should:
-* Have a github account. If not, create one, and tell Robin so that you can add your own files to this repository. 
+* Have a Mathworks account, and have accepted the invitation to the online MATLAB drive comppedagogy. 
 * Have installed either git bash (if you are on a PC) or know how to open the terminal (mac). If you don't have this, [here is a guide](https://kb.wisc.edu/smng/internal/106101)
 ----------------------------------------------------------------------------------
 ### Basic navigation and listing
 
-#### 1. Open git bash (PC) or your command line (terminal program, mac). 
+#### 1. Open git bash (PC) or your command line (terminal program, mac).
 #### 2. When you open an instance of your command line, you will automatically start in your "home" folder. 
 That folder varies from computer to computer, so you might want to ask your command line to print out where you currently are located. To do that, type the following command into your terminal and hit enter: 
 
