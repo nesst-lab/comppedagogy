@@ -89,7 +89,7 @@ And report back what it just found. (You can also string these two commands toge
 
 c. You might be behind the master repo by some number of commits. This means that someone else has committed to the master repo since the last time you looked. In the picture below it says that our branch is behind origin/master by 15 commits, and can be fast-forwarded
 
-![behind by commits](directoryPictureExamples/behindByCommits.png)
+![behind by commits](startHere/directoryPictureExamples/behindByCommits.png)
 
 To do this, enter the command 
 
