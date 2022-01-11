@@ -143,7 +143,7 @@ Do you see the commit messages in the second column? Try clicking on one and see
 
 #### From now on you should push your worksheets into the remote repo. 
 -----------------
-### You are now ready to proceed to [Worksheet D](http://github.com/blab-lab/comppedagogy/blob/master/sorksheets2/worksheetD.md)
+### You are now ready to proceed to [Worksheet D](http://github.com/blab-lab/comppedagogy/blob/master/worksheets2/worksheetD.md)
 
 ------------------
 ### MORE FUN WITH VI ###
