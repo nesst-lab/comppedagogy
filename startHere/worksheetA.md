@@ -74,7 +74,7 @@ b. Then, using `ls` and the `..` functionality, list the contents of the directo
 
 A path specifies the exact location in your computer's directory structure for any file or directory. It is called "path" because when you are navigating in your directory structure, you have to tell your computer exactly what PATH to take to get to the directory/file you want. 
 
-First, let's open up MATLAB online. The default view will show you your current folder view in the top left panel. You should see comppedagogy in there---if not, make sure you've accepted the invitation and added the folder to your drive (see [this article](https://kb.wisc.edu/smng/internal/106101) for instructions). You will then see a **command window**: basically MATLAB's command line. There will be a >> on the first line. Type: 
+First, let's open up MATLAB online. The default view will show you your current folder view in the top left panel. You should see comppedagogy in there---if not, [follow this link]([url](https://drive.matlab.com/sharing/412598b7-dd88-4077-9ed7-f9d764e5760c/)) and click "Add to MATLAB Online". You will then see a **command window**: basically MATLAB's command line. There will be a >> on the first line. Type: 
 
 `cd '/MATLAB Drive/comppedagogy'` 
 
