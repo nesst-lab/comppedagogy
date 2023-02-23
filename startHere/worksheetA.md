@@ -4,12 +4,11 @@
 #### Skills introduced: 
 * Basic navigation and listing
 * Paths and directory structure
-* Altering the directory structure from the command line
 
 ----------------------------------------------------------------------------------
 #### Before going through this worksheet, you should:
 * Have a Mathworks account, and have accepted the invitation to the online MATLAB drive comppedagogy. 
-* Have installed either git bash (if you are on a PC) or know how to open the terminal (mac). If you don't have this, [here is a guide](https://kb.wisc.edu/smng/internal/106101)
+* Have access to git bash (Windows) or have opened the program called 'terminal' (mac). SMAC and BLAB Lab members, use git bash on the lab computers.
 ----------------------------------------------------------------------------------
 ### Basic navigation and listing
 
@@ -120,106 +119,6 @@ d. Now navigate back into **comppedagogy**. Can you do this in just one command?
 
 *Note: if you have a computer with multiple drives, switch with cd /letter, i.e. to get to the M: drive, cd /m (for git bash), or cd /Volumes if you are on a Mac.*
 
--------
-### Altering the directory structure from the command line
-
-#### 14. Moving yourself around using the command line is cool, but it's not really that USEFUL. The command line has many other functions, such as making a new directory.
-a. First, navigate into the **moreFolders** folder in the comppedagogy folder.  <br>
-b. Then run the following command, substituting your own name for "robin" (*note: if you have a name that is shared with someone else in the lab, the folder may already exist. Use an initial or a nickname to make your new directory*):  <br>
-
-`mkdir robinsNewDirectory` 
-
-mkdir: **m**a**k**e **dir**ectory. Note that you're using the same path specification that you've used in previous commands! You're creating this directory in the directory you're currently in. 
-
-#### 15. Whoops, you put this directory in the wrong spot! You want it in the directory above the one you're currently in, which is comppedagogy. We can do that too: 
-
-`mv robinsNewDirectory ../` 
-
-mv = **m**o**v**e. This command is unique compared to the other ones you've used before because it takes TWO arguments (arguments let a command know exactly how to perform its task): 
-a. the path to the thing you want to move (here just `robinsNewDirectory`) <br>
-b. the path to the place you want to move it (here, the folder above you, i.e. `..`) <br>
-
-#### 16. Check your understanding!
-It turns out you were right in the first place; you actually want it moreFolders. How do you move it there? Some hints: 
-a. Remember that you have to specify the path to the folder you want to move, and your folder has changed location since you last referenced it <br>
-b. `../` references the folder ABOVE you. To reference the folder you're currently in, use `./`  <br>
-
-#### 17. `mv` also performs a slightly different function. 
-a. First, enter the command in the command line to get the list of items in your working directory (which should be moreFolders)  <br>
-b. Make sure that your new directory is in there, and that there is no directory called **whatDoesThisDo** (if there is, you can use the current folder view to delete that folder manually)  <br>
-c. Substituting your new directory name for `robinsNewDirectory`, enter:  <br>
-
-`mv robinsNewDirectory whatDoesThisDo` 
-
-4. Enter the command to list the items in your working directory. Where is your new directory? Where is **whatDoesThisDo**? 
-
-So `mv` can rename things as well! Note that this stems from how paths work. Renaming and moving are actually the same thing---you're changing the "address" of the object. 
-
-#### Check your understanding: 
-Using the command line, rename the new directory **whatDoesThisDo** to your original directory name (like robinsNewDirectory)
-
-#### 18. When you've got your folder back to its original position in comppedagogy, enter the following two commands: 
-
-`ls`
-`mv robinsNewDirectory iContainMultitudes`
-
-(Again substituting your own folder name in for robinsNewDirectory). Where is your directory? Why do you think this is different from what you did in 17? 
-
-#### 19. Okay, now we're done with these directories. You can remove them with the command line as well, with rmdir (ReMove DIRectory). For example, try making a pointless folder: 
-
-`mkdir aPointlessFolder`
-
-List the files in your directory to make sure it exists. Then, 
-
-`rmdir aPointlessFolder`
-
-And list again. The pointless folder should be gone! 
-
-#### 20. Now we can remove your folder, which is currently in iContainMultitudes. 
-Unlike other commands, *rmdir isn't really a command you want to test and play around with*: you should do it correctly the first time. However, comppedagogy is a safe sandbox and if you delete something we can always put it back with git (which you will learn about in the next worksheet). Here are hints to make sure you get it right the first time: 
-
-a. You must use the exact path to the exact file or directory you want to remove <br>
-b. You cannot "stack" commands, like how we did `cd ../` followed by `cd Application2`. Instead, you must do it all in one command, like `cd ../Application2`. If you do the command piecemeal, you will end up deleting the folder that contains your target folder!  <br>
-
-This should be all the information you need to run this command correctly the first time! But for the faint of heart, the answer is below the bullet points
-
-* <br>
-* 
-* 
-*
-*
-*
-*
-*
-*
-*
-*
-*
-*
-*
-*
-*
-*
-*
-*
-*
-*
-*
-*
-*
-*
-*
-*
-*
-*
-*
-*
-*
-*
-*
-*
-
-`rmdir iContainMultitudes/robinsNewDirectory`
 
 ---------------
 ### Excited about command line? Checkout some cool shortcuts! 
