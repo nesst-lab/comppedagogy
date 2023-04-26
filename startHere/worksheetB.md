@@ -56,4 +56,5 @@ Some notes:
 
 
 --------------
-### You are now ready to proceed to Worksheet 1 in the folder "worksheets" in the Matlab comppedagogy folder. 
+### Next Steps
+You are now ready to proceed to Worksheet 1. Find it in MATLAB Online in comppedagogy/worksheets.
