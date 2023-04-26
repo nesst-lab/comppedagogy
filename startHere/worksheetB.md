@@ -6,21 +6,19 @@
 * Navigating complicated path directions
 
 #### Tools: 
-* Use Matlab Online.
-* To open text files in Matlab, use the command `open nameoftextfile.txt`
+* You will use MATLAB Online for this worksheet. The path navigation commands you used in Worksheet A work the same in MATLAB as they do in git bash.
+* To open text files in Matlab, use the command `open`, like this: `open nameoftextfile.txt`
  
 -------------
 ### DIRECTIONS 
-Open Matlab Online on your computer or the lab computer. Make sure you have access to the 'comppedagogy' folder. Double-click into the 'comppedagogy' folder, then 'worksheets', then 'welcomeToTheLabyrinth'. 
-
-We're going to practice using the skills we learned in Worksheet A, by doing some "traveling" thorugh directories. Whenever instructions tell you to "travel to" or "go to" somewhere, that means you should change directory to the specified place. From now on for Worksheet B, only **enter commands into the Command Window** to change directories and open files. (Use the command `open nameoftextfile.txt` to open a file.) 
+Navigate to the directory welcomeToTheLabyrinth, in worksheets (in the Matlab comppedagogy folder). We're going to do some "traveling" thorugh directories. Whenever you see "travel to" or "go to" (or some other variant), that means you should change directory to the specified place. 
 
 Some notes: 
 * Cities that are in Germany are directories in the Germany directory, cities that are in Wisconsin are directories in the Wisconsin directory, and so on and so forth. 
 * In the Wisconsin cities, streets may also have their own directories, using camelCase instead of spaces: e.g. Park St's directory will be called ParkSt; Grand Canyon Rd would be GrandCanyonRd. 
 * Specific locations have text files---in some really small cities, you might just get a specific location with no street address! 
 * If you don't know what exists in a city, remember to use `ls`. If you forget where you are, remember to use `pwd`! 
-* At the end of every question, you'll open a .txt file. Use the command `open filename` in the Matlab command window. 
+* At the end of every question, you'll open/preview a .txt file. Use the command `open filename` in the Matlab command window. 
 * Copy down the letter that appears in the last line---at the end of your travels you'll have a message! Put this message in a separate text file. 
 -------------
 
@@ -56,7 +54,6 @@ Some notes:
 
 16. Finally, you get to go home. You live on Manitowoc Pkwy: home.txt
 
-17. The secret message has been revealed!
 
 --------------
-### You are now ready to proceed to Worksheet 1. You can find it in Matlab Online in comppedagogy/worksheets/worksheet1_introToMatlab.m
+### You are now ready to proceed to Worksheet 1 in the folder "worksheets" in the Matlab comppedagogy folder. 
