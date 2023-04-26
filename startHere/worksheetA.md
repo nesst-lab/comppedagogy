@@ -8,7 +8,7 @@
 ----------------------------------------------------------------------------------
 #### Before going through this worksheet, you should:
 * Have a Mathworks account, and have accepted the invitation to the online MATLAB drive comppedagogy. 
-* Have access to git bash (Windows) or have opened the program called 'terminal' (mac). SMAC and BLAB Lab members, use git bash on the lab computers.
+* Have access to git bash (Windows) or have opened the program called 'terminal' (mac). SMAC and BLAB Lab members: Use git bash on the lab computers.
 ----------------------------------------------------------------------------------
 ### Basic navigation and listing
 
@@ -35,9 +35,11 @@ And here is an example on terminal. The directories are highlighted in blue. Not
 
 ![ls example on terminal](directoryPictureExamples/resultsOfLs_terminal.png)
 
+Now you'll learn how to go into one of the directories you saw when you used `ls`. You can change directories with the command `cd`, which stands for **c**hange **d**irectory
+
 `cd DirectoryName`
 
-`cd` stands for **c**hange **d**irectory. Put in the name of your directory instead of DirectoryName. If you get back an error, some common culprits:
+Run the above command, but put in the name of a real directory intead of "DirectoryName". If you get back an error, some common culprits:
 * There is a typo in your directory's name (every little thing matters)
 * There is a space in your directory name, and command line doesn't like that. Try putting quotes around "Your Directory Name", e.g. 
 
@@ -111,13 +113,11 @@ You can see this path at work in this picture:
 #### 12. Check your understanding! 
 If you were in Application2, how would you access PageB.htm? 
 
-#### 13. Try it out on your own computer! 
-a. Make sure you are in your comppedagogy folder (what is the command to print your working directory?) <br>
+#### 13. Try it out on your own! 
+a. In MATLAB Online, make sure you are in your comppedagogy folder (what is the command to print your working directory?) <br>
 b. Using the command line, navigate into the folder called **welcomeToTheLabyrinth**. This folder is contained in **worksheets**, which is contained in **comppedagogy**. Verify where you are by using your print working directory command. <br>
 c. From welcomeToTheLabyrinth, navigate into **whichWhich**. This folder is a *sister* folder to welcomeToTheLabyrinth. <br>
 d. Now navigate back into **comppedagogy**. Can you do this in just one command? <br>
-
-*Note: if you have a computer with multiple drives, switch with cd /letter, i.e. to get to the M: drive, cd /m (for git bash), or cd /Volumes if you are on a Mac.*
 
 
 ---------------
