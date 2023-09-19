@@ -6,8 +6,8 @@
 * Navigating complicated path directions
 
 #### Tools: 
-* You will need to use Matlab online for this. Matlab will use all the same path navigation commands that you learned in Worksheet A. 
-* To open text files in Matlab, use the command `open nameoftextfile.txt`
+* You will use MATLAB Online for this worksheet. The path navigation commands you used in Worksheet A work the same in MATLAB as they do in git bash.
+* To open text files in Matlab, use the command `open`, like this: `open nameoftextfile.txt`
  
 -------------
 ### DIRECTIONS 
@@ -54,11 +54,7 @@ Some notes:
 
 16. Finally, you get to go home. You live on Manitowoc Pkwy: home.txt
 
-17. Check if there is a directory for the street of your Madison address. If there isn't, make one (remember to pull right before you do this step---someone else might have added it while you were traveling!). Inside this street directory, create a text file using vi that is called YOURNAME_home.txt. Put your initials inside, and save. In addition, put the full path to this text document inside your worksheet 1s answer file (so we can find your home document with initials). 
-
-When you've finished this worksheet, push your worksheet and this new directory to the master repo. 
-
-*Note: if you don't want people to know what street you live on in Madison, just use Highland Ave (the Waisman Center address).*
 
 --------------
-### You are now ready to proceed to Worksheet 1 in the folder "worksheets" in the Matlab comppedagogy folder. 
+### Next Steps
+You are now ready to proceed to Worksheet 1. Find it in MATLAB Online in comppedagogy/worksheets.

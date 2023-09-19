@@ -1,4 +1,11 @@
 ## SMNG's BASIC (BLAB And SMAC Intro to Computing) series
+
+
+###  🛑 This content is not recommended 🛑
+For BASIC training, I recommend you do not complete worksheets C and D, which go into more detail on using git bash and vi. Since Spring 2023, GitHub Desktop is now the recommended tool for managing files via git. You can find more about git and GitHub Desktop on the lab KB: https://kb.wisc.edu/smng/internal/106230. 
+
+This worksheet is left up for informational purposes.
+
 ### Worksheet C: git and vim
  
 #### Skills introduced: 
