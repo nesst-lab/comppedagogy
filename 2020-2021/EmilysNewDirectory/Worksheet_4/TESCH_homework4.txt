@@ -1,3 +1,0 @@
-1: strcmp(string1,string2) seems to be case sensitve because if you make string1= 'hi' and string2='hi' and then run strcmp(string1,string2) you get 1 logical but strcmp(String1,string2) gives Unrecognized function or variable 'String1'.
-2:You would expect it to print This exists! because we know that file exists.
-3:

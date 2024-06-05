@@ -1,4 +1,0 @@
-Homework item 1: The values that I had assigned for each side have now become the values for a, b, and c. This is becuase the basic_pythagTripleFunction assigns whichever value you input as a, b, and c.
-
-Homework item 2: It should give me an output of 1 because that is the smallest value contained in the testVector. 
-

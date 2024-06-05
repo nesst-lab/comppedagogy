@@ -1,3 +1,0 @@
-Homework Item 1: The new values are a=15; b=17; c=4. This is because we redefined the variables which caused the old ones to be overwritten.
-
-Homework Item 2: The value that results when asking for the vectorMin = 1. 

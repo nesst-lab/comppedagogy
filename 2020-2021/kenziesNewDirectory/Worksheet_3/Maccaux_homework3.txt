@@ -1,5 +1,0 @@
-homework item 1: sides 1-3 disappeared and were instead labeled as a, b, and c becaus they are inherently the same thing when it comes to the function. They are defined as the numbers I input as sides 1-3 and replaced the old numbers I had for a, b, and c. 
-
-homework item 2: the function would produce the output of 1, because it takes the minimum value in the vector. the smallest number is 1, so I assume that is what it'll be. 
-
-

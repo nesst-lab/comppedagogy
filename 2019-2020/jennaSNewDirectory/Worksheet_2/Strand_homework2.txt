@@ -1,9 +1,0 @@
-I expected oldWorkingDir and workingDir to be the same value because the value was originally assigned to the workingDir variable, and the oldWorkingDir variable was then set to the same value that workingDir was.
-
-Homework 2: oldWorkingDir = 'workingDir'
-
-Homework 3: Yes, because the commamd gave me a variable of 1, and we learned earlier that this value means it is true.
-
-Homework 4: The dimensions of columnVector are 6x1. I do not think that anotherVector and columnVector are equal because it shows that the dimensions of anotherVector are 1x6, but the dimensions of columnVector are 6x1.
-
-Homework 5: I would define a variable that was a matrix with the first row as 1 2 3 and the second row as 4 5 6 with matrix = [1 2 3; 4 5 6]. I would define a cell array with the virst row as a b c and second row as d e f with matrix = ['a' 'b' 'c'; 'd' 'e' 'f'].

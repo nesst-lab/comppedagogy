@@ -1,4 +1,0 @@
-I don't think the oldWorkingDir and workingDir will have the same values because I took two different paths to get to both of these directories
-
-
-

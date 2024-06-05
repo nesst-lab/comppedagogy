@@ -1,3 +1,0 @@
-Homework #1: if it's case sensitive "Hello" should not equal 'hello" and when you type the commant strcmp('Hello', hello') you should get O and that was the case. 
-Homework #2: I would expect it to type out "This exists" because the file basic_pythagHypotenuse exists and this script is asking to give the output "This exis" is something is in there.ls
-

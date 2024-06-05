@@ -1,8 +1,0 @@
-The script stopped at line 19 
-Side 1, Side 2 and Side 3 were defined and then called as the inpputs
-the new variables are bPythagTriple which is 0, meaning the tripls is NOT a
-pythag triple, hypotenuse which is 17 as it is the longest of the triangle sides (which are listed as the variable triangleSides) and nonHypotenuse which includes the other two numbers from the inputs: 15 and 4. 
-
-For item 2: vectorMin would be 1 since it is the min value of testVector
-
-

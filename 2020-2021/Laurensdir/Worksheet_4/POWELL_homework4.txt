@@ -1,5 +1,0 @@
-1. strcmp(string1, string2) is case sensitive. You can test it out by comparing names with and without a capital letter, such as lauren and Lauren. The value you get back is 0, meaning they are not the same according to strcmp. 
-2. I would expect 'This exists!' to  print since the basic_pythagHypotenuse is a function that exists in my path currently.
-% RK: how does Matlab tell this if statement that it should print? 
-
-% RK: items 3-5??

@@ -1,8 +1,0 @@
- 
-#1: In audioGUI, for argument 2 you might you signalOut instead of signalIn which is the default. However, signalIn by itself will also work. For argument 3 an input that you might feed is certain trial numbers only like [1 2 3] or certain words that are only for some experiments instead of all trial numbers which is the default. We call the variable in number 5 a boolean.
-
-#2: audioGUI(cd, [1 2 3 4], 'signalIn' [], 1)
-
-#3: a: The argument of waverunner that specifies trials is the second. b: the example a waverunner call that only overwrites trials 1, 4, and 6 while leaving everything else on defeat would be waverunner([], [2 5], [], [], []), the number inputed are different because they indicate the numbers we do not want to overwrite and we leave out the numbers that we do want to overwirte. c: another parameter that you would alter in audioGUI other than amplitude threshold or preemphasis that you could overwrite using waverunner is lpc order, {'nlpc'}
-
-#4. a: When you take a word and choose to set it equal to value, that just means that you are defining a variable. b: I do recognize the words in lines 142-151 from when we run the check_dataVals in lab. c: A translation of those lines would be if your trial duration is shorter than 1 second that trial needs to be added to the list of short trials. If your trial duration is longer than 1 second that trial needs to be added to the list of longer trials. d: I think its more of an educated guess that is occuring based off of what we decided our paramters and variables to be, and that is based off of what we already know and had learned about speech. The code we run reflects our knowledge, it is not th eprogram that inherently knows whether something is right or wrong.   

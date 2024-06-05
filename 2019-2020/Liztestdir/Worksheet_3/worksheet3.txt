@@ -1,3 +1,0 @@
-1. a is now 15, b is now 17, c is now 4 (these were originally defined as side1, side2, and side3) when the function was called it created a new variable workspace
-2. vectorMin is 1
-

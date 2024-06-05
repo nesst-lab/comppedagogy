@@ -1,9 +1,0 @@
-1. I expect oldWorkingDir and workingDir to be different now because we assigned workingDir to a new value. This new value does not change oldWorkingDir because it has already been defined. 
-
-2. oldWorkingDir = 'workingDir';
-
-3. The logical value it gives back is 1, which means that the results are true and newVector is equal to anotherVector. 
-
-4. THe dimensions of columnVector are 6x1. No, I do not think that columnVector and anotherVector are equal because their dimensions are different, even though they contain the same numbers. I would use this command: isequal(columnVector, anotherVector). 
-
-5. matrix = [1 2 3; 4 5 6]; cellArray = {'a' 'b' 'c'; 'd' 'e' 'f'}; 

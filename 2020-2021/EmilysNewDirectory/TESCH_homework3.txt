@@ -1,2 +1,0 @@
-Side1, 2 and 3 aren't there but a,b, and c now have the values that were asigned to side1, 2, and 3 before. 
-vectorMin should be 1 since that's the mimimum value in the vector. Correcti

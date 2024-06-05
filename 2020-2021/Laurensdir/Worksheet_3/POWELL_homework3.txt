@@ -1,4 +1,0 @@
-1. The new variables hypotenuse, nonHyp, and triangleSides were created by the function. My a,b and c still are 8, 12, and 13.
-% RK make sure you put in the break points, and try again! 
-
-2. The command would give you a value of 1, since that is the smallest value in the vector.

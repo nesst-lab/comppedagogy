@@ -1,3 +1,0 @@
-
-#1. I no longer have a side 1, 2, or 3 and now a, b, c, are also all different from what they were before. Now a = 15, b = 17, and c = 4 since the side values became the letter values when we called the function and stopped running the script. I also ahve triangleSides 15,17,4 which are the original sides. Sinece we stopped the script we do not know if the triangle is pythagorean triangle. Also, nonHyp is 15, 4, and hypotenuse is 17. 
-#2. The value of vectorMin is 1. 

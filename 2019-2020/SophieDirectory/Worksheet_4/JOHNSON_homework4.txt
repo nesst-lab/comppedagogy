@@ -1,3 +1,0 @@
-1.Yes, strcmp is case sensitive. I tested it by entering strcmp('hello','Hello') and it returned 0, so they are not equal, and the function is case sensitive.
-
-2.Yes, I would expect the statement to print because basic_pythagHypotenuse is a function in the pathway, so the if statement would be true and 'This exists!" would print.

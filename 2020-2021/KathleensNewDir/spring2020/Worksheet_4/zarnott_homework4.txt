@@ -1,7 +1,0 @@
-
-#1. I believe that strcmp(string1, string2) is case sensititve because if there was a wrong an incorrect case in either of the strings, it would compare the correct strings and may say they are equivalent when they actually arent or vice versa.
-
-#2. Yes, I would expect the statement 'This exists!' to print because the only way it would not print is if the if exist(...) function returned a zero, which would mean it does not exist. Even if the "something" exists as a different object and returns a 2, 3, 4, etc. it would still mean that it exists and there 'This exists!' would still print. 
-
- 
-

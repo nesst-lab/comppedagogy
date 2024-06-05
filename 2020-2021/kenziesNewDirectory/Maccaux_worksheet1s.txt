@@ -1,4 +1,0 @@
-"Y0URE A PATH MASTER" 
-Path:
-cd 00_remote_worksheets/welcomeToTheLabyrinth/Wisconsin/Madison/SpringSt
-vi Maccaux_home.txt

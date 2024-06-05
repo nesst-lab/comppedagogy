@@ -1,9 +1,0 @@
-Homework 1: for argument 2 you could input any numbers for trialnums [2 3 4] or [56] etc, for argument 3 you could also do 'signalOut' instead of in.
-Homework 2: audioGUI(cd, [1 2 3 4], 'signalIn', [],0)
-Homework 3:a: if nargin < 2, trialinds = []; end specifies the trials
-b:waverunner(pwd,[1 4 6]) 
-c:You can also alter the nlpc 
-Homework 4: a:these lines are assigning values to variables
-b:These are the types of errors that you can click through when you use check_dataVals on a set of data.
-c: line 157 means if the dataVal is less than the short threshold set earlier then put it in the list of shortTrials. line 159 menas that if dataVals is greater than the long threshold value then it goes in the long Trials list.
-d:check_datVals checks all of the data in the data.mat file that's loaded so it's running these checks on every data point, then sorting them according to the else if statements. This doesn't fix anything but it just checks to see if there might be errors that somone should look at.

@@ -1,5 +1,0 @@
-1. strcmp(string1, string2) is case sensitive.
-myName = 'jenna';
-strcmp(myName,'Jenna')
-This is a logical 0, so it is case sensitive.
-2. Yes, it will print 'This exists!' because it exists as a file.

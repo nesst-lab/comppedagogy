@@ -1,5 +1,0 @@
-homework item 1:
-strcmp(string1,string2) is case sensitive because when you test strcmp(lily,Lily) after assigned each variable a different value, the output is 0.
-
-homework item 2:
-i would expect 'This exists!' to print because I have used this function before.

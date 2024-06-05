@@ -1,3 +1,0 @@
-Homework #1: a = 15, b = 17, c = 4. The valued of a,b,c changed to the values of side1, side2, side3, because we defined a = side 1 b = side2 etc, and the values of the sides were 15,17,4. 
-
-Homework #2: vectormin = min(testVector) would be a value of 1 

@@ -1,3 +1,0 @@
-
-application check #1: how would you move this file to be inside your directory, instead of in comppedagogy? - you would use the command mv ../myfirstvi.txt/./
-

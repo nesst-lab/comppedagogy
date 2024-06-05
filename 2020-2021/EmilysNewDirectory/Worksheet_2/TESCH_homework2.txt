@@ -1,8 +1,0 @@
-I think workingDir and oldWorkingDir should in theory be the same even though one variable changed because if oldWorkingDir= workingDir then even if the value changes for workingDir they should still be equal. I was wrong and after the value changed oldWorkingDir=WorkingDir must have also changed because they aren't equal anymore.
-You can use the comman oldWorkingDir=workingDir and it will make the new variable oldWorkingDir have the value of working Dir. This command just doesn't work like math so you made a new variable but if you change workingDir later it won't change oldWorkingDir.
-I think the two vectors are equal because the ans gives logical 1 and 1 means true. 
-The column vector would be 6x1.
-I think the vectors would be equivalent since they have the same values. To check use isequal (newVector, columnVector) which tells us they aren't equal probably becase the dimensions of these vectors are different. 
-aMatrix= [1,2,3;4,5,6]
-aCellArray= {'a','b','c'; 'd','e','f'}
-

@@ -1,6 +1,0 @@
-1. workingDir and oldWorkingDir are not the same because I navigated to a new directory.
-2. oldWorkingDir = 'workingDir'
-3. These two answers are the same because isequal gave a logical 1 which is true. The only difference between them are the commas in anotherVector, but this makes no difference.
-4. columnVector is 6x1. They are not equivalent, and the command I would use is isequal(columnVector,anotherVector)
-5. matrix = [1 2 3; 4 5 6]
-   array = {'a' 'b' 'c';'d' 'e' 'f'} 
