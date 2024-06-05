@@ -1,14 +1,11 @@
-## SMNG's BASIC (BLAB And SMAC Intro to Computing) series
-
-
-###  🛑 This content is not recommended 🛑
-For BASIC training, I recommend you do not complete worksheets C and D, which go into more detail on using git bash and vi. Since Spring 2023, GitHub Desktop is now the recommended tool for managing files via git. You can find more about git and GitHub Desktop on the lab KB: https://kb.wisc.edu/smng/internal/106230. 
-
-This worksheet is left up for informational purposes.
+## NeSST's INC (Intro to NeSST Computing) series
 
 ### Worksheet C: git and vim
+
+Note: You MUST learn to use Git Bash before using GitHub Desktop. To get approval to use GitHub Desktop, contact the lab manager or Robin. 
  
 #### Skills introduced: 
+* Cloning repositories
 * Creating text files from the command line using vim
 * Git basics
   * Git add, commit, push
@@ -16,17 +13,35 @@ This worksheet is left up for informational purposes.
 
 ----------------------------------------------------------------------------------
 #### Before going through this worksheet, you should:
-* Be added to the comppedagogy repo by one of the BASIC leaders 
-* Have cloned the comppedagogy repo to your computer
+* Have a GitHub account
+* Be added to the comppedagogy repo by the lab manager or Robin
+* Have read the first section [here](https://www.notion.so/nesstlabmu/Resources-for-git-and-GitHub-Desktop-6609b345bb3f4f43aaa574399b80dfbb?pvs=4#ed91e70fee074b558cb95c155766b993)
 ----------------------------
+### Getting the comppedagogy repo into your lab computer account
+
+#### 1. Open Git Bash
+a. Open Git Bash on your lab computer. <br>
+b. Using your knowledge of the command line interface from Worksheets A and B, navigate into your personal documents folder, C:\Users\[username]\Documents, where username is your pawprint 
+
+#### 2. Make a pseudo-lab structure in your personal Documents folder
+a. Using your knowledge of the command line interface from Worksheets A and B, make a new folder in your personal documents folder called software <br>
+b. Navigate into this folder<br>
+c. Get a list of the folder contents (it should be empty!)<br>
+
+#### 3. Get the comppedagogy repo into your lab computer account
+You are going to ask Git Bash to get all the information from the main remote branch of the repository. It is the MAIN branch because it is the active one---the default branch that has the main, active code. It is a REMOTE branch because it isn't stored on the computer that you are currently working on. When you do this for the first time on a new computer, you CLONE the repo. That is, you make an exact copy of it on your local computer. <br>
+a. In Git Bash, type `git clone https://www.github.com/nesst-lab/comppedagogy<br>
+b. When the command is done running, get a list of the folder contents again. What is different from the last time you ran this command to this time? <br>
+c. Navigate into the comppedagogy folder. How can you tell that you are in a repo folder, rather than any other folder? (Hint: look at the line in Git Bash that tells you where you are.) <br>
+
 ### Introduction to vim
 
-#### 1. In Worksheet A, we created directories with the command mkdir, but then deleted it. 
+#### 4. In Worksheet A, we created directories with the command mkdir, but then deleted it. 
 a. Navigate to comppedagogy in your command line interface <br>
 b. Find the directory with the current academic year in (if you are a returning student, you can use your original folder). E.g. if it is the fall semester of 2021, navigate into the folder 2021-2022. <br>
 c. Make your own directory again (check worksheet A if you have forgotten how to do this), then navigate into it. <br>
 
-#### 2. Now we are going to create a new text file without ever leaving the command line! 
+#### 5. Now we are going to create a new text file without ever leaving the command line! 
 We are going to use a program called vi. It's best to think of this program as one where you are telling someone else to do the writing for you, like "now we are going to write some text! Now we are going to save! Now we are going to write some text again!" Once you are familiar with the program, you'll see how it can be a convenient tool that avoids some weird things like ghost characters that notepad or other programs can introduce. Anyway, end vi talk. 
 
 The basic command structure is `vi` plus the name of the file you want to create (remember that this name is actually a **path**)
@@ -35,7 +50,7 @@ The basic command structure is `vi` plus the name of the file you want to create
 
 This will open up vi in your command line. 
 
-#### 3. When you first open up vi, you are in command mode. That is, vi accepts commands, which are combinations of characters. To enter commands, type the given combinations and hit enter (except escape, which does not require an enter key).
+#### 6. When you first open up vi, you are in command mode. That is, vi accepts commands, which are combinations of characters. To enter commands, type the given combinations and hit enter (except escape, which does not require an enter key).
 
 `i`
 This will take you into "**i**nsert" mode. Now vi will know that the keys you are typing are intended to create text in your document rather than send commands to the program.
@@ -54,17 +69,17 @@ This will **q**uit vim. (again, colon and lowercase q are important).
 
 The file has gone away! But where am I? Check the contents of the current directory. 
 
-#### 4. Check your understanding (and memory)!
+#### 7. Check your understanding (and memory)!
 How would you move this file to be inside your directory, instead of in comppedagogy? (You should do this!) 
 
-#### 5. Awesome, you created a file where you wanted it! But how do you share this file with other people in the lab? And what if you want to see your file on a different computer? 
+#### 8. Awesome, you created a file where you wanted it! But how do you share this file with other people in the lab? And what if you want to see your file on a different computer? 
 
 -----------------
 ### Enter Github 
 
-In SMNG we keep all our experiment code in a git repository ("repo"). Github is a way of sharing your code with other people. There is a "master" version hosted by Git, as well as your own local version ("head"), located on your computer. This way, you can make some changes to code without everybody immediately being affected; the changes that you make on your local machine have to be "pushed" into the master in order for it to be accessible to others. (This is different from keeping things on a server that is directly accessed by multiple computers, like how we store our data.) 
+In SMNG we keep all our experiment code in a git repository ("repo"). Github is a way of sharing your code with other people. There is a "main" version hosted by Git, as well as your own local version ("head"), located on your computer. This way, you can make some changes to code without everybody immediately being affected; the changes that you make on your local machine have to be "pushed" into the master in order for it to be accessible to others. (This is different from keeping things on a server that is directly accessed by multiple computers, like how we store our data.) 
 
-#### 6. Etiquette is very important, especially when you are working with a repo that has a lot of people reading and writing files. 
+#### 9. Etiquette is very important, especially when you are working with a repo that has a lot of people reading and writing files. 
 This is because multiple people may be working on the same bit of code. For example: 
 
 * I've written the function gen_ostUserEvents_timeAdapt, and pushed it to the master repo. Chris is using it and notices a bug: 
@@ -77,7 +92,7 @@ This is because multiple people may be working on the same bit of code. For exam
 
 * I fix this and save it to my computer. Then I try to push it to the master repo, but there's a problem! When Git compares the master version to my version, it notices that it is different in more places than what I just fixed. This is called a "conflict". This conflict can be avoided by practicing good Git etiquette (getiquette!). 
 
-#### 7. Best practices: 
+#### 10. Best practices: 
 a. When you sit down to work on something, first check if there are any updates to the master (bad Robin!). Git commands are prefaced with "git": 
 
 `git status`
@@ -106,19 +121,19 @@ To do this, enter the command
 
 d. When you are done working for the day, do another check for changes to the master, and then push your changes (we will do the actual commands for this later). 
 
-#### 8. Now suppose you want to track changes to the text file you just made, and make sure that this version appears on the computer of everyone who wants to have access to everything in the repository. Github needs to track the file, and to do that, it needs to know the existence of it.
+#### 11. Now suppose you want to track changes to the text file you just made, and make sure that this version appears on the computer of everyone who wants to have access to everything in the repository. Github needs to track the file, and to do that, it needs to know the existence of it.
 
 `git add RobinsDirectory/myfirstvi_NAME.txt` 
 
 This "adds" your version of the file to the staging area so it can be put into the master repo. 
 
-#### 9. Now you need to "commit" your change, or get it ready to send off to the repository. You must also add a message (with the -m "flag") saying what new changes there are to the file. This is important for tracking changes to the file over time.
+#### 12. Now you need to "commit" your change, or get it ready to send off to the repository. You must also add a message (with the -m "flag") saying what new changes there are to the file. This is important for tracking changes to the file over time.
 
 `git commit -m 'created my first file in vi'`
 
 You must use quotes around your message (in git bash you can also use double quotes, "created my first file"). Don't use an apostrophe in the message itself. 
 
-#### 10. Ok, time to send off your changes! 
+#### 13. Ok, time to send off your changes! 
 A "push" takes whatever is in your own local version of the repository and essentially overwrites what's in the repository online. 
 
 `git push`
@@ -142,15 +157,17 @@ d. Push your work.
 `git commit -m "my most informative message"`<br>
 `git push`
 
-#### 11. Now try making changes to your text file. Follow the commands in steps 2-3. 
+**Best practices note**: If you are making changes to the main branch of a repo, especially code that is "live" (other people are working on it or running it), generally you should only ever push code that is tried and true. If you are not sure or if you haven't finished testing, you should either keep it local on your computer, or push to a development branch. 
+
+#### 14. Now try making changes to your text file. Follow the commands in steps 2-3. 
 The steps remain the same even though that file already exists. Remember to type "i" to "insert" text! You can also try deleting some text and then pushing those changes.
 
-#### 12. After you have toyed around editing and pushing, go to https://github.com/blab-lab/comppedagogy. 
+#### 15. After you have toyed around editing and pushing, go to https://github.com/blab-lab/comppedagogy. 
 Do you see the commit messages in the second column? Try clicking on one and see how github represents the commit history. 
 
 #### From now on you should push your worksheets into the remote repo. 
 -----------------
-### You are now ready to proceed to [Worksheet D](http://github.com/blab-lab/comppedagogy/blob/master/worksheets2/worksheetD.md)
+### You are now ready to proceed to [Worksheet D](http://github.com/nesst-lab/comppedagogy/blob/master/worksheets2/worksheetD.md)
 
 ------------------
 ### MORE FUN WITH VI ###
