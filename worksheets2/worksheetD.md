@@ -1,11 +1,6 @@
-## SMNG's BASIC (BLAB And SMAC Intro to Computing) series
+## NeSST's INC (Intro to NeSST Computing) series
 ### Worksheet D: when we break git etiquette
 
-###  🛑 This content is not recommended 🛑
-For BASIC training, I recommend you do not complete worksheets C and D, which go into more detail on using git bash and vi. Since Spring 2023, GitHub Desktop is now the recommended tool for managing files via git. You can find more about git and GitHub Desktop on the lab KB: https://kb.wisc.edu/smng/internal/106230. 
-
-This worksheet is left up for informational purposes.
- 
 #### Skills introduced: 
 * Reading git error messages
 * Merging commits
@@ -18,7 +13,7 @@ This worksheet is left up for informational purposes.
 ----------------------------------------------------------------------------------
 ### Why git etiquette? 
 
-Recall that in SMNG we keep all our experiment code in a git repo. In Worksheet C, we talked about an example where two people found typos independently, but only one person (Chris) followed good git etiquette: 
+Recall that in NeSST we keep all our experiment code in a git repo. In Worksheet C, we talked about an example where two people found typos independently, but only one person (Chris) followed good git etiquette: 
 
 * I've written the function gen_ostUserEvents_timeAdapt, and pushed it to the master repo. Chris is using it and notices a bug: 
 
