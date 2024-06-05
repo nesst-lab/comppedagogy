@@ -1,4 +1,4 @@
-## SMNG's BASIC (BLAB And SMAC Intro to Computing) series
+## NeSST Lab's INC (Intro to NeSST Computing) series
 ### Worksheet A: intro to using the command line 
  
 #### Skills introduced: 
@@ -126,7 +126,8 @@ d. Now navigate back into **comppedagogy**. Can you do this in just one command?
 * [For windows command line](https://www.howtogeek.com/254401/34-useful-keyboard-shortcuts-for-the-windows-command-prompt/) 
 
 ---------------
-### You are now ready to move onto [Worksheet B](http://github.com/blab-lab/comppedagogy/blob/master/startHere/worksheetB.md)
+### You are now ready to move onto [Worksheet B](http://github.com/nesst-lab/comppedagogy/blob/master/startHere/worksheetB.md)
 ---------------
 Originally presented by Robin Karlin and Sarah Bakst on February 12, 2020.<br>
 Subsequent edits by Robin Karlin and Chris Naber (February 2021) 
+Forked to NeSST Lab by Robin Karlin (June 2024)
