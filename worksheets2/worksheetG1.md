@@ -77,7 +77,7 @@ In this experiment, people will complete two blocks of trials. Each block will r
 
 #### Stimuli
 Words: rid, rad, grain, groan, blow, bleed
-Colors: red, green, blue
+Colors: red, green, blue (hint: https://redketchup.io/color-picker) 
 
 For simplicity, only "rid" and "rad" will be displayed in red font; only "grain" and "groan" will be displayed in green font, and only "blow" and "bleed" will be displayed in blue font. 
 
