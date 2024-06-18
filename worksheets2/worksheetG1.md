@@ -2,9 +2,9 @@
 ### Worksheet G1: Your first Gorilla experiment
 
 #### Skills introduced: 
-* Reading git error messages
-* Merging commits
-* Resolving conflicts
+* Cloning material from Standard components
+* Learn how to record speech data in Gorilla
+* Best practices for online experiments
 
 ----------------------------------------------------------------------------------
 #### Before going through this worksheet, you should:
@@ -51,7 +51,7 @@ Navigate back into your practice project and make a new experiment. Give it a na
 
 Set up the experiment flow so that it goes through each of the Standard components you just cloned. Commit this version with an appropriate comment. 
 
-**Logic test 1**: what order should these components be in? Why? (Answer at end of worksheet) 
+**Further consideration 1**: what order should these components be in? Why? (Answer at end of worksheet) 
 
 ----------------------------
 ### Making a speech task 
@@ -72,14 +72,52 @@ Try to write a set of prose instructions that is clear and unambiguous without s
 
 _Hint:_ you can use more than one screen to convey instructions! This can be helpful when there is a lot of information. 
 
-#### 5. Make a practice task 
+#### 5. Make the spreadsheet for the task
+In this experiment, people will complete two blocks of trials. Each block will repeat each unique stimulus twice. There will be a break after each block. These are the specifications for the stimuli: 
 
-In the Gorilla tutorials, you learned how to use spreadsheets to display stimuli that people can respond to with a buttonpress. You'll do a similar thing now, except instead of a buttonpress, you will 
+#### Stimuli
+Words: rid, rad, grain, groan, blow, bleed
+Colors: red, green, blue
+
+For simplicity, only "rid" and "rad" will be displayed in red font; only "grain" and "groan" will be displayed in green font, and only "blow" and "bleed" will be displayed in blue font. 
+
+#### Randomization
+Stimuli within a block should be randomized. 
+
+Set up a spreadsheet that takes you through the experiment flow. You can either do this right in Gorilla, or you can use Excel to set it up. If you use Excel, save the file as a **.csv** (Comma delimited) in the comppedagogy folder on your computer (or anywhere in your personal MU OneDrive if you don't have comppedagogy cloned on your computer). Then upload it to Gorilla. 
+
+**Further consideration 2**: How will you set up the breaks? 
+
+#### 6. Make the trial display
+
+The trial display should consist of the following: 
+1. A fixation cross for 800 ms;
+2. The stimulus (word and font color should both be determined by the spreadsheet. Hint: you can use HTML to change font colors https://www.freecodecamp.org/news/how-to-change-text-color-in-html/). This should display for 2 seconds. 
+3. An **Audio recording** component that starts when the stimulus appears, so that you can record what the participant says. 
+4. A blank screen of 1.2 seconds, so that people can take a little breather between trials
+
+
+
+----------------------------------
+## UNDER CONSTRUCTION!! 
+
+### Adding practice 
+
+In most of our experiments, we have a practice run of the experimental task before we start the actual experiment. When we are in person, this helps us determine if someone has understood the experiment, or if they need clarification on some of the instructions. Obviously we can't do that for online studies. However, practice runs also help the participant learn what to expect, so that they can get used to the pace and demands of the experiment before it actually starts. 
+
+**Further consideration 3**: Why do you think we tell them that the practice will start right away? 
+
+
+
+
+
 
 ----------------------------------
 Answers: 
 
-Logic test 1: The components should be 1. consent form (participants MUST consent before any data is collected); 2. microphone permissions check, and then 3. recording quality check. You have to check permissions before you check quality, because if permissions are not being given, there will be no recording to check the quality of!
+FC 1: The components should be 1. consent form (participants MUST consent before any data is collected); 2. microphone permissions check, and then 3. recording quality check. You have to check permissions before you check quality, because if permissions are not being given, there will be no recording to check the quality of!
+<br><br>
+FC 2: Many people expect some delay between clicking a button and having to speak, so it is good to warn people that they will have to start speaking right away. 
 
 
 
