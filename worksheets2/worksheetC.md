@@ -162,7 +162,7 @@ d. Push your work.
 #### 14. Now try making changes to your text file. Follow the commands in steps 2-3. 
 The steps remain the same even though that file already exists. Remember to type "i" to "insert" text! You can also try deleting some text and then pushing those changes.
 
-#### 15. After you have toyed around editing and pushing, go to https://github.com/blab-lab/comppedagogy. 
+#### 15. After you have toyed around editing and pushing, go to https://github.com/nesst-lab/comppedagogy. 
 Do you see the commit messages in the second column? Try clicking on one and see how github represents the commit history. 
 
 #### From now on you should push your worksheets into the remote repo. 
