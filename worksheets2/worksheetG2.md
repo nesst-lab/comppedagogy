@@ -2,8 +2,9 @@
 ### Worksheet G1: Adding Practice for Gorilla Experiments
 
 #### Skills introduced: 
-* Learn how to add randomized practice trials to an experiment
+* Learn how to create practice trials and set up the spreadsheet
 * Copying screens
+* Adding buttons and using the "Jump to Row" screen component
 
 -----------------------------------------------------------------------------------------------
 #### Before going through this worksheet, you should:
@@ -36,13 +37,17 @@ The trials will include:
 2. The stimulus word
 3. A buffer (blank screen of 1.2 seconds)
 
-* The fastest way to create this is by copying screens from previous displays. Click the drop down arrow of a screen by the screen's name, then select "copy screen", then paste the screen by following the same process on an empty screen and selecting "paste screen." Make sure to rename the screens. 
+* The fastest way to create this is by copying screens from previous displays. Click the drop down arrow of a screen by the screen's name, then select "copy screen", then paste the screen by following the same process on an empty screen and selecting "paste screen." Make sure to rename the screens so you know what they are. 
 
 #### Randomized Practice Trials
-This display includes the trials with the same layout as the practice display. 
+This display includes the trials with the same layout as the practice display.
 
 #### Randomized Practice Post
-This display will include two buttons: one button that will send the participant back to the beginning to redo the task, and another that will allow them to continue to the actual experimental task. Give each button a that tells you what it's purpose is (ex: "try again") and a label that tells the participant what it does (ex: "I want to practice again")
+This display will include two buttons: 
+1. A button that will send the participant back to the beginning to redo the task
+2. Another button that will allow them to continue to the actual experimental task.
+
+Give each button a name that tells you what it's purpose is (ex: "try again") and a label that tells the participant what it does (ex: "I want to practice again")
 
 #### Edit the spreadsheet
 Set up the spreadsheet to have a logical flow of displays so that the instructions are first, then six randomized practice trials, and lastly the post practice display. Make sure that the instructions for the practice come after the instructions for the whole experiment.
@@ -63,5 +68,5 @@ You can access these in the comppedagogy repo.
 Answers:
 
 FC 1:  Many people expect some delay between clicking a button and having to speak, so it is good to warn people that they will have to start speaking right away.
-FC 2: No, the stimulus words will be the same as they were the first time that the participant did the practice. This is because 
+FC 2: No, the stimulus words will be the same as they were the first time that the participant did the practice. This is because the randomization that we added in the previous worksheet randomizes the trials by block only once. It has not been set to randomize multiple times. 
 
