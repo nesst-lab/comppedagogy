@@ -49,9 +49,9 @@ This display will include two buttons:
 1. A button that will send the participant back to the beginning to redo the task
 2. Another button that will allow them to continue to the actual experimental task
 
-*Give each button a name that tells you what it's purpose is (ex: "try again") and a label that tells the participant what it does (ex: "I want to practice again")
-*Add the component of a click response to the button. In the box labeled response type "redo" for the first button and "continue" for the second button.
-* Go to screen, and add the component of "Jump To Row." Add two destination boxes, one for each button. Set the criteria for both to "response value." Type in the response for each corresponding button. (it is what you wrote in the click response component)
+* Give each button a name that tells you what it's purpose is (ex: "try again") and a label that tells the participant what it does (ex: "I want to practice again")
+* Add the component of a click response to the button. In the box labeled response type "redo" for the first button and "continue" for the second button.
+* Go to screen, and add the component of "Jump To Row." Add two destination boxes, one for each button. Set the criteria for both to "response value." Type in the response for each corresponding button. hint: this will be what you wrote in the click response component 
 * For the row index, you will put the corresponding row # of the spreadsheet that either goes back to the practice instructions or to the break before the experimental trials. 
 
 #### Edit the spreadsheet
