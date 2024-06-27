@@ -10,14 +10,15 @@
 #### Before going through this worksheet, you should:
 * Have completed worksheet G2 and created the Speech Stoop Task.
 -----------------------------------------------------------------------------------------------
-### Why Practice?
+## UNDER CONSTRUCTION! :construction_worker_woman:
+### Adding practice
 In most of our experiments, we have a practice run of the experimental task before we start the actual experiment. When we are in person, this helps us determine if someone has understood the experiment, or if they need clarification on some of the instructions. Obviously we can't do that for online studies. However, practice runs also help the participant learn what to expect, so that they can get used to the pace and demands of the experiment before it actually starts. 
 
 **Further Consideration 1**: Why would you tell a participant that practice will start right away?
 
 -----------------------------------------------------------------------------------------------
 
-#### Making the Displays
+#### Making the Displays 🔨
 There will be four displays:
 1. Practice 
 2. Randomized Practice Instructions
@@ -45,9 +46,12 @@ This display includes the trials with the same layout as the practice display.
 #### Randomized Practice Post
 This display will include two buttons: 
 1. A button that will send the participant back to the beginning to redo the task
-2. Another button that will allow them to continue to the actual experimental task.
+2. Another button that will allow them to continue to the actual experimental task
 
-Give each button a name that tells you what it's purpose is (ex: "try again") and a label that tells the participant what it does (ex: "I want to practice again")
+*Give each button a name that tells you what it's purpose is (ex: "try again") and a label that tells the participant what it does (ex: "I want to practice again")
+*Add the component of a click response to the button. In the box labeled response type "redo" for the first button and "continue" for the second button.
+* Go to screen, and add the component of "Jump To Row." Add two destination boxes, one for each button. Set the criteria for both to "response value." Type in the response for each corresponding button. (it is what you wrote in the click response component)
+* For the row index, you will put the corresponding row # of the spreadsheet that either goes back to the practice instructions or to the break before the experimental trials. 
 
 #### Edit the spreadsheet
 Set up the spreadsheet to have a logical flow of displays so that the instructions are first, then six randomized practice trials, and lastly the post practice display. Make sure that the instructions for the practice come after the instructions for the whole experiment.
@@ -56,8 +60,7 @@ Set up the spreadsheet to have a logical flow of displays so that the instructio
 
 **Further Consideration 2**: If a participant wants to redo the practice trials, would the stimulus words on the second practice be new randomized words? 
 
-### You are now ready to proceed with Worksheet G3!
-You can access these in the comppedagogy repo.
+
 
 
 
@@ -68,5 +71,12 @@ You can access these in the comppedagogy repo.
 Answers:
 
 FC 1:  Many people expect some delay between clicking a button and having to speak, so it is good to warn people that they will have to start speaking right away.
+<br><br> 
 FC 2: No, the stimulus words will be the same as they were the first time that the participant did the practice. This is because the randomization that we added in the previous worksheet randomizes the trials by block only once. It has not been set to randomize multiple times. 
 
+
+
+
+---------------------------------------------------
+### You are now ready to proceed with Worksheet G3!
+You can access these in the comppedagogy repo.
