@@ -38,7 +38,7 @@ The trials will include:
 2. The stimulus word
 3. A buffer (blank screen of 1.2 seconds)
 
-* The fastest way to create this is by copying screens from previous displays. Click the drop down arrow of a screen by the screen's name, then select "copy screen", then paste the screen by following the same process on an empty screen and selecting "paste screen." Make sure to rename the screens so you know what they are. 
+* The fastest way to create this is by copying screens from previous displays. Click the drop down arrow of a screen by the screen's name, then select "copy screen." Repeat this process to paste the screen by selecting "paste screen" on the dropdown arrow of the desired empty screen. Make sure to rename the screens so you know what they are. 
 
 #### Randomized Practice Trials
 This display includes the trials with the same layout as the practice display.
