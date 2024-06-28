@@ -73,55 +73,50 @@ Try to write a set of prose instructions that is clear and unambiguous without s
 _Hint:_ you can use more than one screen to convey instructions! This can be helpful when there is a lot of information. 
 
 #### 5. Make the spreadsheet for the task
-In this experiment, people will complete two blocks of trials. Each block will repeat each unique stimulus twice. There will be a break after each block. These are the specifications for the stimuli: 
+Set up a spreadsheet that takes you through the experiment flow (detailed below). You can either do this right in Gorilla, or you can use Excel to set it up. If you use Excel, save the file as a **.csv** (Comma delimited) in the comppedagogy folder on your computer (or anywhere in your personal MU OneDrive if you don't have comppedagogy cloned on your computer). Then upload it to Gorilla. 
+
+#### Blocks and trials
+In this experiment, people will complete two blocks of trials. A **trial** is every time a new stimulus is presented; a block is a group of trials that occurs together in a sequence, without break.
+
+In each block, the participant will repeat each unique stimulus twice. 
+
+There will be a break after each block, where participants can take a little rest, and then continue when they are ready.
+
+**Further consideration 2**: How will you set up the breaks? _Hint_: You might need another set of instructions for it. 
 
 #### Stimuli
-Words: rid, rad, grain, groan, blow, bleed
-Colors: red, green, blue (hint: https://redketchup.io/color-picker) 
+Words: rid, rad, grain, groan, blow, bleed\
+Colors: red, green, blue
 
 For simplicity, only "rid" and "rad" will be displayed in red font; only "grain" and "groan" will be displayed in green font, and only "blow" and "bleed" will be displayed in blue font. 
 
 #### Randomization
-Stimuli within a block should be randomized. 
+Stimuli within a block should be randomized, i.e. displayed in a (different) random order for every block, so that each participant gets a (potentially) unique sequence of trials. _Hint:_ check out the documentation on randomizing rows. 
 
-Set up a spreadsheet that takes you through the experiment flow. You can either do this right in Gorilla, or you can use Excel to set it up. If you use Excel, save the file as a **.csv** (Comma delimited) in the comppedagogy folder on your computer (or anywhere in your personal MU OneDrive if you don't have comppedagogy cloned on your computer). Then upload it to Gorilla. 
-
-**Further consideration 2**: How will you set up the breaks? 
+**Further consideration 3**: Why do we want trials to be randomized? 
 
 #### 6. Make the trial display
 
-The trial display should consist of the following: 
-1. A fixation cross for 800 ms;
-2. The stimulus (word and font color should both be determined by the spreadsheet. Hint: you can use HTML to change font colors https://www.freecodecamp.org/news/how-to-change-text-color-in-html/). This should display for 2 seconds. 
-3. An **Audio recording** component that starts when the stimulus appears, so that you can record what the participant says. 
-4. A blank screen of 1.2 seconds, so that people can take a little breather between trials
+The trial display should consist of the following screens: 
+1. A fixation cross for 800 ms; 
+2. The stimulus (word and font color should both be determined by the spreadsheet).
+  a. This should display for 2 seconds before advancing, giving the participant plenty of time to react and say the word.
+  b. This should be accompanied by an **Audio recording** component that starts when the stimulus appears, so that you can record what the participant says.
+3. A blank screen that advances automatically after 1.2 seconds, so that people can take a little breather between trials
 
-
-
-----------------------------------
-## UNDER CONSTRUCTION!! 
-
-### Adding practice 
-
-In most of our experiments, we have a practice run of the experimental task before we start the actual experiment. When we are in person, this helps us determine if someone has understood the experiment, or if they need clarification on some of the instructions. Obviously we can't do that for online studies. However, practice runs also help the participant learn what to expect, so that they can get used to the pace and demands of the experiment before it actually starts. 
-
-**Further consideration 3**: Why do you think we tell them that the practice will start right away? 
-
-
-
-
-
+**Further consideration 4**: Why do you want to start recording as soon as you display the stimulus? 
 
 ----------------------------------
-Answers: 
+#### Answers: 
 
-FC 1: The components should be 1. consent form (participants MUST consent before any data is collected); 2. microphone permissions check, and then 3. recording quality check. You have to check permissions before you check quality, because if permissions are not being given, there will be no recording to check the quality of!
-<br><br>
-FC 2: Many people expect some delay between clicking a button and having to speak, so it is good to warn people that they will have to start speaking right away. 
+**FC 1**: The components should be 1. consent form (participants MUST consent before any data is collected); 2. microphone permissions check, and then 3. recording quality check. You have to check permissions before you check quality, because if permissions are not being given, there will be no recording to check the quality of! \
 
+**FC 2**: You will need to set up another display for the break, and then include the break as a row in the spreadsheet. \
 
+**FC 3**: If the order is the same for everybody, or for every block, people could memorize the order of responses and thus not actually have to complete the task as intended. Or, there could be order effects that we don't know about (e.g. saying "green" before saying "red" could have a specific effect on "red", so we want to make sure that we don't always do it in that order). \
 
+**FC 4**: Some people may start talking very quickly, and you want to make sure you get their entire utterance. At the same time, you don't want to stop displaying the stimulus too fast, for people that may need it for longer. It is very tricky to "force" people to respond at exactly the time you want. 
 
 ----------------------------------
-### You are now ready to proceed with Worksheet G2! 
+### You are now ready to proceed with [Worksheet G2](https://github.com/nesst-lab/comppedagogy/edit/main/worksheets2/worksheetG2.md)!
 You can access these in the comppedagogy repo. 
