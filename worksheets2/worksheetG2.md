@@ -33,6 +33,7 @@ You'll need **one display** for this type of practice. You can call it "hardCode
 
 1. **Instructions**. Make sure the instructions are informative but not too wordy. The participant has already seen the instructions for the entire experiment, so the function of these instructions is to signpost that they are about to start the practice.
 2. **Screens for two practice trials**. Each trial will include the same trial structure as the actual task, which you have already created:
+<br>
   a. A fixation cross for 800 ms
 <br>
   b. The stimulus word + audio recording
