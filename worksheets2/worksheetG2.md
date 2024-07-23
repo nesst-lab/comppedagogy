@@ -33,11 +33,12 @@ You'll need **one display** for this type of practice. You can call it "hardCode
 
 1. **Instructions**. Make sure the instructions are informative but not too wordy. The participant has already seen the instructions for the entire experiment, so the function of these instructions is to signpost that they are about to start the practice.
 2. **Screens for two practice trials**. Each trial will include the same trial structure as the actual task, which you have already created:
+<br>
   a. A fixation cross for 800 ms
   b. The stimulus word + audio recording
   c. a buffer (blank screen of 1.2 seconds)
 However, you will need enough screens to make two trials, rather than just one trial sequence that repeats according to the spreadsheet. The fastest way to create this is by copying screens from previous displays. Click the drop down arrow of a screen by the screen's name, then select "copy screen." Repeat this process to paste the screen by selecting "paste screen" on the dropdown arrow of the desired empty screen. Make sure to rename the screens so you know what they are.
-3. **A landing screen where they can pick if they want to repeat the practice, or move onto the task**
+4. **A landing screen where they can pick if they want to repeat the practice, or move onto the task**
 
 #### Set up the trials
 You will use the same stimulus words from worksheet G1. The best words to use are those that represent the full complexity of the experimental task. This means including some words that are more difficult for the participant and some that are easier. Pick two stimuli that you think satisfy this requirement. Then, change the stimulus text object in your trial screens so that they are **hard-coded** to display the trials you selected. 
