@@ -43,7 +43,7 @@ However, you will need enough screens to make two trials, rather than just one t
 You will use the same stimulus words from worksheet G1. The best words to use are those that represent the full complexity of the experimental task. This means including some words that are more difficult for the participant and some that are easier. Pick two stimuli that you think satisfy this requirement. Then, change the stimulus text object in your trial screens so that they are **hard-coded** to display the trials you selected. 
 
 #### Set up the landing screen 
-The easiest way to move between screens for a hard coded practice is using buttons and conditional branching. **Conditional Branching** on gorilla 
+The easiest way to move between screens for a hard coded practice is using buttons and conditional branching. **Conditional Branching** means that you will use the branching to control the order of the screens. 
 
 Click "add object" to add two buttons: 
 1. Redo button
@@ -55,17 +55,17 @@ Click "add object" to add two buttons:
 
 #### Practice type 2: Randomized Practice Trials- Jump to Row
 
-Randomized trials are very similar to what they sound like. Each participant will recieve different stimulus words based upon a randomizer that Gorilla completes automatically. 
+Randomized trials are very similar to what they sound like. Each participant will recieve 6 different trials (each with a different stimulus) based upon a randomizer that Gorilla completes automatically. 
 
 #### Make the displays 🛠️
 
 You'll need three displays for this practice. 
 
 1. **Instructions** You can name this display "practiceRandInstructions." Follow the same guidelines for the instructions used for the hard-coded practice. (hint: copy screens!) 
-2. **Trial Display** You can name this display "practiceRand." The trials will have the same setup as the hard-coded practice, except there will only be 3 screens. The spreadsheet will control how many trials are presented. 
+2. **Trial Display** You can name this display "practiceRand." The trials will have the same setup as the hard-coded practice, except there will only be 3 screens. The spreadsheet will control how many trials are presented to the participant. 
 3. **Post Display** You can name this display "practiceRandPost." This will be the same layout as the landing screen from the hard-coded practice. However, buttons will be controlled using jump to row components instead of conditional branching. 
 
-#### Randomized Practice Post
+#### Jump to Row
 
 * Give each button a name that tells you what it's purpose is (ex: "try again") and a label that tells the participant what it does (ex: "I want to practice again")
 * Add the component of a click response to the button. In the box labeled response type "redo" for the first button and "continue" for the second button.
@@ -75,10 +75,9 @@ You'll need three displays for this practice.
 #### Edit the spreadsheet
 Set up the spreadsheet to have a logical flow of displays so that the instructions are first, then six randomized practice trials, and lastly the post practice display. Make sure that the instructions for the practice come after the instructions for the whole experiment.
 
-**Add the Randomizer**
-Underneath Randomizer, select add component and choose "randomize Trials" for column select "block." Click the little dice to preview your randomization. 
+**Add the Randomizer and Preview Randomization** hint(look up documentation on randomizing if needed) 
 
-**Further Consideration 3**: What happened to spreadsheet when you previewed the randomization?
+**Further Consideration 3**: What happened to the spreadsheet when you previewed the randomization?
 
 #### Preview the experiment and commit the changes
 
@@ -97,7 +96,7 @@ Answers:
 FC 1:  Many people expect some delay between clicking a button and having to speak, so it is good to warn people that they will have to start speaking right away.
 <br><br> 
 FC 2: 
-FC 3: The trials were randomized by block 
+FC 3: The trials were randomized by block so that the words for the practice and in each block are presented differently to each participant. 
 FC 4: No, the stimulus words will be the same as they were the first time that the participant did the practice. This is because the randomization that we added in the previous worksheet randomizes the trials by block only once. It has not been set to randomize multiple times. 
 
 
