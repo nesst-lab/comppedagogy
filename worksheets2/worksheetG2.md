@@ -75,9 +75,14 @@ You'll need three displays for this practice.
 #### Edit the spreadsheet
 Set up the spreadsheet to have a logical flow of displays so that the instructions are first, then six randomized practice trials, and lastly the post practice display. Make sure that the instructions for the practice come after the instructions for the whole experiment.
 
+**Add the Randomizer**
+Underneath Randomizer, select add component and choose "randomize Trials" for column select "block." Click the little dice to preview your randomization. 
+
+**Further Consideration 3**: What happened to spreadsheet when you previewed the randomization?
+
 #### Preview the experiment and commit the changes
 
-**Further Consideration 3**: If a participant wants to redo the practice trials, would the stimulus words on the second practice be new randomized words? 
+**Further Consideration 4**: If a participant wants to redo the practice trials, would the stimulus words on the second practice be new randomized words? 
 
 
 
@@ -92,7 +97,8 @@ Answers:
 FC 1:  Many people expect some delay between clicking a button and having to speak, so it is good to warn people that they will have to start speaking right away.
 <br><br> 
 FC 2: 
-FC 3: No, the stimulus words will be the same as they were the first time that the participant did the practice. This is because the randomization that we added in the previous worksheet randomizes the trials by block only once. It has not been set to randomize multiple times. 
+FC 3: The trials were randomized by block 
+FC 4: No, the stimulus words will be the same as they were the first time that the participant did the practice. This is because the randomization that we added in the previous worksheet randomizes the trials by block only once. It has not been set to randomize multiple times. 
 
 
 
