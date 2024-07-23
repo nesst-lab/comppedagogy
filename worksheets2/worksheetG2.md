@@ -21,7 +21,7 @@ In most of our experiments, we have a practice run of the experimental task befo
 **Further Consideration 1**: Why would you tell a participant that practice will start right away?
 
 -----------------------------------------------------------------------------------------------
-### Practice type 1: Hard-coded practice trials 
+### Practice type 1: Hard-coded practice trials- Conditional Branching
 
 #### Make the display 🔨
 
@@ -29,10 +29,10 @@ In most of our experiments, we have a practice run of the experimental task befo
 
 **Further consideration 2**: In what types of situations might you use this type of practice? 
 
-You'll need one display for this type of practice. You can call it "hardCodePractice". It will need several screens: 
+You'll need one display for this type of practice. You can call it "hardCodePractice". It will need several **screens**: 
 
 1. **Instructions**. Make sure the instructions are informative but not too wordy. The participant has already seen the instructions for the entire experiment, so the function of these instructions is to signpost that they are about to start the practice.
-2. **Displays for two practice trials**. Each trial will include the same trial structure as the actual task, which you have already created:
+2. **Screens for two practice trials**. Each trial will include the same trial structure as the actual task, which you have already created:
   a. A fixation cross for 800 ms
   b. The stimulus word + audio recording
   c. a buffer (blank screen of 1.2 seconds)
@@ -42,20 +42,30 @@ However, you will need enough screens to make two trials, rather than just one t
 #### Set up the trials
 You will use the same stimulus words from worksheet G1. The best words to use are those that represent the full complexity of the experimental task. This means including some words that are more difficult for the participant and some that are easier. Pick two stimuli that you think satisfy this requirement. Then, change the stimulus text object in your trial screens so that they are **hard-coded** to display the trials you selected. 
 
+#### Set up the landing screen 
+The easiest way to move between screens for a hard coded practice is using buttons and conditional branching. **Conditional Branching** on gorilla 
+
+Click "add object" to add two buttons: 
+1. Redo button
+2. Continue button 
+
 
 =============================================================
 *************************************** TKTKTKTK
 
-#### Practice type 2: Randomized Practice Trials
+#### Practice type 2: Randomized Practice Trials- Jump to Row
 
-#### Make the display 🛠️
+Randomized trials are very similar to what they sound like. Each participant will recieve different stimulus words based upon a randomizer that Gorilla completes automatically. 
 
-Randomized trials are very similar to what they sound like. Each participant will recieve different stimulus words based upon a randomizer that Gorilla does automatically. 
+#### Make the displays 🛠️
+
+You'll need three displays for this practice. 
+
+1. **Instructions** You can name this display "practiceRandInstructions." Follow the same guidelines for the instructions used for the hard-coded practice. (hint: copy screens!) 
+2. **Trial Display** You can name this display "practiceRand." The trials will have the same setup as the hard-coded practice, except there will only be 3 screens. The spreadsheet will control how many trials are presented. 
+3. **Post Display** You can name this display "practiceRandPost." This will be the same layout as the landing screen from the hard-coded practice. However, buttons will be controlled using jump to row components instead of conditional branching. 
 
 #### Randomized Practice Post
-This display will include two buttons: 
-1. A button that will send the participant back to the beginning to redo the task
-2. Another button that will allow them to continue to the actual experimental task
 
 * Give each button a name that tells you what it's purpose is (ex: "try again") and a label that tells the participant what it does (ex: "I want to practice again")
 * Add the component of a click response to the button. In the box labeled response type "redo" for the first button and "continue" for the second button.
