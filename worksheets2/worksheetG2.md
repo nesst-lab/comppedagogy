@@ -27,7 +27,7 @@ In most of our experiments, we have a practice run of the experimental task befo
 
 "Hard-coded" means that you are definitively deciding how the practice will go every time, for every participant. That is, you pick a certain set of stimuli that you want every person to do in that order. 
 
-**Further consideration 1**: In what types of situations might you use this type of practice? 
+**Further consideration 2**: In what types of situations might you use this type of practice? 
 
 You'll need one display for this type of practice. You can call it "hardCodePractice". It will need several screens: 
 
@@ -46,8 +46,11 @@ You will use the same stimulus words from worksheet G1. The best words to use ar
 =============================================================
 *************************************** TKTKTKTK
 
-#### Randomized Practice Trials
-This display includes the trials with the same layout as the practice display.
+#### Practice type 2: Randomized Practice Trials
+
+#### Make the display 🛠️
+
+Randomized trials are very similar to what they sound like. Each participant will recieve different stimulus words based upon a randomizer that Gorilla does automatically. 
 
 #### Randomized Practice Post
 This display will include two buttons: 
@@ -64,7 +67,7 @@ Set up the spreadsheet to have a logical flow of displays so that the instructio
 
 #### Preview the experiment and commit the changes
 
-**Further Consideration 2**: If a participant wants to redo the practice trials, would the stimulus words on the second practice be new randomized words? 
+**Further Consideration 3**: If a participant wants to redo the practice trials, would the stimulus words on the second practice be new randomized words? 
 
 
 
@@ -78,7 +81,8 @@ Answers:
 
 FC 1:  Many people expect some delay between clicking a button and having to speak, so it is good to warn people that they will have to start speaking right away.
 <br><br> 
-FC 2: No, the stimulus words will be the same as they were the first time that the participant did the practice. This is because the randomization that we added in the previous worksheet randomizes the trials by block only once. It has not been set to randomize multiple times. 
+FC 2: 
+FC 3: No, the stimulus words will be the same as they were the first time that the participant did the practice. This is because the randomization that we added in the previous worksheet randomizes the trials by block only once. It has not been set to randomize multiple times. 
 
 
 
