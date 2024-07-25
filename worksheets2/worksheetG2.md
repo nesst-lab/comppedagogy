@@ -51,7 +51,7 @@ The easiest way to move between screens for a hard coded practice is using butto
 
 Add two buttons:
 * As you have probably learned, there are many kinds of buttons available on Gorilla, just a regular "button" will do or a "text button response"
-* Give each button a name that tells you what it's purpose is (ex: "try again") and a label that tells the participant what it does (ex: "I want to practice again")
+* Give each button a **name** that tells you what it's purpose is (ex: "try again") and a **label** that tells the participant what it does (ex: "I want to practice again")
 * Add the component of a click response to the button (if necessary). In the box labeled response type "redo" for the first button and "continue" for the second button.
 * Switch from the objects tab to the screen tab and add the "branch" component. Add two destinations, one for each button. Set the criteria for both to response value. Type in each respective response (continue/redo) set accuracy to any and for screen select the appropriate screen in which you want to move to. 
 
@@ -61,7 +61,7 @@ Add two buttons:
 
 ### Practice type 2: Randomly Selected Subset Trials with Jump to Row
 
-We will be using a new method of randomization called "select randomized subset." This method allows there to be multiple trial options on the spreadsheet, but only a few will be randomly selected for each participant. Each participant will recieve 3 different trials, out of 6 options on the spreadsheet.
+We will be using a new method of randomization called **"select randomized subset."** This method allows there to be multiple trial options on the spreadsheet, but only a select few will be randomly selected for each participant. 
 
 #### Make the displays 🛠️
 
@@ -100,14 +100,14 @@ You'll need three displays for this practice.
 
 
 ---------------------------------------------------
-Answers:
+**Answers:**
 
 **FC 1:**  Many people expect some delay between clicking a button and having to speak, so it is good to warn people that they will have to start speaking right away.
 <br><br> 
 **FC 2:** It would be good to use hard coded practice when you want every participant to recieve the same trials and/or in the same order so that the difference between trials is easier for participants to percieve. 
 <br> <br>
 **FC 3:** The trials should have been reduced from 6 to 3. There should be one trial for each different color. When you randomize it multiple times, there should be a different color order each time. This randomization would be good for when you have multiple different practice trials on the spreadsheet but only want each participant to be presented with a few at a time.  
-<br><br>
+<br>
 **FC 4:** No, the stimulus words will be the same as they were the first time that the participant did the practice. This is because the randomization that we added in the previous worksheet randomizes the trials by block only once. It has not been set to randomize multiple times. 
 
 
