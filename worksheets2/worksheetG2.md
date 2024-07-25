@@ -73,12 +73,14 @@ You'll need three displays for this practice.
 
 #### Edit the spreadsheet
 * Set up the spreadsheet to have a logical flow of displays so that the instructions are first, then six practice trials, and lastly the post practice display. Make sure that the instructions for the practice come after the instructions for the whole experiment.
-* Add a column to the spreadsheet and name it "select_subset." For each trial, type the name of the color in this column "red." 
+* Add a column to the spreadsheet and name it "select_subset." For each trial, type the name of the color in this column (e.x "red.")
 
 #### **Add the Randomizer and Preview Randomization** 
+* Add the randomizer: "select randomized subset"
+* Add three subsets: For column, select **select subset.** For value type in the color names. For number select 1. 
+* Keep the randomizer from G1
 
-
-**Further Consideration 3**: What happened to the spreadsheet when you previewed the randomization?
+**Further Consideration 3**: What happened to the spreadsheet when you previewed the randomization? Try randomizing the spreadsheet multiple times and note what happens. When would you use this kind of randomization?
 
 #### Jump to Row
 
@@ -88,7 +90,7 @@ You'll need three displays for this practice.
 
 #### Preview the experiment and commit the changes
 
-**Further Consideration 4**: If a participant wants to redo the practice trials, would the stimulus words on the second practice be new randomized words? 
+**Further Consideration 4**: If a participant were to redo the practice trials, would the stimulus words on the second practice be new randomized words? 
 
 
 
@@ -104,7 +106,7 @@ FC 1:  Many people expect some delay between clicking a button and having to spe
 <br><br> 
 FC 2: It would be good to use hard coded practice when you want every participant to recieve the same trials and/or in the same order so that the difference between trials is easier for participants to percieve. 
 <br> <br>
-FC 3: 
+FC 3: The trials should have been reduced from 6 to 3. There should be one trial for each different color. When you randomize it multiple times, there should be a different color order each time. This randomization would be good for when you have multiple different practice trials on the spreadsheet but only want each participant to be presented with a few at a time.  
 <br><br>
 FC 4: No, the stimulus words will be the same as they were the first time that the participant did the practice. This is because the randomization that we added in the previous worksheet randomizes the trials by block only once. It has not been set to randomize multiple times. 
 
