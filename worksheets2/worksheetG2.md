@@ -7,7 +7,8 @@
 * Adding buttons to set up different conditions
 * Using conditional branching within display
 * Using the "Jump to Row" screen component
-  
+* Using the "Select Randomized Subset" randomizer
+
 Initiated by Maggie Ribaudo June 2024
 
 -----------------------------------------------------------------------------------------------
@@ -21,7 +22,7 @@ In most of our experiments, we have a practice run of the experimental task befo
 **Further Consideration 1**: Why would you tell a participant that practice will start right away?
 
 -----------------------------------------------------------------------------------------------
-### Practice type 1: Hard-coded practice trials
+### Practice type 1: Hard-coded Practice Trials with Conditional Branching
 
 #### Make the display 🔨
 
@@ -58,9 +59,9 @@ Add two buttons:
 =============================================================
 *************************************** TKTKTKTK
 
-#### Practice type 2: Randomized Practice Trials
+### Practice type 2: Randomly Selected Subset Trials with Jump to Row
 
-Randomized trials are very similar to what they sound like. Each participant will recieve 6 different trials (each with a different stimulus word) based upon a randomizer, just like how you randomized the regular experimental trials. 
+We will be using a new method of randomization called "select randomized subset." This method allows there to be multiple trial options on the spreadsheet, but only a few will be randomly selected for each participant. Each participant will recieve 3 different trials, out of 6 options on the spreadsheet.
 
 #### Make the displays 🛠️
 
@@ -71,10 +72,11 @@ You'll need three displays for this practice.
 3. **Post Display** You can name this display "practiceRandPost." This will be the same layout as the landing screen from the hard-coded practice. However, buttons will be controlled using jump to row components instead of conditional branching. 
 
 #### Edit the spreadsheet
-Set up the spreadsheet to have a logical flow of displays so that the instructions are first, then six randomized practice trials, and lastly the post practice display. Make sure that the instructions for the practice come after the instructions for the whole experiment.
+* Set up the spreadsheet to have a logical flow of displays so that the instructions are first, then six practice trials, and lastly the post practice display. Make sure that the instructions for the practice come after the instructions for the whole experiment.
+* Add a column to the spreadsheet and name it "select_subset." For each trial, type the name of the color in this column "red." 
 
 #### **Add the Randomizer and Preview Randomization** 
-Look up documentation on randomization if needed!
+
 
 **Further Consideration 3**: What happened to the spreadsheet when you previewed the randomization?
 
@@ -101,7 +103,9 @@ Answers:
 FC 1:  Many people expect some delay between clicking a button and having to speak, so it is good to warn people that they will have to start speaking right away.
 <br><br> 
 FC 2: It would be good to use hard coded practice when you want every participant to recieve the same trials and/or in the same order so that the difference between trials is easier for participants to percieve. 
-FC 3: Previewing the randomization should have mixed around the order of the words, with the colors matching the correct words, and the blocks of trials staying together. If anything else happened, then something probably went wrong. 
+<br> <br>
+FC 3: 
+<br><br>
 FC 4: No, the stimulus words will be the same as they were the first time that the participant did the practice. This is because the randomization that we added in the previous worksheet randomizes the trials by block only once. It has not been set to randomize multiple times. 
 
 
