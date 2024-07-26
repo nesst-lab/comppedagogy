@@ -5,6 +5,7 @@
 Note: You MUST learn to use Git Bash before using GitHub Desktop. To get approval to use GitHub Desktop, contact the lab manager or Robin. 
  
 #### Skills introduced: 
+* Making and moving directories
 * Cloning repositories
 * Creating text files from the command line using vim
 * Git basics
@@ -17,14 +18,116 @@ Note: You MUST learn to use Git Bash before using GitHub Desktop. To get approva
 * Be added to the comppedagogy repo by the lab manager or Robin
 * Have read the first section [here](https://www.notion.so/nesstlabmu/Resources-for-git-and-GitHub-Desktop-6609b345bb3f4f43aaa574399b80dfbb?pvs=4#ed91e70fee074b558cb95c155766b993)
 ----------------------------
-### Getting the comppedagogy repo into your lab computer account
-
 #### 1. Open Git Bash
 a. Open Git Bash on your lab computer. <br>
-b. Using your knowledge of the command line interface from Worksheets A and B, navigate into your personal documents folder, C:\Users\[username]\Documents, where username is your pawprint 
+b. Using your knowledge of the command line interface from Worksheets A and B, navigate into the public comppedagogy folder, C:\Users\Public\Documents\software\comppedagogy
+
+#### 2. The command line has many other functions, such as making a new directory.
+a. Navigate into the directory with the **current academic year** (if you are a returning student, you can use your original folder). E.g. if it is the fall semester of 2021, navigate into the folder "2021-2022" in comppedagogy.  <br>
+b. Then run the following command, substituting your own name for "robin" (*note: if you have a name that is shared with someone else in the lab, the folder may already exist. Use an initial or a nickname to make your new directory*):  <br>
+
+`mkdir robinsNewDirectory` 
+
+mkdir: **m**a**k**e **dir**ectory. Note that you're using the same path specification that you've used in previous commands! You're creating this directory in the directory you're currently in. 
+
+#### 3. Whoops, you put this directory in the wrong spot! You want it in the directory above the one you're currently in, which is comppedagogy. We can do that too: 
+
+`mv robinsNewDirectory ../` 
+
+mv = **m**o**v**e. This command is unique compared to the other ones you've used before because it takes TWO arguments (arguments let a command know exactly how to perform its task): 
+a. the path to the thing you want to move (here just `robinsNewDirectory`) <br>
+b. the path to the place you want to move it (here, the folder above you, i.e. `..`) <br>
+
+#### Check your understanding!
+It turns out you were right in the first place; you actually want it in the current academic year folder. How do you move it there? Some hints: 
+a. Remember that you have to specify the path to the folder you want to move, and your folder has changed location since you last referenced it <br>
+b. `../` references the folder ABOVE you. To reference the folder you're currently in, use `./`  <br>
+
+#### 5. `mv` also performs a slightly different function. 
+a. First, enter the command in the command line to get the list of items in your working directory (which should be the academic year folder)  <br>
+b. Make sure that your new directory is in there, and that there is no directory called **whatDoesThisDo** (if there is, you can use the current folder view to delete that folder manually)  <br>
+c. Substituting your new directory name for `robinsNewDirectory`, enter:  <br>
+
+`mv robinsNewDirectory whatDoesThisDo` 
+
+4. Enter the command to list the items in your working directory. Where is your new directory? Where is **whatDoesThisDo**? 
+
+So `mv` can rename things as well! Note that this stems from how paths work. Renaming and moving are actually the same thing---you're changing the "address" of the object. 
+
+#### Check your understanding: 
+Using the command line, rename the new directory **whatDoesThisDo** to your original directory name (like robinsNewDirectory)
+
+#### 6. Put your folder back to its original position in comppedagogy, and enter the following two commands: 
+
+`ls`
+`mv robinsNewDirectory iContainMultitudes`
+
+(Again substituting your own folder name in for robinsNewDirectory). Where is your directory? Why do you think this is different from what you did in 5? 
+
+#### 7. Okay, now we're done with these directories. You can remove them with the command line as well, with rmdir (ReMove DIRectory). For example, try making a pointless folder: 
+
+`mkdir aPointlessFolder`
+
+List the files in your directory to make sure it exists. Then, 
+
+`rmdir aPointlessFolder`
+
+And list again. The pointless folder should be gone! 
+
+#### 8. Now we can remove your folder, which is currently in iContainMultitudes. 
+Unlike other commands, *rmdir isn't really a command you want to test and play around with*: you should do it correctly the first time. However, comppedagogy is a safe sandbox and if you delete something we can always put it back with git. Here are hints to make sure you get it right the first time: 
+
+a. You must use the exact path to the exact file or directory you want to remove <br>
+b. You cannot "stack" commands, like how we did `cd ../` followed by `cd Application2`. Instead, you must do it all in one command, like `cd ../Application2`. If you do the command piecemeal, you will end up deleting the folder that contains your target folder!  <br>
+
+This should be all the information you need to run this command correctly the first time! But for the faint of heart, the answer is below the bullet points
+
+* <br>
+* 
+* 
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+
+`rmdir iContainMultitudes/robinsNewDirectory
+
+
+### Okay, now it's time to get the comppedagogy repo into your lab computer account
+
+#### 1. Prepare your directory
+a. In Git Bash, navigate into your **personal** documents folder, C:\Users\[username]\Documents, where username is your pawprint 
 
 #### 2. Make a pseudo-lab structure in your personal Documents folder
-a. Using your knowledge of the command line interface from Worksheets A and B, make a new folder in your personal documents folder called software <br>
+a. Using your knowledge of the command line interface, make a new folder in your personal documents folder called software <br>
 b. Navigate into this folder<br>
 c. Get a list of the folder contents (it should be empty!)<br>
 
@@ -36,10 +139,10 @@ c. Navigate into the comppedagogy folder. How can you tell that you are in a rep
 
 ### Introduction to vim
 
-#### 4. In Worksheet A, we created directories with the command mkdir, but then deleted it. 
+#### 4. We have practiced creating directories with the command mkdir and then deleting them. 
 a. Navigate to comppedagogy in your command line interface <br>
-b. Find the directory with the current academic year in (if you are a returning student, you can use your original folder). E.g. if it is the fall semester of 2021, navigate into the folder 2021-2022. <br>
-c. Make your own directory again (check worksheet A if you have forgotten how to do this), then navigate into it. <br>
+b. Find the directory named for the current academic year (if you are a returning student, you can use your original folder). E.g. if it is the fall semester of 2021, navigate into the folder 2021-2022. <br>
+c. Make your own directory again (check above if you have forgotten how to do this), then navigate into it. <br>
 
 #### 5. Now we are going to create a new text file without ever leaving the command line! 
 We are going to use a program called vi. It's best to think of this program as one where you are telling someone else to do the writing for you, like "now we are going to write some text! Now we are going to save! Now we are going to write some text again!" Once you are familiar with the program, you'll see how it can be a convenient tool that avoids some weird things like ghost characters that notepad or other programs can introduce. Anyway, end vi talk. 
@@ -77,23 +180,23 @@ How would you move this file to be inside your directory, instead of in comppeda
 -----------------
 ### Enter Github 
 
-In SMNG we keep all our experiment code in a git repository ("repo"). Github is a way of sharing your code with other people. There is a "main" version hosted by Git, as well as your own local version ("head"), located on your computer. This way, you can make some changes to code without everybody immediately being affected; the changes that you make on your local machine have to be "pushed" into the master in order for it to be accessible to others. (This is different from keeping things on a server that is directly accessed by multiple computers, like how we store our data.) 
+In the NeSST Lab, we keep all our experiment code in a git repository ("repo"). Github is a way of sharing your code with other people. There is a "main" version hosted by Git, as well as your own local version ("head"), located on your computer. This way, you can make some changes to code without everybody immediately being affected; the changes that you make on your local machine have to be "pushed" into the main in order for it to be accessible to others. (This is different from keeping things on a server that is directly accessed by multiple computers, like how we store our data.) 
 
 #### 9. Etiquette is very important, especially when you are working with a repo that has a lot of people reading and writing files. 
 This is because multiple people may be working on the same bit of code. For example: 
 
-* I've written the function gen_ostUserEvents_timeAdapt, and pushed it to the master repo. Chris is using it and notices a bug: 
+* I've written the function gen_ostUserEvents_timeAdapt, and pushed it to the main repo. Chris is using it and notices a bug: 
 
 `expt.name = 'tmieAdapt'`; --> should be `expt.name = 'timeAdapt';` 
 
-* He fixes it and saves it to his computer, and pushes the fixed version to the master. The next day, I come in and immediately start using the script, but without checking if there's a new version on the master repo. As I'm using the script, I notice another bug: 
+* He fixes it and saves it to his computer, and pushes the fixed version to the main. The next day, I come in and immediately start using the script, but without checking if there's a new version on the main repo. As I'm using the script, I notice another bug: 
 
 `dummyWord = 'caper'`; ---> should be `dummyWord = 'capper'; `
 
-* I fix this and save it to my computer. Then I try to push it to the master repo, but there's a problem! When Git compares the master version to my version, it notices that it is different in more places than what I just fixed. This is called a "conflict". This conflict can be avoided by practicing good Git etiquette (getiquette!). 
+* I fix this and save it to my computer. Then I try to push it to the main repo, but there's a problem! When Git compares the main version to my version, it notices that it is different in more places than what I just fixed. This is called a "conflict". This conflict can be avoided by practicing good Git etiquette (getiquette!). 
 
 #### 10. Best practices: 
-a. When you sit down to work on something, first check if there are any updates to the master (bad Robin!). Git commands are prefaced with "git": 
+a. When you sit down to work on something, first check if there are any updates to the main (bad Robin!). Git commands are prefaced with "git": 
 
 `git status`
 
@@ -109,7 +212,7 @@ This forces it to "go out to the mailbox"
 
 And report back what it just found. (You can also string these two commands together using `&&`: `git fetch && git status`) 
 
-c. You might be behind the master repo by some number of commits. This means that someone else has committed to the master repo since the last time you looked. In the picture below it says that our branch is behind origin/master by 15 commits, and can be fast-forwarded
+c. You might be behind the main repo by some number of commits. This means that someone else has committed to the main repo since the last time you looked. In the picture below it says that our branch is behind origin/main by 15 commits, and can be fast-forwarded
 
 ![behind by commits](../startHere/directoryPictureExamples/behindByCommits.png)
 
@@ -119,13 +222,13 @@ To do this, enter the command
 
 (Since we already asked you to do a pull at the beginning of class, you probably won't have anything new now.)
 
-d. When you are done working for the day, do another check for changes to the master, and then push your changes (we will do the actual commands for this later). 
+d. When you are done working for the day, do another check for changes to the main, and then push your changes (we will do the actual commands for this later). 
 
 #### 11. Now suppose you want to track changes to the text file you just made, and make sure that this version appears on the computer of everyone who wants to have access to everything in the repository. Github needs to track the file, and to do that, it needs to know the existence of it.
 
 `git add RobinsDirectory/myfirstvi_NAME.txt` 
 
-This "adds" your version of the file to the staging area so it can be put into the master repo. 
+This "adds" your version of the file to the staging area so it can be put into the main repo. 
 
 #### 12. Now you need to "commit" your change, or get it ready to send off to the repository. You must also add a message (with the -m "flag") saying what new changes there are to the file. This is important for tracking changes to the file over time.
 
