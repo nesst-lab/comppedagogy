@@ -14,8 +14,9 @@ Note: You MUST learn to use Git Bash before using GitHub Desktop. To get approva
 
 ----------------------------------------------------------------------------------
 #### Before going through this worksheet, you should:
+* Have a Mathworks account, and have accepted the invitation to the online MATLAB drive comppedagogy
 * Have a GitHub account
-* Be added to the comppedagogy repo by the lab manager or Robin
+* Be added to the comppedagogy git repo by the lab manager or Robin
 * Have read the first section [here](https://www.notion.so/nesstlabmu/Resources-for-git-and-GitHub-Desktop-6609b345bb3f4f43aaa574399b80dfbb?pvs=4#ed91e70fee074b558cb95c155766b993)
 ----------------------------
 #### 1. Open MATLAB Online
