@@ -18,12 +18,12 @@ Note: You MUST learn to use Git Bash before using GitHub Desktop. To get approva
 * Be added to the comppedagogy repo by the lab manager or Robin
 * Have read the first section [here](https://www.notion.so/nesstlabmu/Resources-for-git-and-GitHub-Desktop-6609b345bb3f4f43aaa574399b80dfbb?pvs=4#ed91e70fee074b558cb95c155766b993)
 ----------------------------
-#### 1. Open Git Bash
-a. Open Git Bash on your lab computer. <br>
-b. Using your knowledge of the command line interface from Worksheets A and B, navigate into the public comppedagogy folder, C:\Users\Public\Documents\software\comppedagogy
+#### 1. Open MATLAB Online
+a. Open MATLAB Online on your lab computer. <br>
+b. Using your knowledge of the command line interface from Worksheets A and B, navigate into the comppedagogy folder.
 
 #### 2. The command line has many other functions, such as making a new directory.
-a. Navigate into the directory with the **current academic year** (if you are a returning student, you can use your original folder). E.g. if it is the fall semester of 2021, navigate into the folder "2021-2022" in comppedagogy.  <br>
+a. Navigate into the **moreFolders** folder in comppedagogy.  <br>
 b. Then run the following command, substituting your own name for "robin" (*note: if you have a name that is shared with someone else in the lab, the folder may already exist. Use an initial or a nickname to make your new directory*):  <br>
 
 `mkdir robinsNewDirectory` 
@@ -39,7 +39,7 @@ a. the path to the thing you want to move (here just `robinsNewDirectory`) <br>
 b. the path to the place you want to move it (here, the folder above you, i.e. `..`) <br>
 
 #### Check your understanding!
-It turns out you were right in the first place; you actually want it in the current academic year folder. How do you move it there? Some hints: 
+It turns out you were right in the first place; you actually want it in moreFolders. How do you move it there? Some hints: 
 a. Remember that you have to specify the path to the folder you want to move, and your folder has changed location since you last referenced it <br>
 b. `../` references the folder ABOVE you. To reference the folder you're currently in, use `./`  <br>
 
@@ -124,7 +124,7 @@ This should be all the information you need to run this command correctly the fi
 ### Okay, now it's time to get the comppedagogy repo into your lab computer account
 
 #### 1. Prepare your directory
-a. In Git Bash, navigate into your **personal** documents folder, C:\Users\[username]\Documents, where username is your pawprint 
+a. Open Git Bash, and navigate into your **personal** documents folder, C:\Users\[username]\Documents, where username is your pawprint 
 
 #### 2. Make a pseudo-lab structure in your personal Documents folder
 a. Using your knowledge of the command line interface, make a new folder in your personal documents folder called software <br>
