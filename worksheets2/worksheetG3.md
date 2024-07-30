@@ -4,6 +4,7 @@
 #### Skills introduced: Creating a Forced Choice Task in Gorilla 
 * Triggering buttons with a mouse click OR F/J keys
 * Setting text of buttons via manipulation and randomizing this in the experiment setup
+* Creating a progress bar to display task progress to participants 
 * Using the scorer component and storing variables to display participant's score
 
 Initiated by Maggie Ribaudo July 2024
@@ -12,4 +13,4 @@ Initiated by Maggie Ribaudo July 2024
 #### Before going through this worksheet you should:
 * Have completed worksheet G2.
 ---------------------------------------------------------------------------
-##
+#### Make the displays
