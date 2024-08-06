@@ -111,7 +111,7 @@ Somtimes you may want to score a participant's answers and display them back to 
 * Make sure that the screens are advancing correctly
 * Make sure that the correct buttons and stimulus words are being presented
 * Check the progress bar display
-* Checck that both a click and keyboard response results in a response
+* Check that both a click and keyboard response results in a response
 
 ### Set up the Experimental Flow
 Go back into the folder you are working in and create a new experiment. This is where we will create the experimental design, which includes creating the order tasks will be presented to each participant and setting up any manipulations. We will also be randomizing the participants into groups. Always make sure that any tasks you use are up to date. 
