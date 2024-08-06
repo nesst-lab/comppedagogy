@@ -1,7 +1,7 @@
 ## NeSST's INC (Intro to NeSST Computing) series
-### Worksheet G3: Adding Practice for Gorilla Experiments
+### Worksheet G3: Creating a Forced Choice Task in Gorilla
 
-#### Skills introduced: Creating a Forced Choice Task in Gorilla 
+#### Skills introduced: 
 * Triggering buttons with a mouse click or F/J keys
 * Setting text of buttons via manipulation and randomizing this in the experiment setup
 * Creating a progress bar to display task progress to participants 
@@ -52,11 +52,23 @@ The trials and filler displays will each have **2 screens**:
 4.) 2 Images (F and J)
 
 #### Using Multiple Triggers
+Take a moment to search through the components that can be added onto the button or F/J image.
+
+**Further Consideration 1**: What kind of component should you add so that using the keyboard will produce a response in Gorilla? What kind of component should you add so that a mouse click will trigger a response?
 
 #### How to Use the Progress Bar Component
+The progress bar is helpful for long experiments in which a participant may get fatigued and wonder how far into the task they are. 
+
+**On Screens 1 and 2**: Set the progress maximum to the amount of trials in your task. Choose whichever color you would like. Click "use custom field" and create a field titled "progress."
+
+**On the 2nd Screen**: On the screen tab, add an "increase progress" component. Set the criteria to "any response," select "include actions" and "use custom field," bind to progress. 
+
+**Further Consideration 2**: On which screen will the participant see the progress bar change? Why does only one screen have an increase progress component?
 
 #### Break and Finish
 You can copy the break and end of task screen from NeSST Lab ornaments and edit as needed.  
+
+#### Scoring and Storing 
 
 #### Set up the spreadsheet
 There will be 7 blocks in this experiment, consisting of 4 blocks of "Trials" and 3 blocks of "Filler." Each block of trials will have 26 total, while each block of filler will have 20 total. There will be a break between each block of trials. The entire spreadsheet should have 173 rows. You will need a column for the correct answers and a column for randomizing the trials within each block. 
@@ -64,7 +76,8 @@ There will be 7 blocks in this experiment, consisting of 4 blocks of "Trials" an
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #### Answers:
 
-**FC 1**: 
+**FC 1**: 1. Keyboard Response 2. Click Response
+**FC 2**: The participant will see an increase in progress on the screen that presents the stimulus. They should not see a change in the progress bar on the screen in which they respond. If there were multiple increase progress components, then there
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ### You are now ready to proceed with Worksheet G4!
