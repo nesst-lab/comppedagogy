@@ -15,11 +15,10 @@ Initiated by Maggie Ribaudo June 2024
 #### Before going through this worksheet, you should:
 * Have completed worksheet G1 and created the Speech Stroop Task.
 -----------------------------------------------------------------------------------------------
-## UNDER CONSTRUCTION! :construction_worker_woman:
 ### Adding practice
 In most of our experiments, we have a practice run of the experimental task before we start the actual experiment. When we are in person, this helps us determine if someone has understood the experiment, or if they need clarification on some of the instructions. Obviously we can't do that for online studies. However, practice runs also help the participant learn what to expect, so that they can get used to the pace and demands of the experiment before it actually starts. 
 
-
+In this worksheet, you will learn two different ways of adding a practice round. They have different use cases, which you will also learn about. 
 
 -----------------------------------------------------------------------------------------------
 ### Practice type 1: Hard-coded Practice Trials with Conditional Branching
