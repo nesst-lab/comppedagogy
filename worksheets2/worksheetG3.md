@@ -131,6 +131,7 @@ Go back into the folder you are working in and create a new experiment. This is 
 **FC 2**: If you did not add the click response onto the button, then any click at all on the screen would result in a response, and would advance to the next trial. This is problematic because accidental clicks might lead to the participant providing incorrect responses. 
 <br>
 **FC 3**:  The manipulations are randomizing the text of buttons, and matching the responses to these buttons. The manipulations put participants into two different groups who each get a different left and a different right button.
+<br>
 **FC 4**: The participant will see an increase in progress on the screen that presents the stimulus. They should not see a change in the progress bar on the screen in which they respond. If there were multiple increase progress components, then the progress would increase on both screens and would not be accurate to how much progress the participant had actually made. 
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
