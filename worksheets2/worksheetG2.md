@@ -113,14 +113,18 @@ Is this producing the behavior you expected? Try each button to make sure!
 
 
 
-*
-*
-*
-*
-*
-
-
-
+\*
+<br>
+\*
+<br>
+\*
+<br>
+\*
+<br>
+\*
+<br>
+\*
+<br>
 
 
 ---------------------------------------------------
@@ -129,10 +133,10 @@ Is this producing the behavior you expected? Try each button to make sure!
 **FC 1:**  Many people expect some delay between clicking a button and having to speak, so it is good to warn people that they will have to start speaking right away.
 <br><br> 
 **FC 2:** It would be good to use hard coded practice when you want every participant to recieve the same trials and/or in the same order so that the difference between trials is easier for participants to percieve. 
-<br> <br>
-**FC 3:** If they choose "redo", they should move to the first practice trial screen (or practice instructions, to give them a reminder). If they choose "continue", you should *end display* 
 <br><br>
-**FC 4:** The number of practice trial repetitions should have been reduced from 6 to 3 (one per color). There should be one trial for each different color. When you randomize it multiple times, there should be a different color order each time. This randomization would be good for when you have multiple different practice trials on the spreadsheet but only want each participant to be presented with a few at a time, and it doesn't particularly matter which stimuli they get.   
+**FC 3:** If they choose "redo", they should move to the first practice trial screen (or practice instructions, to give them a reminder). If they choose "continue", you should *end display*.
+<br><br>
+**FC 4:** The number of practice trial repetitions should have been reduced from 6 to 3 (one per color). There should be one trial for each different color. When you randomize it multiple times, there should be a different color order each time. This randomization would be good for when you have multiple different practice trials on the spreadsheet but only want each participant to be presented with a few at a time, and it doesn't particularly matter which stimuli they get.
 <br><br>
 **FC 5:** You would get all six trials again (since you are choosing a random two out of the two available for each color). 
 <br><br>
