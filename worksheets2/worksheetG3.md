@@ -7,7 +7,7 @@
 * Creating a progress bar to display task progress to participants 
 * Using the scorer component and storing variables to display participant's score
 
-Initiated by Maggie Ribaudo July 2024
+Initiated by Maggie Ribaudo July 2024 
 
 ---------------------------------------------------------------------------
 #### Before going through this worksheet you should:
@@ -15,6 +15,9 @@ Initiated by Maggie Ribaudo July 2024
 ---------------------------------------------------------------------------
 #### Add the stimuli
 The stimuli can be accessed through OneDrive. Navigate to C:\Users\(insert your pawprint here)\OneDrive - University of Missouri\nesstlab\experiments\standardGorilla\. Then navigate into the sound and picture stimuli folders. Upload the following files into the stimului page of Gorilla: set 65 dB, sit 65dB, sat 65dB, suit 65dB, F image and J image. 
+
+#### Set up the spreadsheet
+There will be 7 blocks in this experiment, consisting of 4 blocks of "Trials" and 3 blocks of "Filler." Each block of trials will have 26 total, while each block of filler will have 20 total. There will be a break between each block of trials. The entire spreadsheet should have 173 rows. You will need a column for the correct answers and a column for randomizing the trials within each block. 
 
 ### Make the displays
 There will be **6 displays** for this experiment:
@@ -56,7 +59,12 @@ Take a moment to search through the components that can be added onto the button
 
 **Further Consideration 1**: What kind of component should you add so that using the keyboard will produce a response in Gorilla? What kind of component should you add so that a mouse click will trigger a response?
 
-#### How to Use the Progress Bar Component
+#### Button Manipulations
+Manipulations allow you to design settings that will change for each participant who is completing the experiment. In this case, we will be manipulating the text of the button and the corresponding responses. 
+
+Go back into the folder you are working in and create a new experiment. This is where we will create the experimental design, which includes the order tasks will be presented to each participant and setting up any manipulations. We will also be randomizing the participants into groups. 
+
+#### Progress Bar Component
 The progress bar is helpful for long experiments in which a participant may get fatigued and wonder how far into the task they are. 
 
 **On Screens 1 and 2**: Set the progress maximum to the amount of trials in your task. Choose whichever color you would like. Click "use custom field" and create a field titled "progress."
@@ -69,15 +77,17 @@ The progress bar is helpful for long experiments in which a participant may get 
 You can copy the break and end of task screen from NeSST Lab ornaments and edit as needed.  
 
 #### Scoring and Storing 
+Somtimes you may want to score a participant's answers and display them back to the participant. For example, as a part of our standard lab components, participants must undergo a series of audio equipment checks to make sure that their microphone and environment is ready. In the microphone quality check, the participant must correctly identify which audio clip contains their own speech. They have up to 5 chances to get 5/6 answers correct, if they do not then they are removed from the experiment. At the end of each attempt, they are informed of their score which can help them to improve the next time around. 
 
-#### Set up the spreadsheet
-There will be 7 blocks in this experiment, consisting of 4 blocks of "Trials" and 3 blocks of "Filler." Each block of trials will have 26 total, while each block of filler will have 20 total. There will be a break between each block of trials. The entire spreadsheet should have 173 rows. You will need a column for the correct answers and a column for randomizing the trials within each block. 
+* Select the scoring component from the screen tab, and add it onto the screen(s) in which the participant must respond. Bind this to the answer column of the spreadsheet. Next add a "save accuracy" component. Set the criteria to "response accuracy" and select the include actions tab, set the accuracy to "correct" and the attribute to "total." Save this to a field titled "correct." This will save the total correct answers throughout the experiment to the store. 
+* On the final screen, markdown text allows us to display participants score. ${store:correct} calls to the store and presents the variable "correct." Type a simple message such as "You scored ${store:correct} out of (total experiment trials.)
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #### Answers:
 
 **FC 1**: 1. Keyboard Response 2. Click Response
-**FC 2**: The participant will see an increase in progress on the screen that presents the stimulus. They should not see a change in the progress bar on the screen in which they respond. If there were multiple increase progress components, then there
+**FC 2**: The participant will see an increase in progress on the screen that presents the stimulus. They should not see a change in the progress bar on the screen in which they respond. If there were multiple increase progress components, then the progress would increase on both screens and would not be accurate to how much progress the participant had actually made. 
+**FC 3**: 
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ### You are now ready to proceed with Worksheet G4!
