@@ -13,11 +13,31 @@ Initiated by Maggie Ribaudo July 2024
 #### Before going through this worksheet you should:
 * Have completed worksheet G2.
 ---------------------------------------------------------------------------
+### Start a new task 
+Start a new task for this worksheet, using Task Builder 2. 
+
 #### Add the stimuli
-The stimuli can be accessed through OneDrive. Navigate to C:\Users\(insert your pawprint here)\OneDrive - University of Missouri\nesstlab\experiments\standardGorilla\. Then navigate into the sound and picture stimuli folders. Upload the following files into the stimului page of Gorilla: set 65 dB, sit 65dB, sat 65dB, suit 65dB, F image and J image. 
+The stimuli for this worksheet are in the NeSST Lab OneDrive. Navigate to \nesstlab\experiments\standardGorilla\. Then navigate into the sound and picture stimuli folders. Upload the following files into the stimului page of Gorilla: 
+* set_65dB
+* sit_65dB
+* sat_65dB
+* suit_65dB
+* F_alone
+* J_alone
 
 #### Set up the spreadsheet
-There will be 7 blocks in this experiment, consisting of 4 blocks of "Trials" and 3 blocks of "Filler." Each block of **trials** will have 26 total, while each block of **filler** will have 20 total. There will be a break between each block of trials. The entire spreadsheet should have 173 rows. You will need a column for the correct answers and a column for randomizing the trials within each block. 
+There will be 2 blocks in this experiment: 1 block of "Trials" and 1 block of "Filler." 
+
+The block of **trials** will have 10 total trials, and the choices will be "set" and "sat". There will be 5 repetitions of each possible word. 
+
+The block of **filler** will have 10 trials, and the choices will be "suit" and "sit". There will be 5 repetitions of each possible word. 
+
+There will be a break between each block of trials. You will need the following columns: 
+* Stimulus (the name of the sound file that will be played)
+* Answer (the correct answer)
+* randomize_trials (a column to denote which groups of trials should be randomized) 
+
+-------------
 
 ### Make the displays
 There will be **6 displays** for this experiment:
@@ -36,58 +56,73 @@ The information that you need to convey to participants in this study:
 * They should respond quickly and accurately
 * Selecting a word will move them to the next trial
 
-#### Practice
-The practice will be hard-coded. The practice will include the same screens as trial and filler. You can copy the end of practice screen from NeSST Lab ornaments and edit it to suit this task. Additionally, add a final short instructions screen before the participant moves to the experimental task. Inform the participant that the task will take 5 minutes, there will be 7 blocks, there will be breaks, along with a progress bar letting them know how far they are in the task. 
+You will want to illustrate what they will see, so that they know what to expect. Because pictures take up some room, you may need to use multiple screens to convey this information without providing too much information at once (or possibly not being able to fit it all on the screen!). 
 
-### Trials and Filler
+#### Practice
+Because there are two different button configurations, you will have to **hard-code** this practice. Make four practice trials to present all four words one time. 
+
+The practice will include the same screens as trial and filler, so you may want to build the trials first, and then copy and paste into practice. 
+
+You can also copy the end of practice screen from NeSST Lab ornaments and edit it to suit this task. 
+
+Additionally, add a final short instructions screen before the participant moves to the experimental task. Inform the participant that the task will take 5 minutes, there will be 2 blocks, there will be breaks, along with a progress bar letting them know how far they are in the task. 
+
+#### Trials and Filler
 The trials and filler displays will each have **2 screens**:
 
 **Present stimulus:** This is the screen that displays the stimulus to the participant. This screen will include the following objects:
 
-1.) A progress bar
-<br>
-2.) an early exit button.
-<br>
-3.) A fixation cross with a 2000 ms display time and 100 ms post display time
-<br>
-4.) An audio clip
+1. A progress bar
+2. An early exit button.
+3. A fixation cross with a 2000 ms display time and 100 ms post display time
+4. An audio clip, which will play automatically after a 500 ms delay
 
-**Respond:** This is the screen in which the participant completes the "forced" choice by responding either by clicking or button or pressing a key on their keyboard. This screen will include the following objects:
+> 💡 **Further consideration 1:** Why don't you want to play the soundfile immediately when the stimulus screen starts? (Hint: think about what triggers you to get to that screen)
 
-1.) A progress bar
-<br>
-2.) An early exit button
-<br>
-3.) 2 buttons (copying from NeSST Lab ornaments and modifying can be helpful)
-<br>
-4.) 2 Images (F and J)
+**Respond:** This is the screen in which the participant completes the forced choice task (forced choice means they have to choose one of two options; they can't enter a free response). They can respond either by clicking or button or pressing a key on their keyboard. This screen will include the following objects:
 
-### Using Multiple Triggers
-Take a moment to search through the components that can be added onto the button or F/J image.
+1. A progress bar
+2. An early exit button
+3. 2 buttons, one for each possible word. Use the plain button for this worksheet. 
+4. 2 Images (F and J)
 
-**Further Consideration 1**: What kind of component should you add so that using the keyboard will produce a response in Gorilla? What kind of component should you add so that a mouse click will trigger a response?
+#### Break and Finish
+You can copy the break and end of task screen from NeSST Lab ornaments and edit as needed.  
 
+---------------
+### Setting up responses
+Now, you will set up the buttons so that people will click on the word that they hear. First, you will have to use **manipulations** to determine which word goes in which button. You will learn how to give people multiple ways of responding to a two-way forced choice question with multiple response types. Some people like to respond with keypresses, and other people like to respond with the mouse. You can set up buttons so that they accept both of these types of responses. 
 
-
-
-
-
-
-
-
-
-**Further Consideration 2**: What would happen if you did not add the click response component onto a button and instead just as it's own separate object?
-
-### Button Manipulations
+#### What should the buttons say? Using manipulations
 Manipulations allow you to design settings that will change for each participant who is completing the experiment. In this case, we will be manipulating the text of the button and the corresponding responses. 
+
+First, you will have to make four different manipulations. **** MAGGIE: Needs more walkthrough! **** 
 
 * On the trials display, bind the left button's text to a manipulation titled "buttonLeft" do the same for the right button, except title it "buttonRight."
 * Do the same for the filler display, except name them "leftButtonFill" and "rightButtonFill"
 * For each response (click or keyboard) bind this to the corresponding button.
 * If you are having any troubles with this, make sure under settings that each manipulation has a proper key. The key is what is displayed on the object tab whenever you bind the manipulations. 
 
-**Further Consideration 3**: What are the manipulations doing? 
+> 💡 **Further Consideration 2**: What are the manipulations doing? Why might we want to change this for different participants? 
 
+#### Using Multiple Triggers
+Take a moment to search through the components that can be added onto the button or F/J image.
+
+> 💡 **Further Consideration 3**: What kind of component should you add so that using the keyboard will produce a response in Gorilla? What kind of component should you add so that a mouse click will trigger a response?
+
+
+
+
+
+
+
+
+
+
+> 💡 **Further Consideration 4**: What would happen if you did not add the click response component onto a button, but instead added it as a separate object?
+
+
+-------------
 ### Progress Bar Component
 The progress bar is helpful for long experiments in which a participant may get fatigued and wonder how far into the task they are. 
 
@@ -95,11 +130,10 @@ The progress bar is helpful for long experiments in which a participant may get 
 
 **On the 2nd Screen**: On the screen tab, add an "increase progress" component. Set the criteria to "any response," select "use custom field," bind to progress. 
 
-**Further Consideration 4**: On which screen will the participant see the progress bar change? Why does only one screen have an increase progress component?
+> 💡 **Further Consideration 5**: On which screen will the participant see the progress bar change? Why does only one screen have an increase progress component?
 
-#### Break and Finish
-You can copy the break and end of task screen from NeSST Lab ornaments and edit as needed.  
 
+------------
 ### Scoring and Storing 
 Somtimes you may want to score a participant's answers and display them back to the participant. For example, as a part of our standard lab components, participants must undergo a series of audio equipment checks to make sure that their microphone and environment is ready. In the microphone quality check, the participant must correctly identify which audio clip contains their own speech. They have up to 5 chances to get 5/6 answers correct, if they do not then they are removed from the experiment. At the end of each attempt, they are informed of their score which can help them to improve the next time around. 
 
