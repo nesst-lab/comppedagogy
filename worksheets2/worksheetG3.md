@@ -94,14 +94,17 @@ You can copy the break and end of task screen from NeSST Lab ornaments and edit 
 Now, you will set up the buttons so that people will click on the word that they hear. First, you will have to use **manipulations** to determine which word goes in which button. You will learn how to give people multiple ways of responding to a two-way forced choice question with multiple response types. Some people like to respond with keypresses, and other people like to respond with the mouse. You can set up buttons so that they accept both of these types of responses. 
 
 #### What should the buttons say? Using manipulations
-Manipulations allow you to design settings that will change for each participant who is completing the experiment. In this case, we will be manipulating the text of the button and the corresponding responses. 
+Manipulations allow you to design settings that will change for each participant who is completing the experiment. You "manipulate" how the experiment is presented to each person by predetermining these settings in the task builder, which are ultimately controlled in the experiment builder. In this case, we will be manipulating the text of the button and binding the responses (click and keyboard) to these manipulations. There will be 4 manipulations total, one for each button.
 
-First, you will have to make four different manipulations. **** MAGGIE: Needs more walkthrough! **** 
+**Create manipulations:**
+* Click bind next to the textbox for the left button on the trials screen. Switch from the spreadsheet to manipulation tab. Create a new manipulation titled "buttonLeft."
+* Repeat this process for each button, naming the buttons based on position on the screen. However, for the filler display, add "Fill" to the end of the name to identify the buttons easier. 
+* Switch from the display page to the settings page :gear:
+* Here you can see the manipulations and change various parameters. Make sure to set Label and Key to be the same thing, these both are for the name of the manipulation. Description allows you to describe what the manipulation does. Default is where you set what the manipulation will be automatically when someone goes to test the experiment. As a defaut, set these to match the stimulus word pairs "set and sat" and "suit" and sit." (The order is not important)
 
-* On the trials display, bind the left button's text to a manipulation titled "buttonLeft" do the same for the right button, except title it "buttonRight."
-* Do the same for the filler display, except name them "leftButtonFill" and "rightButtonFill"
-* For each response (click or keyboard) bind this to the corresponding button.
-* If you are having any troubles with this, make sure under settings that each manipulation has a proper key. The key is what is displayed on the object tab whenever you bind the manipulations. 
+**Binding to Responses:**
+* The main idea of this is to make sure that whatever response is submitted matches the text of the button. Since the text is determined by the manipulations, binding directly to the manipulations ensures that there is no room for errors.
+* For every response (click and keyboard) bind to the corresponding button position.
 
 > 💡 **Further Consideration 2**: What are the manipulations doing? Why might we want to change this for different participants? 
 
@@ -120,8 +123,6 @@ Take a moment to search through the components that can be added onto the button
 
 
 > 💡 **Further Consideration 4**: What would happen if you did not add the click response component onto a button, but instead added it as a separate object?
-
-
 -------------
 ### Progress Bar Component
 The progress bar is helpful for long experiments in which a participant may get fatigued and wonder how far into the task they are. 
@@ -137,7 +138,7 @@ The progress bar is helpful for long experiments in which a participant may get 
 ### Scoring and Storing 
 Somtimes you may want to score a participant's answers and display them back to the participant. For example, as a part of our standard lab components, participants must undergo a series of audio equipment checks to make sure that their microphone and environment is ready. In the microphone quality check, the participant must correctly identify which audio clip contains their own speech. They have up to 5 chances to get 5/6 answers correct, if they do not then they are removed from the experiment. At the end of each attempt, they are informed of their score which can help them to improve the next time around. 
 
-* Select the scoring component from the screen tab, and add it onto the screen(s) in which the participant must respond. Bind this to the answer column of the spreadsheet. Next add a "save accuracy" component. Set the criteria to "response accuracy" and select the include actions tab, set the accuracy to "correct" and the attribute to "total." Save this to a field titled "correct." This will save the total correct answers throughout the experiment to the store. 
+* Select the scoring component from the screen tab, and add it onto the screen(s) in which the participant must respond. Bind this to the answer column of the spreadsheet. Next add a "save accuracy" component. Set the criteria to "response accuracy" and select the include actions tab, set the accuracy to "correct" and the attribute to "total." Save this to a field titled "correct." This will save the total correct answers throughout the experiment to the **store.**
 * On the final screen, markdown text allows us to display participants score. ${store:correct} calls to the store and presents the variable "correct." Type a simple message such as "You scored ${store:correct} out of (total experiment trials.)
 
 ### Preview the Experiment and Commit the Changes
@@ -152,7 +153,7 @@ Go back into the folder you are working in and create a new experiment. This is 
 
 **Include a**:
 * start and finish node
-* randomizer creating two groups "setLeft" and "setRight" leading to each different forced choice manipulation
+* randomizer creating two groups "setLeft" and "setRight" leading to each different forced choice manipulation.
 
 #### Test the Experiment
 * Follow the NeSST Lab Notion guidelines titled "How to test Gorilla experiments" to test the experimental flow. 
@@ -160,13 +161,14 @@ Go back into the folder you are working in and create a new experiment. This is 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #### Answers:
 
-**FC 1**: 1. Keyboard Response 2. Click Response
+**FC 1**: The participant has just read the instructions, and might need some time to process them before they begin responding to the audio clip. 
 <br>
-**FC 2**: If you did not add the click response onto the button, then any click at all on the screen would result in a response, and would advance to the next trial. This is problematic because accidental clicks might lead to the participant providing incorrect responses. 
+**FC 2**:  1. Keyboard Response 2. Click Response
 <br>
-**FC 3**:  The manipulations are randomizing the text of buttons, and matching the responses to these buttons. The manipulations put participants into two different groups who each get a different left and a different right button.
+**FC 3**:  If you did not add the click response onto the button, then any click at all on the screen would result in a response, and would advance to the next trial. This is problematic because accidental clicks might lead to the participant providing incorrect responses. 
 <br>
-**FC 4**: The participant will see an increase in progress on the screen that presents the stimulus. They should not see a change in the progress bar on the screen in which they respond. If there were multiple increase progress components, then the progress would increase on both screens and would not be accurate to how much progress the participant had actually made. 
+**FC 4**:  The manipulations change the position of the text on the buttons from appearing either on the left or the right button. If suit is on the left button, then sit will be on the right button and so on. Changing the text on the button between participants ensures that no bias is causing participants to respond in a particular position. 
+**FC 5**: The participant will see an increase in progress on the screen that presents the stimulus. They should not see a change in the progress bar on the screen in which they respond. If there were multiple increase progress components, then the progress would increase on both screens and would not be accurate to how much progress the participant had actually made. 
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ### You are now ready to proceed with Worksheet G4!
