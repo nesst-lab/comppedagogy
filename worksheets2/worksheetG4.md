@@ -13,6 +13,9 @@ Initiated by Maggie Ribaudo August 2024
 #### Before going through this worksheet you should:
 * Have completed worksheet G3.
 ------------------------------------------------------
+### What is an Adaptive Staircase?
+* An adaptive staircase is 
+
 ### Start a new task
 Start a new task for this worksheet using Task Builder 2. 
 
