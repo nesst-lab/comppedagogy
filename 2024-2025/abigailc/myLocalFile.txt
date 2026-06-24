@@ -1,0 +1,13 @@
+"any sentence at all"
+i
+:w
+:c
+i
+any sentence at all
+i
+:c
+io
+i
+:w
+i
+
